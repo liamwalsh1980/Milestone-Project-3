@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmZone</title>
+</head>
+<body>
+
+    <!-- Jinja templating language -->
+    <!-- for loop to iterate through the films from MongoDB -->
+    {% for film in films %}<br>
+        {{ film.film_name }}<br>
+        {{ film.genre_name }}<br>
+        {{ film.actors }}<br>
+        {{ film.best_bit }}<br>
+        {{ film.media_clip }}<br>
+        {{ film.image }}<br>
+    {% endfor %}
+    
+</body>
+</html>
