@@ -12,6 +12,8 @@
     <!-- Compiled and minified CSS from Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         type="text/css">
+    <!-- Head tab icon using https://gauger.io/fonticon/-->
+    <link rel="icon" type="image/png" href="#" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
@@ -19,6 +21,98 @@
 </head>
 
 <body>
+
+    <header>
+        <!-- Main Navbar -->
+        <nav class="nav-extended background-color">
+            <div class="nav-wrapper">
+                <i class="fas fa-film" id="logo-icon"></i>
+                <a href="{{ url_for('get_films') }}" class="brand-logo">filmzone</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('get_films') }}">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Add Film</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Films<i
+                                class="fas fa-caret-down right"></i></a></li>
+                    <li><a href="#">Manage Genres</a></li>
+                    <li><a href="#">Logout</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Dropdown Structure for Main Navbar-->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">All Films</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Action</a></li>
+            <li><a href="#!">Adventure</a></li>
+            <li><a href="#!">Animated</a></li>
+            <li><a href="#!">Biography</a></li>
+            <li><a href="#!">Comedy</a></li>
+            <li><a href="#!">Crime</a></li>
+            <li><a href="#!">Cult</a></li>
+            <li><a href="#!">Drama</a></li>
+            <li><a href="#!">Fantasy</a></li>
+            <li><a href="#!">Horror</a></li>
+            <li><a href="#!">Historical</a></li>
+            <li><a href="#!">Musical</a></li>
+            <li><a href="#!">Romance</a></li>
+            <li><a href="#!">RomCom</a></li>
+            <li><a href="#!">Sci-Fi</a></li>
+            <li><a href="#!">Seasonal</a></li>
+            <li><a href="#!">Sport</a></li>
+            <li><a href="#!">Thriller</a></li>
+            <li><a href="#!">War</a></li>
+            <li><a href="#!">Western</a></li>
+        </ul>
+
+
+        <!-- Mobile sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <h4 class="center-align brand-logo">filmzone</h4>
+            <li><a href="{{ url_for('get_films') }}">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Films<i
+                        class="fas fa-caret-down right"></i></a></li>
+            <li><a href="#">Add Film</a></li>
+            <li><a href="#">Manage Genres</a></li>
+            <li><a href="#">Logout</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- Dropdown Structure for Mobile sidenav -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!">All Films</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Action</a></li>
+            <li><a href="#!">Adventure</a></li>
+            <li><a href="#!">Animated</a></li>
+            <li><a href="#!">Biography</a></li>
+            <li><a href="#!">Comedy</a></li>
+            <li><a href="#!">Crime</a></li>
+            <li><a href="#!">Cult</a></li>
+            <li><a href="#!">Drama</a></li>
+            <li><a href="#!">Fantasy</a></li>
+            <li><a href="#!">Horror</a></li>
+            <li><a href="#!">Historical</a></li>
+            <li><a href="#!">Musical</a></li>
+            <li><a href="#!">Romance</a></li>
+            <li><a href="#!">RomCom</a></li>
+            <li><a href="#!">Sci-Fi</a></li>
+            <li><a href="#!">Seasonal</a></li>
+            <li><a href="#!">Sport</a></li>
+            <li><a href="#!">Thriller</a></li>
+            <li><a href="#!">War</a></li>
+            <li><a href="#!">Western</a></li>
+        </ul>
+
+    </header>
 
     {% block content %}
     {% endblock %}
