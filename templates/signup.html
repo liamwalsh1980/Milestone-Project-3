@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!-- Subheader text -->
+    <section>
+        <div class="row">
+            <div class="col-12 md-6 subheader">Sign Up Here !</div>
+        </div>
+    </section>
+    <!-- Card Panel from Materialize -->
+    <section>
+        <div class="row">
+            <!-- Signup form -->
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signup') }}">
+                <div class="card-panel">
+                    <!-- Username -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-user-plus prefix form-text"></i>
+                            <input id="username" name="username" type="text" class="validate" required>
+                            <label for="username">Username</label>
+                          </div>
+                    </div>
+                    <!-- Password -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                          <i class="fas fa-user-lock prefix form-text"></i>
+                          <input id="password" name="password" type="password" class="validate" required>
+                          <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <!-- Signup button -->
+                    <div class="row">
+                        <button type="submit" class="col s12 btn-large text-shadow large-button">Sign Up <i class="fas fa-sign-in-alt"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}
