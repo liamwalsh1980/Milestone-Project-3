@@ -14,7 +14,7 @@ body {
     background-color: #030001;
 }
 
-/* Navbar  */
+/* Navbar and Logo */
 .brand-logo {
     font-family: 'Holtwood One SC', serif;
     color: #EAE3EF;
@@ -70,20 +70,31 @@ ul li a:hover {
     font-size: 24px;
 }
 
-/* Hero Image */
+/* Hero Image with Subheader */
 
 #hero-image {
     background: url("../images/hero-image.jpg") no-repeat center center; 
     background-size: contain;
-    min-height: 200px;
+    min-height: 290px;
     width: 100%;
 }
 
-
 .subheader {
-    font-size: 42px;
+    font-size: 28px;
     text-align: center;
     padding-bottom: 30px;
+}
+
+/* sections */
+
+.section {
+    background-color: #EAE3EF;
+    color: #030001;
+    font-size: 20px;
+}
+
+.signup {
+    color: #d76848;
 }
 
 /* Footer */
@@ -101,6 +112,6 @@ ul li a:hover {
 }
 
 .background-footer {
-    background-color: #E89549;;
+    background-color: #E89549;
 }
 
