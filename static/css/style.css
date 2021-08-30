@@ -1,6 +1,19 @@
 /* Fonts chosen using Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Montserrat&display=swap');
 
+/* Overall default css setup */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #EAE3EF;
+    background-color: #030001;
+}
+
 /* Navbar  */
 .brand-logo {
     font-family: 'Holtwood One SC', serif;
@@ -15,6 +28,7 @@
     padding-left: 5px;
     color: #EAE3EF;
     text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+    font-size: 32px;
 }
 
 .nav-wrapper .brand-logo:hover {
@@ -44,3 +58,49 @@ ul li a:hover {
     color: #030001;
     padding: 14px 10px;
 }
+
+@media screen and (max-width: 600px) {
+    #logo-icon {
+        padding-top: 19px;
+        padding-left: 20px;
+    }
+}
+
+#sidenav-logo-icon {
+    font-size: 24px;
+}
+
+/* Hero Image */
+
+#hero-image {
+    background: url("../images/hero-image.jpg") no-repeat center center; 
+    background-size: contain;
+    min-height: 200px;
+    width: 100%;
+}
+
+
+.subheader {
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* Footer */
+
+.footer-text {
+    color: #030001;
+}
+
+#lower-footer-background {
+    background-color: #030001;
+}
+
+.lower-footer-text {
+    color: #EAE3EF;
+}
+
+.background-footer {
+    background-color: #E89549;;
+}
+

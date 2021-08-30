@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Liam Walsh">
     <!-- FontAwesome Icons Script tage from cdnjs.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -14,6 +17,7 @@
         type="text/css">
     <!-- Head tab icon using https://gauger.io/fonticon/-->
     <link rel="icon" type="image/png" href="#" />
+    <!-- Local script for CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
@@ -24,29 +28,31 @@
 
     <header>
         <!-- Main Navbar -->
-        <nav class="nav-extended background-color">
-            <div class="nav-wrapper">
-                <i class="fas fa-film" id="logo-icon"></i>
-                <a href="{{ url_for('get_films') }}" class="brand-logo">filmzone</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('get_films') }}">Home</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Add Film</a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Films<i
-                                class="fas fa-caret-down right"></i></a></li>
-                    <li><a href="#">Manage Genres</a></li>
-                    <li><a href="#">Logout</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="nav-extended background-color">
+                <div class="nav-wrapper">
+                    <i class="fas fa-film" id="logo-icon"></i>
+                    <a href="{{ url_for('index') }}" class="brand-logo">filmzone</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Add Film</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Films<i
+                                    class="fas fa-caret-down right"></i></a></li>
+                        <li><a href="#">Manage Genres</a></li>
+                        <li><a href="#">Logout</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <!-- Dropdown Structure for Main Navbar-->
         <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">All Films</a></li>
+            <li><a href="{{ url_for('get_films') }}">All Films</a></li>
             <li class="divider"></li>
             <li><a href="#!">Action</a></li>
             <li><a href="#!">Adventure</a></li>
@@ -73,10 +79,10 @@
 
         <!-- Mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
-            <h4 class="center-align brand-logo">filmzone</h4>
-            <li><a href="{{ url_for('get_films') }}">Home</a></li>
+            <h4 class="center-align brand-logo"><i class="fas fa-film" id="sidenav-logo-icon"></i> filmzone</h4>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="#">Profile</a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Films<i
+            <li><a class="dropdown-trigger" href="{{ url_for('get_films') }}" data-target="dropdown2">Films<i
                         class="fas fa-caret-down right"></i></a></li>
             <li><a href="#">Add Film</a></li>
             <li><a href="#">Manage Genres</a></li>
@@ -88,7 +94,7 @@
 
         <!-- Dropdown Structure for Mobile sidenav -->
         <ul id="dropdown2" class="dropdown-content">
-            <li><a href="#!">All Films</a></li>
+            <li><a href="{{ url_for('get_films') }}">All Films</a></li>
             <li class="divider"></li>
             <li><a href="#!">Action</a></li>
             <li><a href="#!">Adventure</a></li>
@@ -111,7 +117,6 @@
             <li><a href="#!">War</a></li>
             <li><a href="#!">Western</a></li>
         </ul>
-
     </header>
 
     {% block content %}
@@ -125,6 +130,32 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %}
     {% endblock %}
+
+    <footer class="page-footer background-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="footer-text">FilmZone</h5>
+              <p class="footer-text"> You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="footer-text">Links</h5>
+              <ul>
+                <li><a class="footer-text" href="#!">Link 1</a></li>
+                <li><a class="footer-text" href="#!">Link 2</a></li>
+                <li><a class="footer-text" href="#!">Link 3</a></li>
+                <li><a class="footer-text" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright" id="lower-footer-background">
+          <div class="container lower-footer-text">
+          © 2021 Copyright FilmZone
+          <a class="lower-footer-text right " href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
 </body>
 
 </html>
