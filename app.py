@@ -48,7 +48,7 @@ def signup():
 
         # If the username already exists a message is displayed to the user
         if existing_user:
-            flash("Username already exists, please try again")
+            flash("Username already exists, please try again!")
             # Takes the user back to the signup form to try again
             return redirect(url_for("signup"))
 
