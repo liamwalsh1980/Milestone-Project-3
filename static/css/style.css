@@ -79,8 +79,32 @@ ul li a:hover {
     width: 100%;
 }
 
+@media screen and (min-width: 425px) {
+    #hero-image {
+        min-height: 350px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #hero-image {
+        min-height: 500px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #hero-image {
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #hero-image {
+        min-height: 1000px;
+    }
+}
+
 .subheader {
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
     padding: 10px 0 0 10px;
 }
@@ -97,6 +121,10 @@ ul li a:hover {
 
 .signup-text {
     color: #d76848;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
 }
 
 /* forms */
@@ -119,6 +147,16 @@ ul li a:hover {
     background-color: #647737;
 } */
 
+.instructions {
+    color: #d76848;
+    font-size: 10px;
+}
+
+/* flash messages */
+
+.flash-messages {
+    color: #D76848;
+}
 
 /* Footer */
 

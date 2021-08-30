@@ -41,6 +41,31 @@ def get_films():
 
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
+    if request.method == "POST":
+        # Check if username already exists in database
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        # If the username already exists a message is displayed to the user
+        if existing_user:
+            flash("Username already exists, please try again")
+            # Takes the user back to the signup form to try again
+            return redirect(url_for("signup"))
+
+        # Else statement using a dictionary
+        signup = {
+            # Username in parentheses is from the name attr in signup template
+            "username": request.form.get("username").lower(),
+            # Password in parentheses is from the name attr in signup template
+            # Werkzeug security helper used below
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        # Calling the function using the insert_one method
+        mongo.db.users.insert_one(signup)
+
+        # Put the new user into 'session' cookie
+        session['user'] = request.form.get("username").lower()
+        flash("Signup is successful, Welcome to FilmZone")
     return render_template("signup.html")
 
 
