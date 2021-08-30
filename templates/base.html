@@ -31,8 +31,8 @@
         <div class="navbar-fixed">
             <nav class="nav-extended background-color">
                 <div class="nav-wrapper">
-                    <i class="fas fa-film" id="logo-icon"></i>
-                    <a href="{{ url_for('index') }}" class="brand-logo">filmzone</a>
+                  <!-- Fontawesome Icon added to complement text logo -->
+                    <a href="{{ url_for('index') }}" class="brand-logo left"><i class="fas fa-film" id="logo-icon"></i>filmzone</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -43,7 +43,7 @@
                         <li><a href="#">Manage Genres</a></li>
                         <li><a href="#">Logout</a></li>
                         <li><a href="#">Login</a></li>
-                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="{{ url_for('signup') }}">Signup</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
@@ -88,7 +88,7 @@
             <li><a href="#">Manage Genres</a></li>
             <li><a href="#">Logout</a></li>
             <li><a href="#">Login</a></li>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="{{ url_for('signup') }}">Signup</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
 

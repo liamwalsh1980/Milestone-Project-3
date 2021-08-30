@@ -3,9 +3,10 @@ from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
-from bson.objectid import ObjectId
 # MongoDB stores its data in a JSON like format called BSON
 # In order to find documents from MongoDB later, to render ObjectId
+from bson.objectid import ObjectId
+from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
@@ -36,6 +37,11 @@ def get_films():
     # The first 'films' is the template films.html
     # The second 'films is the variable name above
     return render_template("films.html", films=films)
+
+
+@app.route("/signup", methods=["GET", "POST"])
+def signup():
+    return render_template("signup.html")
 
 
 if __name__ == "__main__":

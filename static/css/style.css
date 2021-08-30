@@ -82,7 +82,7 @@ ul li a:hover {
 .subheader {
     font-size: 28px;
     text-align: center;
-    padding-bottom: 30px;
+    padding: 10px 0 0 10px;
 }
 
 /* sections */
@@ -93,9 +93,32 @@ ul li a:hover {
     font-size: 20px;
 }
 
-.signup {
+/* text changes */
+
+.signup-text {
     color: #d76848;
 }
+
+/* forms */
+
+.form-text {
+    color: #030001;
+}
+
+/* buttons */
+
+.text-shadow {
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+.btn-large {
+    background-color: #D76848;
+}
+
+/* .btn-large:hover {
+    background-color: #647737;
+} */
+
 
 /* Footer */
 
