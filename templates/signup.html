@@ -4,7 +4,7 @@
     <!-- Subheader text -->
     <section>
         <div class="row">
-            <div class="col-12 md-6 subheader">Sign Up Here !</div>
+            <div class="col-12 md-6 subheader">Sign Up !</div>
         </div>
     </section>
     <!-- Card Panel from Materialize -->
@@ -34,6 +34,14 @@
                     <!-- Signup button -->
                     <div class="row">
                         <button type="submit" class="col s12 btn-large text-shadow large-button">Sign Up <i class="fas fa-sign-in-alt"></i></button>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <p class="center-align mini-message">
+                                Already have an account?
+                                <a href="{{ url_for('login') }}" id="login-text">Login Here</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </form>
