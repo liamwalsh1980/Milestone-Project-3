@@ -199,12 +199,22 @@ ul li a:hover {
 
 /* text changes */
 
-#signup-text {
+#signup-text, #login-text {
     color: #d76848;
 }
 
 .uppercase-text {
     text-transform: uppercase;
+}
+
+.instructions {
+    color: #d76848;
+    font-size: 10px;
+}
+
+.mini-message {
+    color: #030001;
+    font-size: 10px;
 }
 
 /* forms */
@@ -227,10 +237,6 @@ ul li a:hover {
     background-color: #647737;
 } */
 
-.instructions {
-    color: #d76848;
-    font-size: 10px;
-}
 
 /* flash messages */
 
