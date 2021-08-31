@@ -69,6 +69,35 @@ def signup():
     return render_template("signup.html")
 
 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        # Check if username already exists in database
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            # Ensure password matches user input
+            # check_password_hash from Werkzeug
+            # Had to use 2 space indenting for PEP8 compliance
+            if check_password_hash(
+              existing_user["password"], request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(request.form.get("username")))
+            else:
+                # Invalid password match message to user
+                flash("Incorrect Username and/or Password")
+                return redirect(url_for("login"))
+
+        else:
+            # Username doesn't exist message to user
+            flash("Incorrect Username and/or Password")
+            return redirect(url_for("login"))
+            
+    # Returns user to main login page to try again
+    return render_template("login.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

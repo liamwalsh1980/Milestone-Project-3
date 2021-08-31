@@ -42,7 +42,7 @@
                                     class="fas fa-caret-down right"></i></a></li>
                         <li><a href="#">Manage Genres</a></li>
                         <li><a href="#">Logout</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="{{ url_for('login') }}">Login</a></li>
                         <li><a href="{{ url_for('signup') }}">Signup</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
@@ -86,7 +86,7 @@
             <li><a href="#">Add Film</a></li>
             <li><a href="#">Manage Genres</a></li>
             <li><a href="#">Logout</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
             <li><a href="{{ url_for('signup') }}">Signup</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
