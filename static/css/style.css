@@ -31,6 +31,7 @@ body {
     font-size: 32px;
 }
 
+/* potentially remove */
 .nav-wrapper .brand-logo:hover {
     color: #E89549;
 }
@@ -90,9 +91,17 @@ ul li a:hover {
     color: #EAE3EF;
 }
 
+#mobile-demo a:hover {
+    color: #E89549;
+}
+
 #mobile-demo a i {
     color: #EAE3EF;
     margin-right: 160px;
+}
+
+#mobile-demo a i:hover {
+    color: #E89549;
 }
 
 #dropdown2 {
@@ -107,18 +116,31 @@ ul li a:hover {
     color: #E89549;
 }
 
+
 /* Hero Image with Subheader */
 
 #hero-image {
     background: url("../images/hero-image.jpg") no-repeat center center; 
     background-size: contain;
-    min-height: 290px;
+    min-height: 220px;
     width: 100%;
+}
+
+@media screen and (min-width: 375px) {
+    #hero-image {
+        min-height: 275px;
+    }
 }
 
 @media screen and (min-width: 425px) {
     #hero-image {
-        min-height: 350px;
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #hero-image {
+        min-height: 400px;
     }
 }
 
@@ -128,13 +150,31 @@ ul li a:hover {
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
     #hero-image {
         min-height: 600px;
     }
 }
 
+@media screen and (min-width: 800px) {
+    #hero-image {
+        min-height: 700px;
+    }
+}
+
 @media screen and (min-width: 900px) {
+    #hero-image {
+        min-height: 800px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #hero-image {
+        min-height: 900px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     #hero-image {
         min-height: 1000px;
     }
@@ -146,12 +186,15 @@ ul li a:hover {
     padding: 10px 0 0 10px;
 }
 
-/* sections */
+/* sections and specials */
+
+.stripline {
+    font-size: 20px;
+}
 
 .section {
-    background-color: #EAE3EF;
-    color: #030001;
-    font-size: 20px;
+    padding: 2px;
+    margin-top: 2px;
 }
 
 /* text changes */
