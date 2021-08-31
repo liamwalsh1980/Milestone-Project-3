@@ -93,7 +93,7 @@ def login():
             # Username doesn't exist message to user
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
-            
+
     # Returns user to main login page to try again
     return render_template("login.html")
 
