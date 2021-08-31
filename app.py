@@ -31,8 +31,8 @@ def index():
     return render_template("index.html", index=index)
 
 
-@app.route("/get_films")
-def get_films():
+@app.route("/films")
+def films():
     films = mongo.db.films.find()
     # The first 'films' is the template films.html
     # The second 'films is the variable name above

@@ -52,7 +52,7 @@
 
         <!-- Dropdown Structure for Main Navbar-->
         <ul id="dropdown1" class="dropdown-content">
-            <li><a href="{{ url_for('get_films') }}">All Films</a></li>
+            <li><a href="{{ url_for('films') }}">All Films</a></li>
             <li class="divider"></li>
             <li><a href="#!">Action</a></li>
             <li><a href="#!">Adventure</a></li>
@@ -76,13 +76,12 @@
             <li><a href="#!">Western</a></li>
         </ul>
 
-
         <!-- Mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
             <h4 class="center-align brand-logo"><i class="fas fa-film" id="sidenav-logo-icon"></i> filmzone</h4>
             <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="#">Profile</a></li>
-            <li><a class="dropdown-trigger" href="{{ url_for('get_films') }}" data-target="dropdown2">Films<i
+            <li><a class="dropdown-trigger" href="{{ url_for('films') }}" data-target="dropdown2">Films<i
                         class="fas fa-caret-down right"></i></a></li>
             <li><a href="#">Add Film</a></li>
             <li><a href="#">Manage Genres</a></li>
@@ -94,7 +93,7 @@
 
         <!-- Dropdown Structure for Mobile sidenav -->
         <ul id="dropdown2" class="dropdown-content">
-            <li><a href="{{ url_for('get_films') }}">All Films</a></li>
+            <li><a href="{{ url_for('films') }}">All Films</a></li>
             <li class="divider"></li>
             <li><a href="#!">Action</a></li>
             <li><a href="#!">Adventure</a></li>

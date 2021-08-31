@@ -70,6 +70,43 @@ ul li a:hover {
     font-size: 24px;
 }
 
+#dropdown1 {
+    background-color: #030001;
+}
+
+#dropdown1 a {
+    color: #EAE3EF;
+}
+
+#dropdown1 a:hover {
+    color: #E89549;
+}
+
+#mobile-demo {
+    background-color: #030001;
+}
+
+#mobile-demo a {
+    color: #EAE3EF;
+}
+
+#mobile-demo a i {
+    color: #EAE3EF;
+    margin-right: 160px;
+}
+
+#dropdown2 {
+    background-color: #030001;
+}
+
+#dropdown2 a {
+    color: #EAE3EF;
+}
+
+#dropdown2 a:hover {
+    color: #E89549;
+}
+
 /* Hero Image with Subheader */
 
 #hero-image {
