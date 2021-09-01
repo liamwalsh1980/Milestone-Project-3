@@ -184,6 +184,13 @@ ul li a:hover {
     font-size: 24px;
     text-align: center;
     padding: 10px 0 0 10px;
+    color: #d76848;
+}
+
+.profile-subheader {
+    font-size: 24px;
+    padding: 50px 0 0 10px;
+    color: #d76848;
 }
 
 /* sections and specials */
@@ -209,11 +216,6 @@ ul li a:hover {
 
 .instructions {
     color: #d76848;
-    font-size: 10px;
-}
-
-.mini-message {
-    color: #030001;
     font-size: 10px;
 }
 
