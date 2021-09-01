@@ -1,14 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
-    <!-- Jinja templating language -->
-    <!-- for loop to iterate through the films from MongoDB -->
-    {% for film in films %}<br>
-        {{ film.film_name }}<br>
-        {{ film.genre_name }}<br>
-        {{ film.actors }}<br>
-        {{ film.best_bit }}<br>
-        <!-- {{ film.media_clip }}<br>
-        {{ film.image }}<br> -->
-    {% endfor %}
-
- {% endblock %}
+     
+ <section>
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <ul class="collapsible">
+                <!-- Jinja templating language -->
+                <!-- for loop to iterate through the films from MongoDB -->
+                {% for film in films %}
+                <li>
+                    <div class="collapsible-header film-name">
+                        <i class="fas fa-film film-icon"></i>
+                        {{ film.film_name }}
+                    </div>
+                    <div class="collapsible-body">
+                        <p>Genre: {{ film.genre_name }}</p><br>
+                        <p>Actors: {{ film.actors }}</p><br>
+                        <p>Best bit: {{ film.best_bit }}</p><br>
+                        <!-- <p>Film clip: {{ film.media_clip }}</p><br>
+                        <p>Film image: {{ film.image }}</p><br> -->
+                    </div>
+                </li>
+                {% endfor %}
+              </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
