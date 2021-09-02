@@ -41,7 +41,7 @@
                         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Films<i
                                     class="fas fa-caret-down right"></i></a></li>
                         <li><a href="#">Manage Genres</a></li>
-                        <li><a href="#">Logout</a></li>
+                        <li><a href="{{ url_for('logout') }}">Logout</a></li>
                         <li><a href="{{ url_for('login') }}">Login</a></li>
                         <li><a href="{{ url_for('signup') }}">Signup</a></li>
                         <li><a href="#">Contact Us</a></li>
@@ -85,7 +85,7 @@
                         class="fas fa-caret-down right"></i></a></li>
             <li><a href="#">Add Film</a></li>
             <li><a href="#">Manage Genres</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
             <li><a href="{{ url_for('login') }}">Login</a></li>
             <li><a href="{{ url_for('signup') }}">Signup</a></li>
             <li><a href="#">Contact Us</a></li>
