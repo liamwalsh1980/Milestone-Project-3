@@ -230,6 +230,15 @@ ul li a:hover {
     color: #030001;
 }
 
+.add_film_text {
+    color: #EAE3EF;
+}
+
+.btn-text {
+    background-color: #d76848;
+    color: #EAE3EF;
+}
+
 /* buttons */
 
 .text-shadow {
