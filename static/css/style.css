@@ -239,6 +239,12 @@ ul li a:hover {
     color: #EAE3EF;
 }
 
+#genre-pick {
+    color: #d76848;
+    font-size: 14px;
+    padding-top: 12px;
+}
+
 /* buttons */
 
 .text-shadow {
