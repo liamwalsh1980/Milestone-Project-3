@@ -206,7 +206,7 @@ ul li a:hover {
 
 /* text changes */
 
-#signup-text, #login-text {
+#signup-text, #login-text, .add-btn-text {
     color: #d76848;
 }
 
@@ -270,7 +270,6 @@ ul li a:hover {
     margin: 0;
     width: 50%;
     height: 50%;
-    
 }
 
 /* buttons */
