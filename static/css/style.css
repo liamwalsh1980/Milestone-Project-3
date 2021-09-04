@@ -116,7 +116,6 @@ ul li a:hover {
     color: #E89549;
 }
 
-
 /* Hero Image with Subheader */
 
 #hero-image {
@@ -239,10 +238,14 @@ ul li a:hover {
     color: #EAE3EF;
 }
 
-#genre-pick {
-    color: #d76848;
-    font-size: 14px;
-    padding-top: 12px;
+.select-wrapper input.select-dropdown {
+    font-family: 'Montserrat', sans-serif;
+    color: #EAE3EF;
+}
+
+.input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
+    font-family: 'Montserrat', sans-serif;
+    color: #EAE3EF;
 }
 
 /* buttons */
