@@ -57,7 +57,7 @@ ul li a:hover {
 
 .dropdown-content li a {
     color: #030001;
-    padding: 14px 10px;
+    padding: 14px 5px 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -238,6 +238,8 @@ ul li a:hover {
     color: #EAE3EF;
 }
 
+/* Add film template */
+
 .select-wrapper input.select-dropdown {
     font-family: 'Montserrat', sans-serif;
     color: #EAE3EF;
@@ -248,6 +250,29 @@ ul li a:hover {
     color: #EAE3EF;
 }
 
+.select-dropdown li.disabled {
+    font-size: 14px;
+    background-color: #EAE3EF;
+    color: #030001;
+}
+
+.dropdown-content li>span {
+    font-size: 14px;
+    background-color: #030001;
+    color: #EAE3EF;
+}
+
+.dropdown-content li>span:hover {
+    color: #d76848
+}
+
+.img_film {
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    
+}
+
 /* buttons */
 
 .text-shadow {
@@ -256,6 +281,10 @@ ul li a:hover {
 
 .btn-large {
     background-color: #D76848;
+}
+
+.btn-large:hover {
+    background-color: #647737;
 }
 
 /* .btn-large:hover {

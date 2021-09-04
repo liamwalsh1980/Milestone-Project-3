@@ -9,20 +9,22 @@
     </section>
     <!-- Add a new Film using a form from Materialize -->
     <section>
+        <!-- Choose from a list of Genres via a for loop inside Jinja code -->
         <div class="row">
-            <form class="col s12 m8 offset-m2" method="POST" action="">
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_film') }}">
                 <div class="row">
                     <div class="input-field col s12 add_film_text">
                         <i class="far fa-arrow-alt-circle-right prefix"></i>
-                        <label for="genre_name"></label>
                         <select id="genre_name" name="genre_name" class="validate" required>
                             <option value="" disabled selected>Choose Genre</option>
                             {% for genre in genres %}
                                 <option value="{{ genre.genre_name }}">{{ genre.genre_name }}</option>
                             {% endfor %}
                         </select>
+                        <label for="genre_name">Genre Name</label>
                     </div>
                 </div>
+                <!-- Add film name -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-film prefix"></i> 
@@ -31,6 +33,7 @@
                         <label for="film_name">Film Name</label>
                     </div>
                 </div>
+                <!-- Add Actor names from film being added -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-star prefix"></i>
@@ -39,20 +42,36 @@
                         <label for="actors">Actors</label>
                     </div>
                 </div>
+                <!-- Add Best bit/favourite scene from the film being added -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-thumbs-up prefix"></i>
                         <textarea id="best_bit" name="best_bit" minlength="5" maxlength="100"
-                        type="text" class="materialize-textarea add_film_text"></textarea>
-                        <label for="best_bit">Best bit</label>
+                        class="validate materialize-textarea add_film_text" required></textarea>
+                        <label for="best_bit">Best Bit</label>
                     </div>
                 </div>
+                <!-- Add Film Image (optional) -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-image prefix"></i>
-                        <input id="image" name="image" type="text" class="validate add_film_text">
+                        <input id="image" name="image" type="url" pattern="https?://.+" class="validate add_film_text">
                         <label for="image">Image URL</label>
+                        <span class="helper-text" data-error="enter valid URL" data-success="right"></span>
                     </div>
+                </div>
+                <!-- Add Film Clip (optional) -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-photo-video prefix"></i>
+                        <input id="media_clip" name="media_clip" type="text" class="validate add_film_text">
+                        <label for="media_clip">Media Clip</label>
+                    </div>
+                </div>
+                <!-- Submit button to add a new film -->
+                <div class="row center-align">
+                    <div class="col s12"></div>
+                    <button type="submit" class="btn-large btn-text">Add Film <i class="fas fa-plus-circle right"></i></button>
                 </div>
             </form>
         </div>

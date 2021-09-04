@@ -20,12 +20,13 @@
                         <i class="fas fa-film film-icon"></i>
                         {{ film.film_name }}
                     </div>
-                    <div class="collapsible-body">
+                    <div class="collapsible-body center-align">
                         <p>Genre: {{ film.genre_name }}</p><br>
                         <p>Actors: {{ film.actors }}</p><br>
-                        <p>Best bit: {{ film.best_bit }}</p><br>
-                        <!-- <p>Film clip: {{ film.media_clip }}</p><br>
-                        <p>Film image: {{ film.image }}</p><br> -->
+                        <p>Best Bit: {{ film.best_bit }}</p><br>
+                        <img class="img_film center-align" src="{{ film.image }}" alt="film image"><br> 
+                        <iframe class="film_clip center-align" src="{{ film.media_clip }}" width="400" height="300" title="Film Clip" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" alt="Media Clip" aria-label="Media clip of {{ film.film_name }}" allowfullscreen></iframe>
+                        <p>Created by: {{ film.created_by }}</p>
                     </div>
                 </li>
                 {% endfor %}

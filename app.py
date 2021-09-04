@@ -121,8 +121,22 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_film")
+@app.route("/add_film", methods=["GET", "POST"])
 def add_film():
+    if request.method == "POST":
+        film = {
+            "genre_name": request.form.get("genre_name"),
+            "film_name": request.form.get("film_name"),
+            "actors": request.form.get("actors"),
+            "best_bit": request.form.get("best_bit"),
+            "image": request.form.get("image"),
+            "media_clip": request.form.get("media_clip"),
+            "created_by": session["user"]
+        }
+        mongo.db.films.insert_one(film)
+        flash("Film Added Successfully")
+        return redirect(url_for("films"))
+
     genres = mongo.db.genres.find().sort("genre_name", 1)
     return render_template("add_film.html", genres=genres)
 
