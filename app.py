@@ -103,13 +103,24 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    # Only users can access their own profile
+    if not session.get("user"):
+        return render_template("index.html")
+
     # Grabs the session user's username from the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
-
+        # Admin only can access all films
+        if session["user"] == "admin":
+            user_films = list(mongo.db.films.find())
+        else:
+            # Logged in users will see just their own films
+            user_films = list(
+                mongo.db.films.find({"created_by": session["user"]}))
+        return render_template(
+            "profile.html", username=username, user_films=user_films)
     return redirect(url_for("login"))
 
 

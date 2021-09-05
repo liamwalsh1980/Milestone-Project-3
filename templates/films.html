@@ -1,37 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
      
-<!-- Subheader text -->
-<section>
-    <div class="row">
-        <div class="col-12 md-6 subheader">All Films</div>
-    </div>
-</section>
-<!-- Accordion from Materialize -->
- <section>
-    <div class="row">
-        <div class="col s12 m8 offset-m2">
-            <ul class="collapsible">
-                <!-- Jinja templating language -->
-                <!-- for loop to iterate through the films from MongoDB -->
-                {% for film in films %}
-                <li>
-                    <div class="collapsible-header film-name">
-                        <i class="fas fa-film film-icon"></i>
-                        {{ film.film_name }}
-                    </div>
-                    <div class="collapsible-body center-align">
-                        <p>Genre: {{ film.genre_name }}</p><br>
-                        <p>Actors: {{ film.actors }}</p><br>
-                        <p>Best Bit: {{ film.best_bit }}</p><br>
-                        <img class="img_film center-align" src="{{ film.image }}" alt="film image"><br> 
-                        <iframe class="film_clip center-align" src="{{ film.media_clip }}" width="400" height="300" title="Film Clip" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" alt="Media Clip" aria-label="Media clip of {{ film.film_name }}" allowfullscreen></iframe>
-                        <p>Created by: {{ film.created_by }}</p>
-                    </div>
-                </li>
-                {% endfor %}
-              </ul>
+    <!-- Subheader text -->
+    <section>
+        <div class="row">
+            <div class="col-12 md-6 subheader">All Films</div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- Accordion from Materialize -->
+    <section>
+        <div class="row center">
+            <div class="col-12 md-6">
+                <!-- Jinja templating language -->
+                <!-- for loop to iterate through the films from MongoDB --> 
+                {% for film in films %}
+                    <h3>{{ film.film_name }}</h3></br>
+                    <p>Genre: {{ film.genre_name }}</p><br>
+                    <p>Actors: {{ film.actors }}</p><br>
+                    <p>Best Bit: {{ film.best_bit }}</p><br>
+                    <img class="img_films center-align" src="{{ film.image }}" alt="film image"><br> 
+                    <p>Created by: {{ film.created_by }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
 {% endblock %}
+

@@ -204,16 +204,29 @@ ul li a:hover {
     margin-top: 2px;
 }
 
+/* Films template */
+
+.box {
+    width: 300px;
+    border: 15px solid red;
+    margin: 100px;
+    display: block;
+}
+
 /* text changes */
 
-#signup-text, #login-text {
+#signup-text, #login-text, #add-film {
     color: #d76848;
 }
 
 .add-btn-text {
     color: #d76848;
-    border-bottom: 3px solid #d76848;
-    font-size: 18px;
+    border-bottom: 2px solid #d76848;
+    font-size: 16px;
+}
+
+.add-btn-text-padding {
+    padding-top: 30px;
 }
 
 .uppercase-text {
@@ -280,6 +293,12 @@ ul li a:hover {
     margin: 0;
     width: 50%;
     height: 50%;
+}
+
+.img_films {
+    margin: 0;
+    width: 25%;
+    height: 25%;
 }
 
 /* buttons */
