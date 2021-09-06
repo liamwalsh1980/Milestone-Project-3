@@ -23,8 +23,8 @@
                                 {{ film.film_name }}
                             </div>
                             <div class="col s4">
-                                <a class="btn-small">Edit</a>
-                                <a class="btn-small">Done</a>
+                                <a href="{{ url_for('edit_film', film_id=film._id) }}" class="btn-small">Edit</a>
+                                <a href="" class="btn-small">Done</a>
                             </div>
                         </div>
                         <div class="collapsible-body center-align">

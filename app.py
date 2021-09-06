@@ -152,6 +152,16 @@ def add_film():
     return render_template("add_film.html", genres=genres)
 
 
+# Function to enble users to edit their films already added to the site
+@app.route("/edit_film/<film_id>", methods=["GET", "POST"])
+def edit_film(film_id):
+    # This is using the ObjectId imported at the top of this file
+    # The Id needs to be converted into a BSON data-type
+    film = mongo.db.films.find_one({"_id": ObjectId(film_id)})
+    genres = mongo.db.genres.find().sort("genre_name", 1)
+    return render_template("edit_film.html", film=film, genres=genres)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
