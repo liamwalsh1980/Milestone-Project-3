@@ -182,8 +182,19 @@ ul li a:hover {
 .subheader {
     font-size: 24px;
     text-align: center;
-    padding: 10px 0 0 10px;
+    padding: 20px 0 0 10px;
     color: #d76848;
+}
+
+/* Profile template */
+
+.collapsible-header .col .fa-film  {
+    padding: 10px;
+    line-height: 20px;
+}
+
+.add-new-film-link{
+    padding-top: 20px;
 }
 
 /* .profile-subheader {
@@ -226,7 +237,7 @@ ul li a:hover {
 }
 
 .add-btn-text-padding {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .uppercase-text {
@@ -238,8 +249,12 @@ ul li a:hover {
     font-size: 10px;
 }
 
-.mini-message, .film-icon, .film-name {
+.mini-message, .film-name {
     color: #030001;
+}
+
+.film-icon {
+    color: #d76848;
 }
 
 .add_film_link {
@@ -260,6 +275,21 @@ ul li a:hover {
     background-color: #d76848;
     color: #EAE3EF;
 }
+
+/* small buttons */
+
+.btn-small {
+    margin: 10px 5px;
+    background-color: #d76848;
+    color: #EAE3EF;
+}
+
+.btn-small:hover {
+    background-color: #647737;
+    color: #EAE3EF;
+}
+
+
 
 /* Add film template */
 
@@ -309,6 +339,7 @@ ul li a:hover {
 
 .btn-large {
     background-color: #D76848;
+    color: #EAE3EF;
 }
 
 .btn-large:hover {

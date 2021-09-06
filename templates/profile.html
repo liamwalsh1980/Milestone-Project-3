@@ -4,22 +4,28 @@
     <!-- Subheader text -->
     <section>
         <div class="row container">
-            <div class="col-12 md-6 subheader">{{ username }}'s Films</div>
-            <div class="col-12 md-6 left add-btn-text-padding"><a href="{{ url_for('add_film') }}" class="add-btn-text">Add New Film <i class="fas fa-plus-circle"></i></a></div>
+            <div class="col-6 md-6 s12 subheader">{{ username }}'s Films</div>
+            <div class="col-6 md-6 s12 right"><a href="{{ url_for('add_film') }}" class="add-btn-text">Add New Film <i class="fas fa-plus-circle add-new-film-link"></i></a></div>
         </div>
     </section>
     <!-- Card Panel from Materialize -->
     <section>
         <div class="row">
-            <div class="col s12 m8 offset-m2">
+            <div class="col m8 s12 offset-m2">
                 <ul class="collapsible">
                     <!-- Jinja templating language -->
                     <!-- for loop to iterate through the films from MongoDB -->
                     {% for film in user_films %}
                     <li>
                         <div class="collapsible-header film-name">
-                            <i class="fas fa-film film-icon"></i>
-                            {{ film.film_name }}
+                            <div class="col s8">
+                                <i class="fas fa-film film-icon"></i>
+                                {{ film.film_name }}
+                            </div>
+                            <div class="col s4">
+                                <a class="btn-small">Edit</a>
+                                <a class="btn-small">Done</a>
+                            </div>
                         </div>
                         <div class="collapsible-body center-align">
                             <p>Genre: {{ film.genre_name }}</p><br>
