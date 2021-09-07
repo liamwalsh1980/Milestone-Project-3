@@ -144,6 +144,44 @@
         {% endblock %}
     </main>
 
+    <footer class="page-footer background-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="footer-text">FilmZone</h5>
+              <p class="footer-text"> Filmzone offers a free service to all users who want to take recommendations of films that have been recently watched by members of the site. Users can signup for free and add unlimited films to the site. The more films the better and with the option to edit and even delete films, users will find using FilmZone a great overall experience.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="footer-text">Links</h5>
+              <ul>
+                <li><a class="footer-text footer-text-link" href="{{ url_for('index') }}" >Home</a></li>
+                <li><a class="footer-text footer-text-link" href="{{ url_for('films') }}">Films</a></li>
+                {% if session.user %}
+                    <li><a class="footer-text footer-text-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                {% else %}
+                    <li><a class="footer-text footer-text-link" href="{{ url_for('signup') }}">Signup</a></li>
+                {% endif %}
+                <li><a class="footer-text footer-text-link" href="#" >Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright" id="lower-footer-background">
+          <div class="container lower-footer-text">
+          © 2021 FilmZone
+            <a id="facebook" class="lower-footer-text right footer-padding" href="https://www.facebook.com/" aria-label="Find us on Facebook (opens in new tab)" target="_blank"><i class="fab fa-facebook"></i></a>
+
+            <a id="instagram" class="lower-footer-text right footer-padding" href="https://www.instagram.com/" aria-label="Find us on Instagram (opens in new tab)" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a id="twitter" class="lower-footer-text right footer-padding" href="https://twitter.com/" aria-label="Find us on Twitter (opens in new tab)" target="_blank"><i class="fab fa-twitter"></i></a>
+
+            <a id="spotify" class="lower-footer-text right footer-padding" href="https://www.spotify.com" aria-label="Find us on Spotify (opens in new tab)" target="_blank"><i class="fab fa-spotify"></i></a>
+
+            <a id="youtube" class="lower-footer-text right footer-padding" href="https://www.youtube.com" aria-label="Find us on Youtube (opens in new tab)" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
     <!-- JQuery script from https://code.jquery.com/ to enable JQuery usage -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -152,32 +190,6 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %}
     {% endblock %}
-
-    <footer class="page-footer background-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="footer-text">FilmZone</h5>
-              <p class="footer-text"> You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="footer-text">Links</h5>
-              <ul>
-                <li><a class="footer-text" href="#!">Link 1</a></li>
-                <li><a class="footer-text" href="#!">Link 2</a></li>
-                <li><a class="footer-text" href="#!">Link 3</a></li>
-                <li><a class="footer-text" href="#!">Link 4</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright" id="lower-footer-background">
-          <div class="container lower-footer-text">
-          © 2021 Copyright FilmZone
-          <a class="lower-footer-text right " href="#!">More Links</a>
-          </div>
-        </div>
-      </footer>
 </body>
 
 </html>

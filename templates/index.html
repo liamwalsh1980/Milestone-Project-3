@@ -11,9 +11,9 @@
     <section>
         <div class="row">
             {% if session.user %}
-                <p class="container-fluid col-12 md-6 center-align section">Welcome back</p>
+                <p class="container-fluid col-12 md-6 center-align homepage-content">Welcome back, seen any new films that is worth adding to the list?</p>
             {% else %}
-                <p class="container-fluid col-12 md-6 center-align section">If you love films you’re in the right place. Take a look at other FilmZone members recommendations and add your own favourite films by signing up for free. </p>
+                <p class="container-fluid col-12 md-6 center-align homepage-content">If you love films you’re in the right place. Take a look at other FilmZone members and their recommendations and add your own favourite films by signing up for free. </p>
             {% endif %}
         </div> 
     </section>
@@ -21,9 +21,9 @@
         <div class="container-fluid">
             <div class="row">
                 {% if session.user %}
-                    <p class="col-12 center-align stripline uppercase-text">add your favourite films - <span><a href="{{ url_for('add_film') }}" id="add-film">Add Film</a></span>!</p>
+                    <p class="col-12 center-align homepage-stripline uppercase-text">add your favourite films - <span><a href="{{ url_for('add_film') }}" id="add-film">Add Film</a></span>!</p>
                 {% else %}
-                    <p class="col-12 center-align stripline uppercase-text">add your favourite films - <span><a href="{{ url_for('signup') }}" id="signup-text">Signup</a></span>!</p>
+                    <p class="col-12 center-align homepage-stripline uppercase-text">add your favourite films - <span><a href="{{ url_for('signup') }}" id="signup-text">Signup</a></span> !</p>
                 {% endif %}
             </div>
         </div>
