@@ -16,7 +16,7 @@
                     <div class="input-field col s12 add_film_text">
                         <i class="far fa-arrow-alt-circle-right prefix"></i>
                         <select id="genre_name" name="genre_name" class="validate" required>
-                            <option value="" disabled selected>Choose Genre</option>
+                            <option value="" disabled selected class="add_film_text">Choose from list</option>
                             {% for genre in genres %}
                                 <option value="{{ genre.genre_name }}">{{ genre.genre_name }}</option>
                             {% endfor %}

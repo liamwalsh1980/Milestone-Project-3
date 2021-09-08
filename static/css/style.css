@@ -304,10 +304,6 @@ ul li a:hover {
     color: #030001;
 }
 
-/* .add_film_text {
-    color: #EAE3EF;
-} */
-
 /* Add film template */
 
 .select-wrapper input.select-dropdown {
@@ -352,6 +348,14 @@ ul li a:hover {
     border-bottom: 1px solid #d76848;
 }
 
+.add_film_text, .select-wrapper input.select-dropdown  {
+    color: #EAE3EF;
+}
+
+/* .input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label[genre_name] {
+    color: #030001;
+} */
+
 /* Buttons */
 
 .btn-text {
@@ -377,6 +381,10 @@ ul li a:hover {
 
 .btn-large:hover {
     background-color: #647737;
+}
+
+.button-padding {
+    margin: 5px;
 }
 
 /* flash messages */
