@@ -152,9 +152,21 @@ def add_film():
     return render_template("add_film.html", genres=genres)
 
 
-# Function to enble users to edit their films already added to the site
+# Function to enable users to edit their films already added to the site
 @app.route("/edit_film/<film_id>", methods=["GET", "POST"])
 def edit_film(film_id):
+    if request.method == "POST":
+        edit = {
+            "genre_name": request.form.get("genre_name"),
+            "film_name": request.form.get("film_name"),
+            "actors": request.form.get("actors"),
+            "best_bit": request.form.get("best_bit"),
+            "image": request.form.get("image"),
+            "media_clip": request.form.get("media_clip"),
+            "created_by": session["user"]
+        }
+        mongo.db.films.update({"_id": ObjectId(film_id)}, edit)
+        flash("Film Updated Successfully")
     # This is using the ObjectId imported at the top of this file
     # The Id needs to be converted into a BSON data-type
     film = mongo.db.films.find_one({"_id": ObjectId(film_id)})
