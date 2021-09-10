@@ -174,6 +174,14 @@ def edit_film(film_id):
     return render_template("edit_film.html", film=film, genres=genres)
 
 
+# Function to enable users to delete any film already added by user
+@app.route("/delete_film/<film_id>")
+def delete_film(film_id):
+    mongo.db.films.remove({"_id": ObjectId(film_id)})
+    flash("Film Successfully Deleted")
+    return redirect(url_for("films"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
