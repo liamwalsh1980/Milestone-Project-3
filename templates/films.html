@@ -4,7 +4,7 @@
     <!-- Subheader text -->
     <section>
         <div class="row">
-            <div class="col-12 subheader">All Films</div>
+            <div class="col-12 subheader">Films</div>
         </div>
     </section>
     <!-- Films section for all users to view -->
@@ -14,7 +14,7 @@
             <!-- for loop to iterate through the films from MongoDB --> 
             {% for film in films %}
                 <div class="col s12 xl4">
-                    <h3>{{ film.film_name }}</h3></br>
+                    <h4>{{ film.film_name }}</h4></br>
                     <p>Genre: {{ film.genre_name }}</p><br>
                     <p>Actors: {{ film.actors }}</p><br>
                     <p>Best Bit: {{ film.best_bit }}</p><br>

@@ -183,6 +183,7 @@ def delete_film(film_id):
     return redirect(url_for("films"))
 
 
+# Function to grab all genre names from MongoDB
 @app.route("/genres.html")
 def genres():
     genres = list(mongo.db.genres.find().sort("genre_name", 1))
