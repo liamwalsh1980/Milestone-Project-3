@@ -7,18 +7,19 @@
             <div class="col-12 subheader">All Films</div>
         </div>
     </section>
-    <!-- -->
+    <!-- Films section for all users to view -->
     <section>
         <div class="row center">
             <!-- Jinja templating language -->
             <!-- for loop to iterate through the films from MongoDB --> 
             {% for film in films %}
-                <div class="container col xl4 s12">
+                <div class="col s12 xl4">
                     <h3>{{ film.film_name }}</h3></br>
                     <p>Genre: {{ film.genre_name }}</p><br>
                     <p>Actors: {{ film.actors }}</p><br>
                     <p>Best Bit: {{ film.best_bit }}</p><br>
                     <img class="img_films center-align" src="{{ film.image }}" alt="film image">
+                    <div class="line-break container"></div>
                     <br> 
                     <p>Created by: {{ film.created_by }}</p>
                     <br>

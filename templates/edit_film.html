@@ -13,7 +13,7 @@
         <div class="row">
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_film', film_id=film._id) }}">
                 <div class="row">
-                    <div class="input-field col s12 add_film_text">
+                    <div class="input-field col s12 edit_film_text">
                         <i class="far fa-arrow-alt-circle-right prefix"></i>
                         <select id="genre_name" name="genre_name" class="validate" required>
                             <option value="" disabled>Choose Genre</option>
@@ -33,7 +33,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-film prefix"></i> 
                         <input id="film_name" name="film_name" minlength="1" maxlength="100" 
-                            value="{{ film.film_name }}" type="text" class="validate add_film_text" required>
+                            value="{{ film.film_name }}" type="text" class="validate edit_film_text" required>
                         <label for="film_name">Film Name</label>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-star prefix"></i>
                         <input id="actors" name="actors" minlength="3" maxlength="100" 
-                        value="{{ film.actors }}" type="text" class="validate add_film_text" required> 
+                        value="{{ film.actors }}" type="text" class="validate edit_film_text" required> 
                         <label for="actors">Actors</label>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-thumbs-up prefix"></i>
                         <textarea id="best_bit" name="best_bit" minlength="5" maxlength="100"
-                        class="validate materialize-textarea add_film_text" required>{{ film.best_bit }}</textarea>
+                        class="validate materialize-textarea edit_film_text" required>{{ film.best_bit }}</textarea>
                         <label for="best_bit">Best Bit</label>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-image prefix"></i>
                         <input id="image" name="image" type="url" pattern="https?://.+" value="{{ film.image }}"
-                        class="validate add_film_text">
+                        class="validate edit_film_text">
                         <label for="image">Image URL</label>
                         <span class="helper-text" data-error="enter valid URL" data-success="right"></span>
                     </div>
@@ -70,7 +70,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-photo-video prefix"></i>
                         <input id="media_clip" name="media_clip" type="text" value="{{ film.media_clip }}"
-                        class="validate add_film_text">
+                        class="validate edit_film_text">
                         <label for="media_clip">Media Clip</label>
                     </div>
                 </div> -->

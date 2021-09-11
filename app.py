@@ -132,16 +132,17 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Function to enable users to add new films to the site
 @app.route("/add_film", methods=["GET", "POST"])
 def add_film():
     if request.method == "POST":
+        # Dictionary created and assigned to 'film'
         film = {
             "genre_name": request.form.get("genre_name"),
             "film_name": request.form.get("film_name"),
             "actors": request.form.get("actors"),
             "best_bit": request.form.get("best_bit"),
             "image": request.form.get("image"),
-            "media_clip": request.form.get("media_clip"),
             "created_by": session["user"]
         }
         mongo.db.films.insert_one(film)
@@ -180,6 +181,12 @@ def delete_film(film_id):
     mongo.db.films.remove({"_id": ObjectId(film_id)})
     flash("Film Successfully Deleted")
     return redirect(url_for("films"))
+
+
+@app.route("/genres.html")
+def genres():
+    genres = list(mongo.db.genres.find().sort("genre_name", 1))
+    return render_template("genres.html", genres=genres)
 
 
 if __name__ == "__main__":

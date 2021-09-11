@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Subheader text -->
+<section>
+    <div class="row">
+        <div class="col-12 subheader">Genres</div>
+    </div>
+</section>
+<!-- -->
+<section>
+    <div class="container row">
+        {% for genre in genres %}
+        <div class="col s12 m4 l3">
+          <div class="card text-shadow genre-card">
+            <div class="card-content">
+              <span class="card-title center-align">{{ genre.genre_name }}</span>
+            </div>
+            <div class="card-action center-align">
+                <a href="" id="genre-btn" class="btn-small btn-small-genres">Edit</a>
+                <a href="" class="btn-small  btn-small-genres">Delete</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

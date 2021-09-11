@@ -366,28 +366,49 @@ ul li a:hover {
     border-bottom: 1px solid #d76848;
 }
 
-.add_film_text, .select-wrapper input.select-dropdown  {
+.add_film_text, .edit_film_text, .select-wrapper input.select-dropdown  {
     color: #EAE3EF;
+    font-size: 15px;
 }
 
 /* .input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label[genre_name] {
     color: #030001;
 } */
 
-/* Buttons */
+/* Genres page */
 
-.btn-text {
-    background-color: #d76848;
-    color: #EAE3EF;
+.genre-card {
+    background-color: #d76848;;
+    border-radius: 10%;
 }
 
-.btn-small {
+.card .card-title {
+    font-size: 20px;
+}
+
+/* Buttons */
+
+.btn-small-genres {
+    background-color: #030001;
+    margin: 10px 5px;
+}
+
+.btn-small-genres:hover {
+    background-color: #647737;
+}
+
+/* .btn-text-profile {
+    background-color: #d76848;
+    color: #EAE3EF;
+} */
+
+.btn-small-profile {
     margin: 10px 5px;
     background-color: #d76848;
     color: #EAE3EF;
 }
 
-.btn-small:hover {
+.btn-small-profile:hover {
     background-color: #647737;
     color: #EAE3EF;
 }
