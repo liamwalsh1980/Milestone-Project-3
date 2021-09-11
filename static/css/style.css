@@ -136,7 +136,7 @@ ul li a:hover {
 
 @media screen and (min-width: 375px) {
     #hero-image {
-        min-height: 275px;
+        min-height: 300px;
     }
 }
 
@@ -154,37 +154,55 @@ ul li a:hover {
 
 @media screen and (min-width: 600px) {
     #hero-image {
-        min-height: 500px;
+        min-height: 450px;
     }
 }
 
 @media screen and (min-width: 700px) {
     #hero-image {
-        min-height: 600px;
+        min-height: 525px;
     }
 }
 
 @media screen and (min-width: 800px) {
     #hero-image {
-        min-height: 700px;
+        min-height: 600px;
     }
 }
 
 @media screen and (min-width: 900px) {
     #hero-image {
-        min-height: 800px;
+        min-height: 650px;
     }
 }
 
 @media screen and (min-width: 1000px) {
     #hero-image {
-        min-height: 900px;
+        min-height: 750px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #hero-image {
+        min-height: 800px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     #hero-image {
-        min-height: 1000px;
+        min-height: 825px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #hero-image {
+        min-height: 850px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #hero-image {
+        min-height: 1050px;
     }
 }
 
