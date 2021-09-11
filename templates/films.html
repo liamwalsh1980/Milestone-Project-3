@@ -13,26 +13,16 @@
             <!-- Jinja templating language -->
             <!-- for loop to iterate through the films from MongoDB --> 
             {% for film in films %}
-                <div class="col l6">
+                <div class="container col xl4 s12">
                     <h3>{{ film.film_name }}</h3></br>
                     <p>Genre: {{ film.genre_name }}</p><br>
                     <p>Actors: {{ film.actors }}</p><br>
                     <p>Best Bit: {{ film.best_bit }}</p><br>
                     <img class="img_films center-align" src="{{ film.image }}" alt="film image">
                     <br> 
-                    <!-- Admin access to all films to edit/delete -->
-                    {% if session["user"] == "admin" %}
-                        <a href="{{ url_for('edit_film', film_id=film._id) }}" class="btn-small">Edit</a>
-                        <a href="{{ url_for('delete_film', film_id=film._id) }}" class="btn-small">Done</a>
-                    <!-- Logged in user has access to all their films added to edit/delete -->
-                    {% elif session.user|lower == film.created_by|lower %}
-                        <a href="{{ url_for('edit_film', film_id=film._id) }}" class="btn-small">Edit</a>
-                        <a href="{{ url_for('delete_film', film_id=film._id) }}" class="btn-small">Done</a>
-                    <!-- Logged out or unregistered users do not have access to edit/delete films -->
-                    {% endif %}
-                        <p>Created by: {{ film.created_by }}</p>
-                        <br>
-                        <div class="line-break container"></div>
+                    <p>Created by: {{ film.created_by }}</p>
+                    <br>
+                    <div class="line-break container"></div>
                 </div>
             {% endfor %}
         </div>
