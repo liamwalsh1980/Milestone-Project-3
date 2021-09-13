@@ -8,6 +8,7 @@
 
 ## Table of contents
 1. [Introduction](#introduction)
+    * [CRUD](#crud)
 1. [UX](#ux)
     * [User demographic](#user-demographic) 
     * [Main aims](#main-aims)
@@ -68,7 +69,15 @@ ___
 [Back to top ⇧](#filmzone)
 
 ## Introduction
-This Milestone project (Python and Data Centric Development) is the third of four that continues to contribute towards my Full Stack Web Developer Diploma with Code Institute. The main requirements in this project are to design a Full-Stack website that allows users to manage a common dataset about a particular domain. Users make use of the site to share their own data with the community, and benefit from having convenient access to the data provided by all other members. The site Administrator/owner will also be a regular visitor to the website and therefore has additional functionalities to the frontend and backend of the site. The site will of authentication in place for any user to sign up to their own account/profile and in turn contribute to the website by adding and editing whilst logged in. The main technologies that need to be used to achieve this is HTML, CSS, JavaScript with the option of using jQuery, Python + Flask, MongoDB and any other suitable libraries, external APIs and tools that will assist in building this Full-Stack website. One of the key aims is to make sure that users can Create, Read, Update and Delete (CRUD conventions) where needed to offer excellent interactive user experience.  
+This Milestone project (Python and Data Centric Development) is the third of four that continues to contribute towards my Full Stack Web Developer Diploma with Code Institute. The main requirements in this project are to design a Full-Stack website that allows users to manage a common dataset about a particular domain. Users make use of the site to share their own data with the community, and benefit from having convenient access to the data provided by all other members. The site Administrator/owner will also be a regular visitor to the website and therefore has additional functionalities to the frontend and backend of the site. The site will of authentication in place for any user to sign up to their own account/profile and in turn contribute to the website by adding and editing whilst logged in. The main technologies that need to be used to achieve this is HTML, CSS, JavaScript with the option of using jQuery, Python + Flask, MongoDB and any other suitable libraries, external APIs and tools that will assist in building this Full-Stack website. 
+
+### CRUD
+One of the key aims is to make sure that users can Create, Read, Update and Delete (CRUD conventions) where needed to offer excellent interactive user experience. The project will deliver all of these conventions in the form: -
+
+- **Create** will be classed as Adding a Film/Adding a Genre
+- **Read** will be classed as viewing Films all signed users have added
+- **Update** will be classed and editing a Film a user has added or for the Admin user to be able to edit a Genre
+- **Delete** will be classed as deleting a Film a user has added of for the Admin user to be able to delete a Genre. The term 'Done' is also used in the profile page to accomplish delete. 
 
 FilmZone is a friendly, easy to use Website for all film lovers to visit. Users can view another users' favourite films and add their own films by signing up to a user account with a username and password of their choosing. With a search facility available, users can quickly find a particular film based on Genre, Actor or Film name keyword. As a keen film lover, I thought of this idea based on my own experiences and thinking that it would be good to have a platform on the internet to tell others what my favourites films are and why. As users aren’t restricted to how many films they can add, I believe that with just a few registered users the library of films within Filmzone could quickly grow and therefore offers new users a broad range of Films to consider watching next.  
 
@@ -89,7 +98,7 @@ ___
 [Back to top ⇧](#filmzone)
 
 ## UX 
-User Demographic 
+### User Demographic 
 
 - For film lovers who enjoy watching films on a regular basis  
 - For anybody that is looking for a particular firm based on a genre type or actor name
@@ -468,6 +477,10 @@ Once configuration coding is added on the app.py file I then retrieved the MONGO
 - Select ‘Connect your application’ 
 - Select ‘Python’ for driver  
 - Select the latest version (for me it was ‘3.12 or later’) 
+
+![Image template](static/images/deployment/connecting-mongodb-to-flask.png)
+(passwords are removed for security) 
+
 - Copy the string using the icon on the righthand side of the string.  
 - Paste this as the second argument inside the app.py file for the MONGO URI and then paste it in the Config Vars in Heroku.  
 
@@ -611,6 +624,8 @@ Also known as the index.html template, I started by adding a sub header “We al
 >More to come – search bar, flicks of the week and potentially a carousel.  
 
 ### Films page 
+
+This page 'films.html' is for the purpose of holding all films added by all logged in users as a central page for everyone to view. Whether your logged in or not you will be able to access this page. The head and footer is indentical to the rest of the site by using the Jinja templating language. Within the body of the page i added a subheader called 'Films' and below is a 'for' loop iterating through films which is a function ??????
 
 [Back to top ⇧](#filmzone)
 

@@ -33,7 +33,7 @@ def index():
 
 @app.route("/films")
 def films():
-    films = mongo.db.films.find()
+    films = list(mongo.db.films.find().sort("film_name", 1))
     # The first 'films' is the template films.html
     # The second 'films is the variable name above
     return render_template("films.html", films=films)
@@ -184,7 +184,7 @@ def delete_film(film_id):
 
 
 # Function to grab all genre names from MongoDB
-@app.route("/genres.html")
+@app.route("/genres")
 def genres():
     genres = list(mongo.db.genres.find().sort("genre_name", 1))
     return render_template("genres.html", genres=genres)
