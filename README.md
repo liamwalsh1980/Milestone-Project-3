@@ -21,9 +21,51 @@
     * [Surface](#surface)
 1. [Development Environment](#development-environment )
 1. [Deployment](#deployment)
+    * [Requirements](#requirements)
     * [Connect Flask to MongoDB Atlas](#connect-flask-to-mongodb-atlas)
+    * [Clone project](#clone-project)
+    * [Forking project](#forking-project)
+1. [Design Process](#design-process)
+    * [CSS custom styling](#css-custom-styling)
+    * [Base Template](#base-template)
+    * [Head](#head)
+    * [Body](#body)
+    * [Header](#header)
+    * [NavBar](#navbar)
+    * [Mobile SideNav](#mobile-sidenav)
+    * [Footer](#footer)
+    * [Homepage](#homepage)
+    * [Films page](#films-page)
+    * [Signup page](#signup-page)
+    * [Login page](#login-page)
+    * [Logout page](#logout-page)
+    * [Profile page](#profile-page)
+    * [Add Film page](#add-film-page)
+    * [Edit Film page](#edit-film-page)
+    * [Genres page](#genres-page)
+    * [Add Genre page](#add-genre-page)
+    * [Edit Genre page](#edit-genre-page)
+    * [Contact Us page](#contact-us-page)
+    * [Media Queries](#media-queries)
+1. [Features](#features)
+    * [Existing features](#existing-features)
+    * [Features to implement](#features-to-implement)
+1. [Technologies used](#technologies-used)
+    * [Languages](#languages)
+    * [Frameworks and Libraries](#frameworks-and-libraries)
+    * [Other technologies](#other-technologies) 
+1. [Testing](#testing)
+1. [Bugs](#bugs)
+1. [Credits](#credits)
+    * [Images](#images)
+    * [Content](#content)
+    * [Code](#code)
+    * [JavaScript](#javaScript)
+1. [Acknowledgements](#acknowledgements)
+1. [Notes](#notes)
 
 ___
+[Back to top ⇧](#filmzone)
 
 ## Introduction
 This Milestone project (Python and Data Centric Development) is the third of four that continues to contribute towards my Full Stack Web Developer Diploma with Code Institute. The main requirements in this project are to design a Full-Stack website that allows users to manage a common dataset about a particular domain. Users make use of the site to share their own data with the community, and benefit from having convenient access to the data provided by all other members. The site Administrator/owner will also be a regular visitor to the website and therefore has additional functionalities to the frontend and backend of the site. The site will of authentication in place for any user to sign up to their own account/profile and in turn contribute to the website by adding and editing whilst logged in. The main technologies that need to be used to achieve this is HTML, CSS, JavaScript with the option of using jQuery, Python + Flask, MongoDB and any other suitable libraries, external APIs and tools that will assist in building this Full-Stack website. One of the key aims is to make sure that users can Create, Read, Update and Delete (CRUD conventions) where needed to offer excellent interactive user experience.  
@@ -44,6 +86,7 @@ This user will be able to visit all pages that User One and User Two has access 
 Date this project started: 23rd August 2021
 
 ___
+[Back to top ⇧](#filmzone)
 
 ## UX 
 User Demographic 
@@ -53,8 +96,6 @@ User Demographic
 - For film lovers that are interested in sharing their best films with others 
 - For film lovers who prefer to watch films at home on their TV or device 
 - For film lovers who have access to the internet via computer, tablet or mobile device. 
-
-[Back to top ⇧](#filmzone)
 
 ### Main Aims 
 
@@ -96,6 +137,7 @@ User Demographic
 - Due to a News Report a Film Actor has been discredited and therefore all Films associated to this Actor needs to be removed from the Internet. 
 
 ___
+[Back to top ⇧](#filmzone) 
 
 ### Development Process 
 As this project is focused on full stack development and using a non-relational database more time was given to the preparation of the site based on UX Design, the five development planes, the document-oriented database and keeping a full focus on the user goals, developer goals and user stories found above.  
@@ -169,6 +211,8 @@ With these goals in mind, I put together diagrams that shows the importance and 
 
 ![Image template](static/images/ux/strategy/strategy-logged-in-admin-user.png)
 
+[Back to top ⇧](#filmzone)
+
 ### Scope 
 After looking at all possible users, features and user stories from my Strategy I made a list of what I wanted to include in the build of the site based on what features all users would want and how it would be possible to offer these features. I created two releases of the site with release one being the challenge for this project. Any features from release two would be considered for the next phase of this web application but unlikely to be included this time around.  
 
@@ -187,6 +231,8 @@ After looking at all possible users, features and user stories from my Strategy 
 **Scope overview**
 
 ![Image template](static/images/ux/scope/scope-overview.png)
+
+[Back to top ⇧](#filmzone)
 
 ### Structure 
 
@@ -237,9 +283,11 @@ Contact Us page - TBC
 Structure screenshot 
 {png here} 
 
+[Back to top ⇧](#filmzone)
+
 ### Skeleton 
 
-For this part of the design process, I used Balsamiq to sketch out all web pages based on what I want to achieve. 
+For this part of the design process, I used Balsamiq to sketch out all web pages based on what I want to achieve.
 
 #### Balsamiq Wireframes
 
@@ -248,8 +296,8 @@ For this part of the design process, I used Balsamiq to sketch out all web pages
 As the developer of FilmZone I put a lot of work into making sure that the Wireframes were as close as possible to the finished site. There were a few differences which are highlighted below: -  
 
 TBC 
-
 ___
+[Back to top ⇧](#filmzone)
 
 ### Surface 
 
@@ -296,6 +344,8 @@ For Filmzone to work this project is based on backend development as well as fro
 
 ![Image template](static/images/ux/surface/database-collections-filmzone.png)
 
+[Back to top ⇧](#filmzone)
+
 #### Users Collection 
 
 When a user creates an account, all information will be stored in the ‘users’ collection. 
@@ -328,6 +378,9 @@ When the Admin user is signed in the Genres section can be amended with the opti
 - Genre name (Connected to the ‘Genre name’ field from the ‘films’ collection) 
 - _id (Auto-generated by MongoDB and connected to the ‘users’ and ‘films’ collections) 
 
+___
+[Back to top ⇧](#filmzone)
+
 ## Development Environment 
 
 Within Github I opened a ‘new’ repository and included the Code Institute full template. The New repository will be called liamwalsh1980/Milestone-Project-3 with a brief description of the new application which can be seen below: - 
@@ -348,9 +401,20 @@ Inside the env.py file I added the following: -
 
 - Import os (set our default environment) 
 
+___
+[Back to top ⇧](#filmzone)
+
 ## Deployment 
 
+### Requirements
+- Github
+- Heroku
+- MongoDB
+- Python3
+
 To deploy this application there were tasks to complete in both the Git command line and Heroku.  
+
+### Heroku and Github
 
 Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud. 
 
@@ -359,7 +423,7 @@ Before deployment can be completed on Heroku I completed the following steps in 
 A requirments.txt file and Procfile file was created using the command-line.  
 - $ pip3 freeze –local > requirements.txt 
 - $ echo web: python app.py > Procfile
-(I removed the blank line below the Procfile as this could cause issues later on in the project)
+>I removed the blank line below the Procfile as this could cause issues later on in the project
 
 Within the command-line, Commit and Push both files to the repository 
 
@@ -383,6 +447,8 @@ Return to the Deploy section and click ‘Enable Automatic Deployment’ and wit
 ![Image template](static/images/deployment/app-successfully-deployed.png)
 
 Click ‘View’ to launch the new app in a browser.  
+
+[Back to top ⇧](#filmzone)
 
 ### Connect Flask to MongoDB Atlas
 
@@ -441,7 +507,24 @@ To test all is working I opened the file using the command-line with the command
 
 - $ python3 app.py 
 
+___
+[Back to top ⇧](#filmzone)
+
+### Clone project
+
+___
+[Back to top ⇧](#filmzone)
+
+### Forking project
+
+___
+[Back to top ⇧](#filmzone)
+
+
 ## End of deployment 
+
+___
+[Back to top ⇧](#filmzone)
 
 ## Design Process  
 
@@ -470,6 +553,8 @@ At the bottom of the body element, I added the script tags for external usage of
 
 >{% block styles %}<br>
 >{% endblock %} 
+
+[Back to top ⇧](#filmzone)
 
 ### Header 
 
@@ -511,6 +596,8 @@ Login Admin users (Home | Profile | Films (with dropdown menu) | Add Films | Man
 
 To finish, I applied the class ‘navbar-fixed’ inside a div element which is wrapped around the navbar code to fix it to the top of the all webpages whenever a user scrolls down a page. This offers good UX for users to be able to navigate to another page at any point throughout their experience on the site.  
 
+[Back to top ⇧](#filmzone) 
+
 ### Footer  
 
 With the footer added from the base.html file, each page footer is the same. This is designed for consistency and styling using the Materialize CSS framework. I chose a bright orange colour background from my chosen pallet to separate the colours to show good styling and usage of my pallet. The footer includes the Copyright icon connected to FilmZone and social media icons. I also added links to the footer which changes depending on whether a user is logged in or not. If a user is logged in, they will see links for ‘Homepage’, ‘Films’, ‘Profile’ and ‘Contact Us’. Logged out user will see all links except for the ‘Profile’ link. Instead, they will see a ‘Signup’ link. I used an ‘if’ statement and Jinja code to achieve this.  
@@ -524,6 +611,8 @@ Also known as the index.html template, I started by adding a sub header “We al
 >More to come – search bar, flicks of the week and potentially a carousel.  
 
 ### Films page 
+
+[Back to top ⇧](#filmzone)
 
 ### Signup page 
 
@@ -575,6 +664,8 @@ The function name for the login page is 'login' and using the GET and POST metho
 
 I tested the ‘Signup’ and 'Login' templates together by registering a new username and password and then signing in with correct and incorrect username/password credentials. All scenarios tested successfully.  
 
+[Back to top ⇧](#filmzone) 
+
 ### Logout function 
 
 I added a python function called ‘logout’ in the app.py file for users to be able to successfully log out of their account by click the ‘logout’ link on the navigation bar of the web application. The function uses the app.route decorator, session.pop(“user”) method to remove the user from the cookie session and log them out. I also included a flash message to indicate to the user they have logged out successfully and the redirect import to return users to the login page.  
@@ -599,7 +690,9 @@ Below I added a new section where I setup a Materialize collapsible unordered li
 
 I then added a new function called profile(username) in my app.py python file. Using the app.route decorator, this function includes the GET and POST methods, username session cookie called ‘user’, return render_template to the user's profile along with return redirect to the login page if the user fails to login successfully. Effectively, this function grabs the session user’s username from the database.  
 
-### Add film page 
+[Back to top ⇧](#filmzone) 
+
+### Add Film page 
 
 Before I started designing the ‘add film’ template I made sure that all film genres were added according to my Data Schema, Genre collections and matches to the MongoDB created earlier on this project. I then created a new html template called ‘add_film’ for all signed in users to add a film to the website. This is part of the CRUD function and specific to ‘C’ for create i.e., adding/creating a new film. I applied the Jinja templating language for extending the base template and block content as normal and below that added a subheader ‘Add Film’. I then created a form for users to complete in order to add a film which would be on both the ‘Films’ page and the users profile page for editing/removing. The form consists of the following: - 
 
@@ -623,7 +716,7 @@ All of the above fields have a relevant icons positioned to the left of fields a
 
 In the base template i added the link for this pahe to the Main Navbar and Mobile Navbar making sure its positioned within the if statement only for logged in users. This was achieved using conditional validation and Jinja templating language. 
 
-### Edit film page 
+### Edit Film page 
 
 ### Genres page 
 
@@ -631,33 +724,72 @@ I started by creating a new html template called ‘genres.html’ for the purpo
 
 In the base template I added the link for this page to the Main Navbar and Mobile Navbar. However, in order to make sure that this page is only accessed by the ‘Admin’ user I added some conditional validation using Jinja code ‘if statement’ making sure to close the ‘if statement’ after the genres.html link.  
 
+[Back to top ⇧](#filmzone)
+
 ### Add Genre page 
 
 ### Edit Genre page 
+
+[Back to top ⇧](#filmzone)
 
 ### Contact Us page 
 
 ### Media Queries 
 
-### Features 
+____
+[Back to top ⇧](#filmzone)
 
+## Features 
 ### Existing features 
-
 ### Features to implement  
 
-## Technologies Used 
+____
+[Back to top ⇧](#filmzone)
+
+## Technologies used 
 ### Languages 
+- HTML5
+- CSS3
+- JavaScript
+- Python3
+
 ### Frameworks and Libraries 
 -  Materialize CSS (Version 1.0.0). A modern responsive front-end framework based on the Material Design philosopher developed in 2014 by Google which helps you build a stylish and responsive application. 
 ### Other technologies 
 -  RandomKeygen 
 -  Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud. 
 -  Werkzeug. A comprehensive WSGI (Web Server Gateway Interface) web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries. 
+____
+[Back to top ⇧](#filmzone)
 
-Frameworks and Libraries 
+## Testing
+Testing information can be found in a separate 
+[Testing document](TESTING.md)
 
+____
 
-# END OF README
+## Bugs
+Bugs – see JavaScript note for ‘dot’ bug on the add film template 
+____
+[Back to top ⇧](#filmzone)
+
+## Credits
+
+### Images
+### Content
+### Code
+### JavaScript
+____
+[Back to top ⇧](#filmzone)
+
+## Acknowledgements
+
+## Notes
+
+____
+[Back to top ⇧](#filmzone) 
+
+# End of Readme Documentation
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
