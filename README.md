@@ -625,7 +625,18 @@ Also known as the index.html template, I started by adding a sub header “We al
 
 ### Films page 
 
-This page 'films.html' is for the purpose of holding all films added by all logged in users as a central page for everyone to view. Whether your logged in or not you will be able to access this page. The head and footer is indentical to the rest of the site by using the Jinja templating language. Within the body of the page i added a subheader called 'Films' and below is a 'for' loop iterating through films which is a function ??????
+This page 'films.html' is for the purpose of holding all films added by all logged in users as a central page for everyone to view. Whether your logged in or not you will be able to access this page. The head and footer are identical to the rest of the site by using the Jinja templating language. Within the body of the page i added a subheader called 'Films' and below is a 'for' loop iterating through films which is the function name in my app.py file. The user will see all films added by all users. The layout will be as follows: -
+
+- Film name
+- Genre type
+- Actor names
+- Best bit
+- Image of the film
+- Created by (Horizontal lines above and below highlighting the field)
+
+The function in my app.py file finds and sorts the list of films from the database and presents all films alphabetically. On smaller screens each film is positioned one on top of another in the form of a list to scroll down. On bigger screen sizes i am hoping for the films to be positions in rows of either two or three depending on what looks best for the user. 
+
+This page is purely for viewing films already added and therefore covers the 'R' for read based on the CRUD convention. 
 
 [Back to top ⇧](#filmzone)
 
@@ -705,11 +716,25 @@ Below I added a new section where I setup a Materialize collapsible unordered li
 
 I then added a new function called profile(username) in my app.py python file. Using the app.route decorator, this function includes the GET and POST methods, username session cookie called ‘user’, return render_template to the user's profile along with return redirect to the login page if the user fails to login successfully. Effectively, this function grabs the session user’s username from the database.  
 
+This page is for viewing, editing and deleting films already added and therefore covers the R','U' and 'D' based on the CRUD convention. 
+
+R = Read for viewing the films added by the user logged in 
+U = Update for editing any film added by the user logged in
+D = Delete for deleing any film added by the user logged in
+
+### Delete function
+
+I added a python function called 'delete_film' in the app.py file for users to be able delete only the films they have added by clicking the 'Done' button within their profile page. The function uses the app.route decorator with the film_id from MongoDB in parentheses. By using the .remove method, the _id from MongoDB, ObjectId from MongoDB with the film_id inside curly brackets, users are able to remove (delete) any film they have added. I also included a flash message to indicate to the user that the film they wanted to remove has been successfully deleted. The flash message displays in the 'Films' page as this is where the user is taken after the film is deleted. I used the redirect import to achieve this.
+
+>Note: Instead of using the session.pop(“user”) method I considered using the session.clear() but this I think wouldn’t work as well as this removes all session cookies applicable to the application. 
+
+With the signup, login and logout functions now in place and working I felt I needed to show only relevant links on the navigation bar based on whether the user is signed in to their account or not. I used the Jinja templating language to apply templating logic to the navbars. In the base.html template and within the navbars I positioned a Jinja if statement for the ‘session.user’ so that users that aren’t logged in will only see the Homepage, Films page, Login page, Signup page and Contact Us page within the navbars. If a user is signed in to their account, they will be able to see on the navbars the Homepage, Films page, Profile page, Add Films page, Logout page and Contact Us page. If an ‘Admin’ user Is logged in, they will be able to see the Manage Genres page as well.  
+
 [Back to top ⇧](#filmzone) 
 
 ### Add Film page 
 
-Before I started designing the ‘add film’ template I made sure that all film genres were added according to my Data Schema, Genre collections and matches to the MongoDB created earlier on this project. I then created a new html template called ‘add_film’ for all signed in users to add a film to the website. This is part of the CRUD function and specific to ‘C’ for create i.e., adding/creating a new film. I applied the Jinja templating language for extending the base template and block content as normal and below that added a subheader ‘Add Film’. I then created a form for users to complete in order to add a film which would be on both the ‘Films’ page and the users profile page for editing/removing. The form consists of the following: - 
+Before I started designing the ‘add film’ template I made sure that all film genres were added according to my Data Schema, Genre collections and matches to the MongoDB created earlier on this project. I then created a new html template called ‘add_film’ for all signed in users to add a film to the website. This is part of the CRUD convention and specific to ‘C’ for create i.e., adding/creating a new film. I applied the Jinja templating language for extending the base template and block content as normal and below that added a subheader ‘Add Film’. I then created a form for users to complete in order to add a film which would be on both the ‘Films’ page and the users profile page for editing/removing. The form consists of the following: - 
 
 - Genre Name (Choose from list). This section of the form is a dropdown menu with pre-populated genres already added. The user just needs to select the relevant genre. This field is mandatory and without selecting a genre will mean that the ‘add film’ request cannot be submitted. 
 
@@ -732,6 +757,29 @@ All of the above fields have a relevant icons positioned to the left of fields a
 In the base template i added the link for this pahe to the Main Navbar and Mobile Navbar making sure its positioned within the if statement only for logged in users. This was achieved using conditional validation and Jinja templating language. 
 
 ### Edit Film page 
+
+A started designing this page by duplicating the Add Film template and then made a few small changes. The subheader content changed to 'Edit Film' and using a for loop i was able to prefix the fields based on which film is being edited. See below.
+
+Edit Genre name
+- {% for genre in genres %} - 'For' Loop to iterate through all Genres
+- {% if genre.genre_name == film.genre_name %} - If Statement to confirm genre name is strictly equal to film name
+{- else} - Else statement if genre name isn't strictly equal to film name
+
+Edit Film name
+- {{ film.film_name }} - Grabs the current film name based on which film is selected
+
+Edit Actor names
+- {{ film.actors }} - Grabs the current actors names based on which film is selected
+
+Edit Best Bit added by user
+- {{ film.best_bit }} - Grabs the current comments made by the user that's added the film 
+
+Edit Image URL
+- {{ film.image }} - Grabs the current URL for the image of the film being edited
+
+Below are two buttons for the user click on. The first being 'Edit Film' which sends all the new data to the MongoDB and in turn updates the film information in the 'Films' template. The second button is to cancel the edit option and return the user to their Profile. Both buttons are large and stand out from the edit form for good and clear UX. Both buttons also have a relevant icon to the right showing what the buttons represent. The icons are sourced from Font Awesome. 
+
+This page is for editing films already added and therefore covers the 'U' for update based on the CRUD convention. 
 
 ### Genres page 
 

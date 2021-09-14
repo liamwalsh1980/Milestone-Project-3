@@ -9,9 +9,9 @@
     </section>
     <!-- Edit a Film using a form from Materialize -->
     <section>
-        <!-- Choose from a list of Genres via a for loop inside Jinja code -->
         <div class="row">
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_film', film_id=film._id) }}">
+                <!-- Choose from a list of Genres via a for loop inside Jinja code -->
                 <div class="row">
                     <div class="input-field col s12 edit_film_text">
                         <i class="far fa-arrow-alt-circle-right prefix"></i>
@@ -65,15 +65,6 @@
                         <span class="helper-text" data-error="enter valid URL" data-success="right"></span>
                     </div>
                 </div>
-                <!-- Edit Film Clip (optional)
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-photo-video prefix"></i>
-                        <input id="media_clip" name="media_clip" type="text" value="{{ film.media_clip }}"
-                        class="validate edit_film_text">
-                        <label for="media_clip">Media Clip</label>
-                    </div>
-                </div> -->
                 <div class="row center-align">
                     <!-- Submit button to Edit a film already added -->
                     <div class="col s12"></div>
