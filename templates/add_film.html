@@ -71,7 +71,10 @@
                 <!-- Submit button to add a new film -->
                 <div class="row center-align">
                     <div class="col s12"></div>
-                    <button type="submit" class="btn-large btn-text">Add Film <i class="fas fa-plus-circle right"></i></button>
+                    <button type="submit" class="btn-large btn-text button-padding">Add Film <i class="fas fa-plus-circle right"></i></button>
+                    <!-- Cancel Edit and return to user profile -->
+                    <div class="col s12"></div>
+                    <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large btn-text button-padding">Cancel<i class="far fa-times-circle right"></i></a>
                 </div>
             </form>
         </div>

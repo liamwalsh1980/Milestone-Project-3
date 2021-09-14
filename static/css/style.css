@@ -265,7 +265,7 @@ ul li a:hover {
     line-height: 20px;
 }
 
-.add-new-film-link{
+.add-new-film-link, .add-new-genre-link{
     padding-top: 20px;
 }
 
@@ -379,7 +379,7 @@ ul li a:hover {
 
 .genre-card {
     background-color: #d76848;;
-    border-radius: 25%;
+    border-radius: 10%;
 }
 
 .card .card-title {

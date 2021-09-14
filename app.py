@@ -114,11 +114,12 @@ def profile(username):
     if session["user"]:
         # Admin only can access all films
         if session["user"] == "admin":
-            user_films = list(mongo.db.films.find())
+            user_films = list(mongo.db.films.find().sort("film_name", 1))
         else:
             # Logged in users will see just their own films
             user_films = list(
-                mongo.db.films.find({"created_by": session["user"]}))
+                mongo.db.films.find(
+                    {"created_by": session["user"]}).sort("film_name", 1))
         return render_template(
             "profile.html", username=username, user_films=user_films)
     return redirect(url_for("login"))
@@ -179,7 +180,7 @@ def edit_film(film_id):
 @app.route("/delete_film/<film_id>")
 def delete_film(film_id):
     mongo.db.films.remove({"_id": ObjectId(film_id)})
-    flash("Film Successfully Deleted")
+    flash("Film Successfully Removed")
     return redirect(url_for("films"))
 
 
@@ -188,6 +189,19 @@ def delete_film(film_id):
 def genres():
     genres = list(mongo.db.genres.find().sort("genre_name", 1))
     return render_template("genres.html", genres=genres)
+
+
+@app.route("/add_genre", methods=["GET", "POST"])
+def add_genre():
+    if request.method == "POST":
+        genre = {
+            "genre_name": request.form.get("genre_name")
+        }
+        mongo.db.genres.insert_one(genre)
+        flash("New Genre Added")
+        return redirect(url_for("genres"))
+
+    return render_template("add_genre.html")
 
 
 if __name__ == "__main__":

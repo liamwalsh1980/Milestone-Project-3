@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!-- Subheader text -->
+    <section>
+        <div class="row">
+            <div class="col-12 md-6 subheader">Add Genre</div>
+        </div>
+    </section>
+    <!-- Add a new Film using a form from Materialize -->
+    <section>
+        <div class="row">
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_genre') }}">
+                <!-- Add genre name -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="far fa-folder-open prefix"></i> 
+                        <input id="genre_name" name="genre_name" minlength="3" maxlength="30" 
+                            type="text" class="validate add_film_text" required>
+                        <label for="genre_name">Genre Name</label>
+                    </div>
+                </div>
+                <!-- Submit button to add a new genre name -->
+                <div class="row center-align">
+                    <div class="col s12"></div>
+                    <button type="submit" class="btn-large btn-text button-padding">Add Genre <i class="fas fa-plus-circle right"></i></button>
+                    <!-- Cancel and return to user profile -->
+                    <div class="col s12"></div>
+                    <a href="{{ url_for('genres') }}" class="btn-large btn-text button-padding">Cancel<i class="far fa-times-circle right"></i></a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}
