@@ -78,7 +78,7 @@ One of the key aims is to make sure that users can Create, Read, Update and Dele
 - **Create** will be classed as Adding a Film/Adding a Genre
 - **Read** will be classed as viewing Films all signed users have added
 - **Update** will be classed and editing a Film a user has added or for the Admin user to be able to edit a Genre
-- **Delete** will be classed as deleting a Film a user has added of for the Admin user to be able to delete a Genre. The term 'Done' is also used in the profile page to accomplish delete. 
+- **Delete** will be classed as deleting a Film a user has added of for the Admin user to be able to delete a Genre. The term 'Remove' is also used in the profile page to accomplish delete. 
 
 FilmZone is a friendly, easy to use Website for all film lovers to visit. Users can view another users' favourite films and add their own films by signing up to a user account with a username and password of their choosing. With a search facility available, users can quickly find a particular film based on Genre, Actor or Film name keyword. As a keen film lover, I thought of this idea based on my own experiences and thinking that it would be good to have a platform on the internet to tell others what my favourites films are and why. As users aren’t restricted to how many films they can add, I believe that with just a few registered users the library of films within Filmzone could quickly grow and therefore offers new users a broad range of Films to consider watching next.  
 
@@ -554,6 +554,8 @@ I then set the default values to zero for margin, padding and border. Within the
 ### Base Template
 I designed a base.html file to act as the parent template which will contain all main references and third-party libraries. All child templates will then be able to inherit everything from this parent template using Jinja templating language blocks. This follows the philosophy of ‘DRY’ - Don’t' repeat yourself as templating will help avoid duplication and saves me time. I chose to use the block name of ‘content’ and to avoid any silent errors, I made sure that the block name of ‘content’ was used consistently throughout the project. 
 
+I made sure that when all html templates were finished i added the relevant URL to the Navbar and Mobile Navbar using ‘url_for’ flask dependant which is mentioned further on down this readme in the 'Signup page'. 
+
 What is included is the header with navbar and footer. More information below for reference. 
 
 ### Head 
@@ -713,7 +715,7 @@ If Johnsmith is logged in they will be presented on their profile page like this
 
 Underneath and to the right side there is a text link called ‘Add New Film’ this has a font awesome ‘plus’ icon next to it. I gave this a colour of copper red from my pallet and a bottom border to stand out, making it visible for users to see and click on. This link will take users to the add film page.  
 
-Below I added a new section where I setup a Materialize collapsible unordered list also known as an accordion. Each field will have a film that has been added by the user and an ‘Edit’ and ‘Delete’ button for just the logged in user to update and delete if required.
+Below I added a new section where I setup a Materialize collapsible unordered list also known as an accordion. Each field will have a film that has been added by the user and an ‘Edit’ and 'Remove' button for just the logged in user to update and delete if required.
 
 I then added a new function called profile(username) in my app.py python file. Using the app.route decorator, this function includes the GET and POST methods, username session cookie called ‘user’, return render_template to the user's profile along with return redirect to the login page if the user fails to login successfully. Effectively, this function grabs the session user’s username from the database.  
 
@@ -723,9 +725,11 @@ R = Read for viewing the films added by the user logged in
 U = Update for editing any film added by the user logged in
 D = Delete for deleing any film added by the user logged in
 
+Within the python function I added the .sort("film_name", 1) method to the users and the admin user which would sort the users list of films by name, alphabetically. 
+
 ### Delete function
 
-I added a python function called 'delete_film' in the app.py file for users to be able delete only the films they have added by clicking the 'Done' button within their profile page. The function uses the app.route decorator with the film_id from MongoDB in parentheses. By using the .remove method, the _id from MongoDB, ObjectId from MongoDB with the film_id inside curly brackets, users are able to remove (delete) any film they have added. I also included a flash message to indicate to the user that the film they wanted to remove has been successfully deleted. The flash message displays in the 'Films' page as this is where the user is taken after the film is deleted. I used the redirect import to achieve this.
+I added a python function called 'delete_film' in the app.py file for users to be able remove only the films they have added by clicking the 'Remove' button within their profile page. The function uses the app.route decorator with the film_id from MongoDB in parentheses. By using the .remove method, the _id from MongoDB, ObjectId from MongoDB with the film_id inside curly brackets, users are able to remove (delete) any film they have added. I also included a flash message to indicate to the user that the film they wanted to remove has been successfully removed. The flash message displays in the 'Films' page as this is where the user is taken after the film is deleted. I used the redirect import to achieve this.
 
 >Note: Instead of using the session.pop(“user”) method I considered using the session.clear() but this I think wouldn’t work as well as this removes all session cookies applicable to the application. 
 
@@ -749,13 +753,13 @@ Before I started designing the ‘add film’ template I made sure that all film
 
 - Image URL. This is a text input field for users to complete. It has a ‘URL’ type attribute and with restricted character requirements (https://) using the pattern attribute.  
 
-I was looking to add another section within this form for users to add a media clip. However, due to lack of time to format this I decided to leave it out and mark it as a future feature. 
+- I was looking to add another section within this form for users to add a media clip. However, due to lack of time to format this I decided to leave it out and mark it as a future feature. 
 
-At the bottom of the form there is a ‘Add Film’ button for users to click to add a film.
+- At the bottom of the form there is a ‘Add Film’ button for users to click to add a film. Next to this button there's a 'Cancel' button for users to click on if they want to return to their profile and not add a new film.
 
-All of the above fields have a relevant icons positioned to the left of fields and inside and to the right of the add button. All icons were sourced from Font Awesome.
+- All of the above fields have a relevant icons positioned to the left of fields and inside and to the right of the add button and cancel button. All icons were sourced from Font Awesome.
 
-In the base template i added the link for this pahe to the Main Navbar and Mobile Navbar making sure its positioned within the if statement only for logged in users. This was achieved using conditional validation and Jinja templating language. 
+- In the base template i added the link for this page to the Main Navbar and Mobile Navbar making sure its positioned within the if statement only for logged in users. This was achieved using conditional validation and Jinja templating language. 
 
 ### Edit Film page 
 
