@@ -35,7 +35,7 @@ def index():
 def films():
     films = list(mongo.db.films.find().sort("film_name", 1))
     # The first 'films' is the template films.html
-    # The second 'films is the variable name above
+    # The second 'films' is the variable name above
     return render_template("films.html", films=films)
 
 
@@ -203,6 +203,20 @@ def add_genre():
         return redirect(url_for("genres"))
 
     return render_template("add_genre.html")
+
+
+@app.route("/edit_genre/<genre_id>", methods=["GET", "POST"])
+def edit_genre(genre_id):
+    if request.method == "POST":
+        change = {
+            "genre_name": request.form.get("genre_name")
+        }
+        mongo.db.genres.update({"_id": ObjectId(genre_id)}, change)
+        flash("Genre Name Successfully Changed")
+        return redirect(url_for("genres"))
+
+    genre = mongo.db.genres.find_one({"_id": ObjectId(genre_id)})
+    return render_template("edit_genre.html", genre=genre)
 
 
 # Run the application

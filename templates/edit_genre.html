@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!-- Subheader text -->
+    <section>
+        <div class="row">
+            <div class="col-12 md-6 subheader">Edit Genre</div>
+        </div>
+    </section>
+    <!-- Edit a genre using a form from Materialize -->
+    <section>
+        <div class="row">
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_genre',genre_id=genre._id) }}">
+                <!-- Edit genre -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="far fa-folder-open prefix"></i> 
+                        <input id="genre_name" name="genre_name" minlength="3" maxlength="30" 
+                            type="text" value="{{ genre.genre_name }}" class="validate add_film_text" required>
+                        <label for="genre_name">Genre Name</label>
+                    </div>
+                </div>
+                <!-- Submit button to add a new genre name -->
+                <div class="row center-align">
+                    <div class="col s12"></div>
+                    <button type="submit" class="btn-large btn-text button-padding">Edit Genre <i class="fas fa-edit right"></i></button>
+                    <!-- Cancel and return to manage genres page -->
+                    <div class="col s12"></div>
+                    <a href="{{ url_for('genres') }}" class="btn-large btn-text button-padding">Cancel<i class="far fa-times-circle right"></i></a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}
