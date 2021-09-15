@@ -727,13 +727,15 @@ D = Delete for deleing any film added by the user logged in
 
 Within the python function I added the .sort("film_name", 1) method to the users and the admin user which would sort the users list of films by name, alphabetically. 
 
-### Delete function
+### Delete film function
 
 I added a python function called 'delete_film' in the app.py file for users to be able remove only the films they have added by clicking the 'Remove' button within their profile page. The function uses the app.route decorator with the film_id from MongoDB in parentheses. By using the .remove method, the _id from MongoDB, ObjectId from MongoDB with the film_id inside curly brackets, users are able to remove (delete) any film they have added. I also included a flash message to indicate to the user that the film they wanted to remove has been successfully removed. The flash message displays in the 'Films' page as this is where the user is taken after the film is deleted. I used the redirect import to achieve this.
 
 >Note: Instead of using the session.pop(“user”) method I considered using the session.clear() but this I think wouldn’t work as well as this removes all session cookies applicable to the application. 
 
 With the signup, login and logout functions now in place and working I felt I needed to show only relevant links on the navigation bar based on whether the user is signed in to their account or not. I used the Jinja templating language to apply templating logic to the navbars. In the base.html template and within the navbars I positioned a Jinja if statement for the ‘session.user’ so that users that aren’t logged in will only see the Homepage, Films page, Login page, Signup page and Contact Us page within the navbars. If a user is signed in to their account, they will be able to see on the navbars the Homepage, Films page, Profile page, Add Films page, Logout page and Contact Us page. If an ‘Admin’ user Is logged in, they will be able to see the Manage Genres page as well.  
+
+This is the 'D' for delete thats part of the CRUD convention. 
 
 [Back to top ⇧](#filmzone) 
 
@@ -792,9 +794,17 @@ I started by creating a new html template called ‘genres.html’ for the purpo
 
 In the base template I added the link for this page to the Main Navbar and Mobile Navbar. However, in order to make sure that this page is only accessed by the ‘Admin’ user I added some conditional validation using Jinja code ‘if statement’ making sure to close the ‘if statement’ after the genres.html link.  
 
+This is the 'R' for read thats part of the CRUD convention. 
+
 [Back to top ⇧](#filmzone)
 
 ### Add Genre page 
+
+I started this page by duplicating the add_film template calling the new page add_genre.html. I then amended the subheader to say ‘Add Genre’. I kept the form active and just kept the row for ‘Genre Name’ to be added, submit button and cancel button. I made sure the styling was maintained with the same colours, padding and icons from Font Awesome. At the top of the form, I changed the action attribute url_for value to add_genre which can then be wired up in the app.py python file.  
+
+In my app.py file I then connected the new add_genre template to the MongoDB using the function name add_genre, GET and POST methods, if our requested HTTP method is strictly equal to POST, a new dictionary is created to then be inserted into our MongoDB. This dictionary is stored in a variable called Genre. I then targeted the Genre collection on MongoDB and use the .insert_one method to push the new Genre name into it. I then added a flash message to the user saying that the new Genre is added successfully and in turn direct the user back to the genres page (Manage genres).  
+
+This is the 'C' for create thats part of the CRUD convention. 
 
 ### Edit Genre page 
 

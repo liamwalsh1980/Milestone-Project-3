@@ -7,7 +7,7 @@
             <div class="col-12 md-6 subheader">Add Genre</div>
         </div>
     </section>
-    <!-- Add a new Film using a form from Materialize -->
+    <!-- Add a new genre using a form from Materialize -->
     <section>
         <div class="row">
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_genre') }}">
@@ -24,7 +24,7 @@
                 <div class="row center-align">
                     <div class="col s12"></div>
                     <button type="submit" class="btn-large btn-text button-padding">Add Genre <i class="fas fa-plus-circle right"></i></button>
-                    <!-- Cancel and return to user profile -->
+                    <!-- Cancel and return to manage genres page -->
                     <div class="col s12"></div>
                     <a href="{{ url_for('genres') }}" class="btn-large btn-text button-padding">Cancel<i class="far fa-times-circle right"></i></a>
                 </div>
