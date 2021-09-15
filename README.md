@@ -808,6 +808,16 @@ This is the 'C' for create thats part of the CRUD convention.
 
 ### Edit Genre page 
 
+I started this page by duplicating the add_genre template and calling it edit_genre.html. I then amended the subheader to say “Edit Genre’. I kept the form active and just added a value attribute within the input element connected with Genre Name. The value added is  
+
+{{ genre.genre_name }} The first ‘genre’ is the current genre and the ‘genre_name’ is from MongoDB.  
+
+Below this row I made sure there was a button to submit the ‘Edit Genre’ request and a cancel button in case the user changes their mind and don’t want to update a genre name. I made sure the styling was maintained with the same colours, padding and icons from Font Awesome. At the top of the form, I changed the action attribute url_for value to edit_genre which can then be wired up in the app.py python file. 
+
+In my app.py file I then connected the new edit_genre template to the MongoDB using the app route decorator and calling it edit_genre passing through the variable genre_id using ankle brackets I.e., <genre_id>. Also included is the POST and GET methods. I then created the function using the same name, edit_genre passing through the genre_id variable using parentheses. Below I then created an ‘if’ statement using the request.method so that if the HTTP requested method is strictly equal to the POST the new data will be submitted from the form via another dictionary. The dictionary was assigned to a variable called ‘change’. As the form only has one item, genre_name, using the ‘get’ method I am able to retrieve the data from the database relevant to the genre_name field. This was then my completed dictionary. I then used the ‘update’ method genres collection. The update method takes two dictionaries. I first targeted the _id from the database with the value of ObjectId passing though genre_id variable. I then added the ‘change’ variable which already a dictionary completed earlier. I then added a flash message to the user saying that the Genre selected has been successfully changed and in turn direct the user back to the genres page (Manage genres). 
+
+This edit genre function is the 'U' for update thats part of the CRUD convention. 
+
 [Back to top ⇧](#filmzone)
 
 ### Contact Us page 

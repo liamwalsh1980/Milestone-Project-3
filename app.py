@@ -191,7 +191,7 @@ def genres():
     return render_template("genres.html", genres=genres)
 
 
-# Function to allow only admin user the option to add new genre name
+# Function to allow admin user the option to add new genre name
 @app.route("/add_genre", methods=["GET", "POST"])
 def add_genre():
     if request.method == "POST":
@@ -205,6 +205,7 @@ def add_genre():
     return render_template("add_genre.html")
 
 
+# Function to allow admin user to edit the name of an existing genre
 @app.route("/edit_genre/<genre_id>", methods=["GET", "POST"])
 def edit_genre(genre_id):
     if request.method == "POST":
