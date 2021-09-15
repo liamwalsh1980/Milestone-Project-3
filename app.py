@@ -220,6 +220,14 @@ def edit_genre(genre_id):
     return render_template("edit_genre.html", genre=genre)
 
 
+# Function to enable admin user to delete any genre already added
+@app.route("/delete_genre/<genre_id>")
+def delete_genre(genre_id):
+    mongo.db.genres.remove({"_id": ObjectId(genre_id)})
+    flash("Genre Successfully Deleted")
+    return redirect(url_for("genres"))
+
+
 # Run the application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

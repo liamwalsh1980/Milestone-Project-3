@@ -366,7 +366,7 @@ ul li a:hover {
     border-bottom: 1px solid #d76848;
 }
 
-.add_film_text, .edit_film_text, .select-wrapper input.select-dropdown  {
+.add_film_text, .edit_film_text, .add_genre_text, .edit_genre_text, .select-wrapper input.select-dropdown  {
     color: #EAE3EF;
     font-size: 15px;
 }
@@ -432,7 +432,7 @@ ul li a:hover {
     color: #F8C149;
     font-size: 24px;
     text-align: center;
-    padding-top: 10px;
+    padding: 0px 5px 5px 0px;
 }
 
 @media screen and (min-width: 1440px) {
