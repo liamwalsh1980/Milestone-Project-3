@@ -358,8 +358,8 @@ ul li a:hover {
 
 .img_films {
     margin: 10px;
-    width: 25%;
-    height: 25%;
+    width: 50%;
+    height: 50%;
 }
 
 .line-break {
@@ -434,6 +434,38 @@ ul li a:hover {
 
 #query {
     color: #EAE3EF;
+}
+
+.btn-small-search {
+    background-color: #d76848;
+    color: #EAE3EF;
+    margin-left: 5px;
+}
+
+.btn-small-search:hover {
+    background-color: #647737;
+}
+
+.info-search {
+    color: #d76848;
+    font-size: 10px;
+    text-align: left;
+    margin-left: 45px;
+}
+
+.no-results {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+    color: #F8C149;
+}
+
+/* Media queries for search facility */
+
+@media screen and (max-width: 350px) {
+    .info-search {
+        font-size: 8px;
+    }
 }
 
 /* flash messages */

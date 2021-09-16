@@ -39,6 +39,13 @@ def films():
     return render_template("films.html", films=films)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    films = list(mongo.db.films.find({"$text": {"$search": query}}))
+    return render_template("films.html", films=films)
+
+
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
     if request.method == "POST":
