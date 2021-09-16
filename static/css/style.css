@@ -426,6 +426,16 @@ ul li a:hover {
     margin: 5px;
 }
 
+/* Search function */
+
+.search-card {
+    background-color: #030001;
+}
+
+#query {
+    color: #EAE3EF;
+}
+
 /* flash messages */
 
 .flash-messages {

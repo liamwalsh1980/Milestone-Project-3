@@ -6,6 +6,23 @@
         <div class="row">
             <div class="col-12 subheader">Films</div>
         </div>
+        <div class="row card-panel search-card">
+            <form action="" method="post" class="col s12">
+                <div class="row valign-wrapper center-align">
+                    <div class="input-field col s12 m8">
+                        <i class="fas fa-search prefix"></i>
+                        <input type="text" name="query" id="query" minlength="1" class="validate" required>
+                        <label for="query">Search Films</label>
+                    </div>
+                    <div class="col s12 m3">
+                        <button type="submit" class="btn btn-text button-padding">
+                            <i class="fas fa-search left"></i> Search
+                        </button>
+                        <a href="{{ url_for('films') }}" class="btn text-shadow">Reset</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
     <!-- Films section for all users to view -->
     <section>
