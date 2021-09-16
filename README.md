@@ -41,12 +41,13 @@
     * [Login page](#login-page)
     * [Logout function](#logout-function)
     * [Profile page](#profile-page)
-    * [Delete function](#delete-function)
+    * [Delete Film function](#delete-film-function)
     * [Add Film page](#add-film-page)
     * [Edit Film page](#edit-film-page)
     * [Genres page](#genres-page)
     * [Add Genre page](#add-genre-page)
     * [Edit Genre page](#edit-genre-page)
+    * [Delete Genre function](#delete-genre-function)
     * [Contact Us page](#contact-us-page)
     * [Media Queries](#media-queries)
 1. [Features](#features)
@@ -727,13 +728,9 @@ D = Delete for deleing any film added by the user logged in
 
 Within the python function I added the .sort("film_name", 1) method to the users and the admin user which would sort the users list of films by name, alphabetically. 
 
-### Delete film function
+### Delete Film function
 
 I added a python function called 'delete_film' in the app.py file for users to be able remove only the films they have added by clicking the 'Remove' button within their profile page. The function uses the app.route decorator with the film_id from MongoDB in parentheses. By using the .remove method, the _id from MongoDB, ObjectId from MongoDB with the film_id inside curly brackets, users are able to remove (delete) any film they have added. I also included a flash message to indicate to the user that the film they wanted to remove has been successfully removed. The flash message displays in the 'Films' page as this is where the user is taken after the film is deleted. I used the redirect import to achieve this.
-
->Note: Instead of using the session.pop(“user”) method I considered using the session.clear() but this I think wouldn’t work as well as this removes all session cookies applicable to the application. 
-
-With the signup, login and logout functions now in place and working I felt I needed to show only relevant links on the navigation bar based on whether the user is signed in to their account or not. I used the Jinja templating language to apply templating logic to the navbars. In the base.html template and within the navbars I positioned a Jinja if statement for the ‘session.user’ so that users that aren’t logged in will only see the Homepage, Films page, Login page, Signup page and Contact Us page within the navbars. If a user is signed in to their account, they will be able to see on the navbars the Homepage, Films page, Profile page, Add Films page, Logout page and Contact Us page. If an ‘Admin’ user Is logged in, they will be able to see the Manage Genres page as well.  
 
 This is the 'D' for delete thats part of the CRUD convention. 
 
@@ -800,6 +797,8 @@ This is the 'R' for read thats part of the CRUD convention.
 
 ### Add Genre page 
 
+All pages relevant to the Genre section can only accessed by the Admin user. 
+
 I started this page by duplicating the add_film template calling the new page add_genre.html. I then amended the subheader to say ‘Add Genre’. I kept the form active and just kept the row for ‘Genre Name’ to be added, submit button and cancel button. I made sure the styling was maintained with the same colours, padding and icons from Font Awesome. At the top of the form, I changed the action attribute url_for value to add_genre which can then be wired up in the app.py python file.  
 
 In my app.py file I then connected the new add_genre template to the MongoDB using the function name add_genre, GET and POST methods, if our requested HTTP method is strictly equal to POST, a new dictionary is created to then be inserted into our MongoDB. This dictionary is stored in a variable called Genre. I then targeted the Genre collection on MongoDB and use the .insert_one method to push the new Genre name into it. I then added a flash message to the user saying that the new Genre is added successfully and in turn direct the user back to the genres page (Manage genres).  
@@ -817,6 +816,13 @@ Below this row I made sure there was a button to submit the ‘Edit Genre’ req
 In my app.py file I then connected the new edit_genre template to the MongoDB using the app route decorator and calling it edit_genre passing through the variable genre_id using ankle brackets I.e., <genre_id>. Also included is the POST and GET methods. I then created the function using the same name, edit_genre passing through the genre_id variable using parentheses. Below I then created an ‘if’ statement using the request.method so that if the HTTP requested method is strictly equal to the POST the new data will be submitted from the form via another dictionary. The dictionary was assigned to a variable called ‘change’. As the form only has one item, genre_name, using the ‘get’ method I am able to retrieve the data from the database relevant to the genre_name field. This was then my completed dictionary. I then used the ‘update’ method genres collection. The update method takes two dictionaries. I first targeted the _id from the database with the value of ObjectId passing though genre_id variable. I then added the ‘change’ variable which already a dictionary completed earlier. I then added a flash message to the user saying that the Genre selected has been successfully changed and in turn direct the user back to the genres page (Manage genres). 
 
 This edit genre function is the 'U' for update thats part of the CRUD convention. 
+
+### Delete Genre function
+
+I added a python function called 'delete_genre' in the app.py file for the admin user to be able delete any genre already added by clicking the 'Delete' button within the manage genres page (genres.html) which is only available to the admin user. The function uses the app.route decorator with the genre_id from MongoDB in parentheses and variable i created called genre_id using ankle brackets I.e., <genre_id>. By using the 
+.remove method, the _id from MongoDB, ObjectId from MongoDB with the genre_id inside curly brackets, the admin user will be able to delete any genre already added. I also included a flash message to indicate to the admin user that the genre they wanted to delete has been successfully deleted. The flash message displays in the 'Genres' page as this is where the user is taken after a genre is deleted. I used the redirect import to achieve this. I then made sure that the relevant url_for link was added to the genres.html page for the delete button to work. 
+
+This Delete genre function is the 'D' for delete thats part of the CRUD convention. 
 
 [Back to top ⇧](#filmzone)
 
