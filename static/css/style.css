@@ -115,14 +115,6 @@ ul li a:hover {
     color: #E89549;
 }
 
-/* Media query for logo icon positioning on mobile devices */
-@media screen and (max-width: 600px) {
-    #logo-icon {
-        padding-top: 20px;
-        padding-left: 20px;
-    }
-}
-
 /* Hero Image with Subheader */
 
 #hero-image {
@@ -132,130 +124,19 @@ ul li a:hover {
     width: 100%;
 }
 
-/* Media queries for hero image to stretch according to screen size */
-
-@media screen and (min-width: 375px) {
-    #hero-image {
-        min-height: 300px;
-    }
-}
-
-@media screen and (min-width: 425px) {
-    #hero-image {
-        min-height: 340px;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    #hero-image {
-        min-height: 400px;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    #hero-image {
-        min-height: 450px;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    #hero-image {
-        min-height: 525px;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    #hero-image {
-        min-height: 600px;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    #hero-image {
-        min-height: 650px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    #hero-image {
-        min-height: 750px;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    #hero-image {
-        min-height: 800px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    #hero-image {
-        min-height: 825px;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    #hero-image {
-        min-height: 850px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    #hero-image {
-        min-height: 1050px;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    #hero-image {
-        min-height: 1400px;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    #hero-image {
-        min-height: 1600px;
-    }
-}
-
-@media screen and (min-width: 2400px) {
-    #hero-image {
-        min-height: 2000px;
-    }
-}
-
 /* Subheader on all relevant pages */
+
+.subheader-home {
+    font-size: 24px;
+    text-align: center;
+    color: #d76848;
+}
 
 .subheader {
     font-size: 24px;
     text-align: center;
     padding-top: 15px;
     color: #d76848;
-}
-
-@media screen and (min-width: 1440px) {
-    .subheader {
-        font-size: 25px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .subheader {
-        font-size: 40px;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    .subheader {
-        font-size: 60px;
-    }
-}
-
-@media screen and (min-width: 2400px) {
-    .subheader {
-        font-size: 80px;
-        padding-top: 50px;
-    }
 }
 
 /* Profile template */
@@ -460,14 +341,6 @@ ul li a:hover {
     color: #F8C149;
 }
 
-/* Media queries for search facility */
-
-@media screen and (max-width: 350px) {
-    .info-search {
-        font-size: 8px;
-    }
-}
-
 /* flash messages */
 
 .flash-messages {
@@ -547,6 +420,234 @@ ul li a:hover {
 
 #youtube:hover {
     color: #ed3833;
+}
+
+/* Media Queries */
+
+/* Media query for logo icon positioning on mobile devices */
+@media screen and (max-width: 600px) {
+    #logo-icon {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* Media queries for hero image to stretch according to screen size */
+
+@media screen and (min-width: 375px) {
+    #hero-image {
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    #hero-image {
+        min-height: 320px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #hero-image {
+        min-height: 350px;
+    }
+}
+
+@media screen and (min-width: 530px) {
+    #hero-image {
+        min-height: 380px;
+    }
+}
+
+@media screen and (min-width: 590px) {
+    #hero-image {
+        min-height: 420px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    #hero-image {
+        min-height: 450px;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    #hero-image {
+        min-height: 480px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #hero-image {
+        min-height: 525px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #hero-image {
+        min-height: 580px;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    #hero-image {
+        min-height: 650px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    #hero-image {
+        min-height: 700px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    #hero-image {
+        min-height: 750px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    #hero-image {
+        min-height: 800px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    #hero-image {
+        min-height: 850px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #hero-image {
+        min-height: 920px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #hero-image {
+        min-height: 1000px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #hero-image {
+        min-height: 1050px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #hero-image {
+        min-height: 1100px;
+    }
+}
+
+@media screen and (min-width: 1660px) {
+    #hero-image {
+        min-height: 1150px;
+    }
+}
+
+@media screen and (min-width: 1730px) {
+    #hero-image {
+        min-height: 1200px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    #hero-image {
+        min-height: 1250px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #hero-image {
+        min-height: 1300px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #hero-image {
+        min-height: 1350px;
+    }
+}
+
+@media screen and (min-width: 2080px) {
+    #hero-image {
+        min-height: 1400px;
+    }
+}
+
+@media screen and (min-width: 2120px) {
+    #hero-image {
+        min-height: 1450px;
+    }
+}
+
+@media screen and (min-width: 2220px) {
+    #hero-image {
+        min-height: 1500px;
+    }
+}
+
+@media screen and (min-width: 2280px) {
+    #hero-image {
+        min-height: 1550px;
+    }
+}
+
+@media screen and (min-width: 2350px) {
+    #hero-image {
+        min-height: 1600px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    #hero-image {
+        min-height: 1700px;
+    }
+}
+
+/* Media query for subheader */
+
+@media screen and (min-width: 1440px) {
+    .subheader {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .subheader {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .subheader {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .subheader, .subheader-home {
+        font-size: 60px;
+        padding-top: 50px;
+    }
+}
+
+/* Media queries for search facility */
+
+@media screen and (max-width: 350px) {
+    .info-search {
+        font-size: 8px;
+    }
+}
+
+/* Media query for footer */
+@media screen and (min-width: 2400px) {
+    .homepage-content {
+        font-size: 60px;
+    }
 }
 
 

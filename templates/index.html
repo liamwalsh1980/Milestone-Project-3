@@ -2,14 +2,16 @@
 {% block content %}
     <section>
         <div class="row">
-            <div class="col-12 md-6 subheader">We all love a good film !</div>
-            <div class="col-12 md-6">
+            <div class="col-12">
+                <div class="col-12 subheader">Welcome to FilmZone</div>
                 <div id="hero-image" aria-labelledby="hero-image"></div>
             </div>
         </div>
     </section>
     <section>
         <div class="row">
+            <div class="col-12 subheader-home">We all love a good film !</div>
+            <br>
             {% if session.user %}
                 <p class="container-fluid col-12 md-6 center-align homepage-content">Welcome back, seen any new films that is worth adding to the list?</p>
             {% else %}
