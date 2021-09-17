@@ -877,9 +877,10 @@ ____
 ### Languages 
 * <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML5</a> - The HyperText Markup Language used to provide content to the website. 
 * <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS3</a> - Cascading Style Sheet used to provide custom styling througout the website to make it look unique. Thois would include changes to fonts, colors, images, positioning and unique features like the search facility on the films page for example and media queries for the back responsive website on all screen sizes.
-* <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> - used to add Materialize Initialization jQuery functions and form validation jQuery to support the 'Genre Name' selection on the 'add film' template.
-* <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python3</a> - To create all functions that allow the website to work and interactive between the application and mongoDB as well as importing several key dependencies i.e. os, flask, flash, render_template, redirect, request, session, url_for, PyMongo, ObjectId(bson.objectid),generate_password_hash, check_password_hash (werkzeug.security) and env. 
-
+* <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> - Used to add Materialize Initialization jQuery functions and form validation jQuery to support the 'Genre Name' selection on the 'add film' template.
+* <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python3</a> - To create all functions that allow the website to work and interactive between the application and mongoDB as well as importing several key dependencies i.e. os, flask, flash, render_template, redirect, request, session, url_for, PyMongo, ObjectId(bson.objectid),generate_password_hash, check_password_hash (werkzeug.security) and env.
+* <a href="https://en.wikipedia.org/wiki/Flask_(web_framework)" target="_blank">Flask</a> - Flask is a micro web framework written in Python.
+* <a href="https://en.wikipedia.org/wiki/Jinja_(template_engine)" target="_blank">Jinja Templating Language</a> - Assists with if statements, for loops and conditional logic. 
 
 ### Frameworks and Libraries 
 * <a href="https://en.wikipedia.org/wiki/JQuery" target="_blank">JQuery</a> - used as a JavaScript library to assist with Javascript to reduce coding and maximise interaction by manipulating the <a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">DOM</a> (Document Object Model).
@@ -893,21 +894,23 @@ ____
 * <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> - I many bespoke icons and social media icons across all pages of the website.
 * <a href="https://pexels.com/" target="_blank">Pexels</a> - I used one "free' <a href="https://www.pexels.com/photo/time-lapse-photography-of-car-lights-in-front-of-cinema-436413/" target="_blank">image</a> from this site for the homepage.
 * <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> - I used two font families on my website. I used the font Montserrat with sans-serif and fallback for most of the website content and Holtwood One SC with Serif as a fallback for the text logo. Fallbacks will only work if the main fonts fail. 
-* <a href="https://www.lipsum.com/feed/html" target="_blank">Lipsum</a> - Used to copy and paste Lorem Ipsum text at the beginning of my project to assist in the structure and layout.
-* <a href="https://gitpod.io/" target="_blank">Gitpod</a> - Used to complete my HTML, CSS and JavaScript/JQuery coding for my MS2 project.
+* <a href="https://gitpod.io/" target="_blank">Gitpod</a> - Used to complete my HTML, CSS, JavaScript/JQuery and Python coding for my MS3 project.
 * <a href="https://github.com/" target="_blank">Github</a> - GitHub is used to store the projects code after being pushed from Git.
 * <a href="https://git-scm.com/" target="_blank">Git</a> - Git was used for version control by using the Gitpod terminal to commit to Git and Push to GitHub.
+* <a href="https://en.wikipedia.org/wiki/Heroku" target="_blank">Heroku</a> - Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 * <a href="https://validator.w3.org/" target="_blank">W3C Markup Validation Service</a> - Used to test all HTML coding for all five pages.
 * <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validation Service</a> - Used to test all CSS coding.
 * <a href="https://jshint.com/" target="_blank">JS Hint</a> - Used to test all Javascript coding.
+* <a href="http://pep8online.com/" target="_blank">Python PEP8 Online</a> - Used to test all Python coding.
 * <a href="https://www.emailjs.com/" target="_blank">Email JS</a> - Used to 
 send email directly from JavaScript - free of charge for up to 200 emails per month.
-
--  RandomKeygen 
--  Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud. 
--  Werkzeug. A comprehensive WSGI (Web Server Gateway Interface) web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries. 
-- https://gauger.io/fonticon/
-____
+* <a href="https://cdnjs.com/" target="_blank">cdnjs</a> - Used to 
+Used to source scripts and links for the base template.
+* <a href="https://werkzeug.palletsprojects.com/en/2.0.x/utils/#module-werkzeug.security" target="_blank">Werkzeug</a> - A comprehensive WSGI (Web Server Gateway Interface) web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries. 
+* <a href="https://randomkeygen.com/" target="_blank">RandomKeygen</a> - A free tool that offers randomly generated keys and passwords you can use to secure any application, service or device. I used this to generate a password when setting the secret_key password making it a fort knox password. 
+* <a href="https://gauger.io/fonticon/" target="_blank">Font Icon</a> - Sourced the 'Film' Icon 
+* <a href="https://en.wikipedia.org/wiki/MongoDB" target="_blank">MongoDB</a> - MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
+ 
 [Back to top ⇧](#filmzone)
 
 ## Testing
