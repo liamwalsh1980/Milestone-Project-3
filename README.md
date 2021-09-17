@@ -565,6 +565,8 @@ Only within the base template, I used a standard boilerplate in the header using
 >{% block styles %}<br>
 >{% endblock %} 
 
+Within the head element i added a head icon that is positioned in the tab of the broswer when the web page is open. The icon is the same as the 'film' icon to the left of the text logo on the website. The icon was sourced from https://gauger.io/fonticon/. 
+
 ### Body 
 At the bottom of the body element, I added the script tags for external usage of Materialize and jQuery. I finished with adding my own custom script enabling me to write my own JavaScript/jQuery code when required. The Jinja code below was also added so I could add my own custom scripts that are applied from one of the child templates in the project. For reference instead of using Vanilla JavaScript jQuery was mainly used instead.  
 
@@ -853,6 +855,7 @@ ____
 -  RandomKeygen 
 -  Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud. 
 -  Werkzeug. A comprehensive WSGI (Web Server Gateway Interface) web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries. 
+- https://gauger.io/fonticon/
 ____
 [Back to top ⇧](#filmzone)
 
