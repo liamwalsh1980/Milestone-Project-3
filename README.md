@@ -48,6 +48,7 @@
     * [Add Genre page](#add-genre-page)
     * [Edit Genre page](#edit-genre-page)
     * [Delete Genre function](#delete-genre-function)
+    * [Search Feature](#search-feature)
     * [Contact Us page](#contact-us-page)
     * [Media Queries](#media-queries)
 1. [Features](#features)
@@ -820,12 +821,41 @@ In my app.py file I then connected the new edit_genre template to the MongoDB us
 
 This edit genre function is the 'U' for update thats part of the CRUD convention. 
 
+[Back to top ⇧](#filmzone)
+
 ### Delete Genre function
 
 I added a python function called 'delete_genre' in the app.py file for the admin user to be able delete any genre already added by clicking the 'Delete' button within the manage genres page (genres.html) which is only available to the admin user. The function uses the app.route decorator with the genre_id from MongoDB in parentheses and variable i created called genre_id using ankle brackets I.e., <genre_id>. By using the 
 .remove method, the _id from MongoDB, ObjectId from MongoDB with the genre_id inside curly brackets, the admin user will be able to delete any genre already added. I also included a flash message to indicate to the admin user that the genre they wanted to delete has been successfully deleted. The flash message displays in the 'Genres' page as this is where the user is taken after a genre is deleted. I used the redirect import to achieve this. I then made sure that the relevant url_for link was added to the genres.html page for the delete button to work. 
 
 This Delete genre function is the 'D' for delete thats part of the CRUD convention. 
+
+### Search Feature
+
+In order to achieve a search facility, I started by creating an index for the ‘films’ collection in my filmzone MongoDB. Looking at this collection my index needs to look up films based on genre_name, film_name and actors. In my git workspace I opened up the python interpreter using the python3 command to start created my index in the command-line. Based on the variable called ‘mongo’ which is assigned to an instance of the flask app using Pymongo which is used throughout the app.py file for creating functions, I imported this within the command line as the ‘mongo’ variable holds everything from our database. 
+
+>from app import mongo 
+
+I then created the new index based on a list of fields using a tuple for each field.
+
+>mongo.db.films.create_index([(“genre_name”, ”text”), (“film_name”, ”text”), (“actors”, ”text”)])
+
+I then checked the index was successfully created by checking the MongoDB
+![Image template](static/images/ux/surface/mongodb-index.png)
+
+I double checked the index was created using the command-line and using the following command 
+
+>mongo.db.films.index_information()
+
+Now the index is created I started creating the front-end search facility in the ‘films’ template. Just below the subheader the search facility section is designed using a materialize card-panel, form, buttons and custom styling. I included a relevant ‘search’ icon. The buttons included are the submit search button and reset button for users to start over if needs be. The key parts to this code for the search feature to work is the ‘query’ name and the url_for ’search’ link.  
+
+In order for this all to work I then created a new function in my app.py file using the @app route decorator and calling it “/search” and making sure to use both the GET and POST methods. The function name to match is ‘search’ with closed curly brackets. I then added a new variable called ‘query’ which will be the query name attribute from my form. Below I added another variable called ‘films’ to find specific documents from the films collection by performing a text index search using a dictionary. The dictionary needs to be used with a $text and $search: query which basically means that we want to perform a ‘search’ on any ‘text’ index for this collection using the ‘query’ variable.  
+
+For reference, the default behaviour of searching an index is OR not AND. This means that if you search with two words, results will come back with EITHER word used and it's also case-insensitive as well.  
+
+If a search is performed for a film name, actor name or genre type that doesn’t exist in the website, the user will see a message displayed ‘No Film found’ instead of a blank page giving better user experience. I used some conditional checks in the ‘films’ template with using a Jinja if/else statement to only display this message if there's no search matches.  
+
+Several search checks were then made to make sure this feature was working fully.  
 
 [Back to top ⇧](#filmzone)
 
