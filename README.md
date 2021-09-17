@@ -855,7 +855,7 @@ For reference, the default behaviour of searching an index is OR not AND. This m
 
 If a search is performed for a film name, actor name or genre type that doesn’t exist in the website, the user will see a message displayed ‘No Film found’ instead of a blank page giving better user experience. I used some conditional checks in the ‘films’ template with using a Jinja if/else statement to only display this message if there's no search matches.  
 
-Several searchs were then made to make sure this feature was working fully.  
+Several searches were then made to make sure this feature was working fully.  
 
 [Back to top ⇧](#filmzone)
 
