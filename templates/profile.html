@@ -18,11 +18,11 @@
                     {% for film in user_films %}
                     <li>
                         <div class="collapsible-header film-name">
-                            <div class="col s8">
+                            <div class="col l8 s12">
                                 <i class="fas fa-film film-icon"></i>
                                 {{ film.film_name }}
                             </div>
-                            <div class="col s4">
+                            <div class="col l4 s12 center-align">
                                 <a href="{{ url_for('edit_film', film_id=film._id) }}" class="btn-small btn-small-profile">Edit</a>
                                 <a href="{{ url_for('delete_film', film_id=film._id) }}" class="btn-small btn-small-profile">Remove</a>
                             </div>
@@ -40,5 +40,11 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="row container">
+            <div class="col-6 m6 s12 right"><a href="{{ url_for('films') }}" class="back-btn-text"><i class="fas fa-backward"></i> Return to Films</a></div>
+        </div>
+    </section>
+
 
 {% endblock %}

@@ -156,6 +156,11 @@ ul li a:hover {
     font-size: 16px;
 }
 
+.back-btn-text {
+    color: #F8C149;
+    font-size: 16px;
+}
+
 /* Homepage content */
 
 .homepage-content {
@@ -649,6 +654,11 @@ ul li a:hover {
         font-size: 60px;
     }
 }
+
+/* Media queries for 320px max */
+
+
+    
 
 
 

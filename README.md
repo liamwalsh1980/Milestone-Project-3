@@ -293,7 +293,7 @@ Contact Us page - TBC
 
 Click this link to see the  <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/structure/structure-start.pdf" target="_blank">Structure screenshot</a> - start.
 
-/workspace/
+Click this link to see the  <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/structure/structure-start.pdf" target="_blank">Structure screenshot</a> - finish.
 
 [Back to top ⇧](#filmzone)
 
