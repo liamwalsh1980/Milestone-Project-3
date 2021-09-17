@@ -31,7 +31,7 @@ def index():
     return render_template("index.html", index=index)
 
 
-# Function to find and sort into alphabetical order all films 
+# Function to find and sort into alphabetical order all films
 @app.route("/films")
 def films():
     films = list(mongo.db.films.find().sort("film_name", 1))

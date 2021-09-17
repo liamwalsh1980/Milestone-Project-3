@@ -855,7 +855,7 @@ For reference, the default behaviour of searching an index is OR not AND. This m
 
 If a search is performed for a film name, actor name or genre type that doesn’t exist in the website, the user will see a message displayed ‘No Film found’ instead of a blank page giving better user experience. I used some conditional checks in the ‘films’ template with using a Jinja if/else statement to only display this message if there's no search matches.  
 
-Several search checks were then made to make sure this feature was working fully.  
+Several searchs were then made to make sure this feature was working fully.  
 
 [Back to top ⇧](#filmzone)
 
@@ -875,14 +875,34 @@ ____
 
 ## Technologies used 
 ### Languages 
-- HTML5
-- CSS3
-- JavaScript
-- Python3
+* <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML5</a> - The HyperText Markup Language used to provide content to the website. 
+* <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS3</a> - Cascading Style Sheet used to provide custom styling througout the website to make it look unique. Thois would include changes to fonts, colors, images, positioning and unique features like the search facility on the films page for example and media queries for the back responsive website on all screen sizes.
+* <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> - used to add Materialize Initialization jQuery functions and form validation jQuery to support the 'Genre Name' selection on the 'add film' template.
+* <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python3</a> - To create all functions that allow the website to work and interactive between the application and mongoDB as well as importing several key dependencies i.e. os, flask, flash, render_template, redirect, request, session, url_for, PyMongo, ObjectId(bson.objectid),generate_password_hash, check_password_hash (werkzeug.security) and env. 
+
 
 ### Frameworks and Libraries 
--  Materialize CSS (Version 1.0.0). A modern responsive front-end framework based on the Material Design philosopher developed in 2014 by Google which helps you build a stylish and responsive application. 
+* <a href="https://en.wikipedia.org/wiki/JQuery" target="_blank">JQuery</a> - used as a JavaScript library to assist with Javascript to reduce coding and maximise interaction by manipulating the <a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">DOM</a> (Document Object Model).
+* <a href="https://materializecss.com/" target="_blank">Materialize CSS (Version 1.0.0)</a> - A modern responsive front-end framework based on the Material Design philosopher developed in 2014 by Google which helps you build a stylish and responsive application. 
+
 ### Other technologies 
+* <a href="https://codeinstitute.net/" target="_blank">Code Institute</a> - I reverted back to the Task Manager mini project for assistance with this project.
+* <a href="https://slack.com/intl/en-gb/" target="_blank">Slack</a> - To communicate with my mentor and other students to get help at times.
+* <a href="https://developer.chrome.com/docs/devtools/" target="_blank">Chrome DevTools</a> - This tool was very useful for amending code, finding where bugs were coming from and help with all code and console errors during the time of being the feedback form page. Used to examine the overall performance of the site with Lighthouse as well. 
+* <a href="https://balsamiq.com/wireframes/?gclid=CjwKCAjw6fCCBhBNEiwAem5SO0TfrA7AKJnwXKFEJStjRK5qFYRfJ7jLW6Vdt4F1CdcujCZRm9Zr7xoC3oUQAvD_BwE" target="_blank">Balsamiq</a> -  Used to create wireframes for all pages on all screen sizes. 
+* <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> - I many bespoke icons and social media icons across all pages of the website.
+* <a href="https://pexels.com/" target="_blank">Pexels</a> - I used one "free' <a href="https://www.pexels.com/photo/time-lapse-photography-of-car-lights-in-front-of-cinema-436413/" target="_blank">image</a> from this site for the homepage.
+* <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> - I used two font families on my website. I used the font Montserrat with sans-serif and fallback for most of the website content and Holtwood One SC with Serif as a fallback for the text logo. Fallbacks will only work if the main fonts fail. 
+* <a href="https://www.lipsum.com/feed/html" target="_blank">Lipsum</a> - Used to copy and paste Lorem Ipsum text at the beginning of my project to assist in the structure and layout.
+* <a href="https://gitpod.io/" target="_blank">Gitpod</a> - Used to complete my HTML, CSS and JavaScript/JQuery coding for my MS2 project.
+* <a href="https://github.com/" target="_blank">Github</a> - GitHub is used to store the projects code after being pushed from Git.
+* <a href="https://git-scm.com/" target="_blank">Git</a> - Git was used for version control by using the Gitpod terminal to commit to Git and Push to GitHub.
+* <a href="https://validator.w3.org/" target="_blank">W3C Markup Validation Service</a> - Used to test all HTML coding for all five pages.
+* <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validation Service</a> - Used to test all CSS coding.
+* <a href="https://jshint.com/" target="_blank">JS Hint</a> - Used to test all Javascript coding.
+* <a href="https://www.emailjs.com/" target="_blank">Email JS</a> - Used to 
+send email directly from JavaScript - free of charge for up to 200 emails per month.
+
 -  RandomKeygen 
 -  Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud. 
 -  Werkzeug. A comprehensive WSGI (Web Server Gateway Interface) web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries. 
@@ -916,6 +936,10 @@ ____
 
 ____
 [Back to top ⇧](#filmzone) 
+
+>During development we want debug=True to see any potential errors appear
+
+>This will be updated to debug=False when deploying site and submitted project
 
 # End of Readme Documentation
 
