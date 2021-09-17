@@ -247,7 +247,7 @@ After looking at all possible users, features and user stories from my Strategy 
 
 ### Structure 
 
-This website will hold at least **??10??** HTML web pages and therefore I wanted to make sure that all pages followed the same theme using CSS styling and Materialize (Responsive CSS Framework). What I focused on: -  
+This website will hold **??12??** HTML web pages and therefore I wanted to make sure that all pages followed the same theme using CSS styling and Materialize (Responsive CSS Framework). What I focused on: -  
 
 Navbar made specific to logged out, logged in and Admin users 
 
@@ -291,8 +291,9 @@ Edit Genre page will be very similar to the Add Genre page. The only difference 
 
 Contact Us page - TBC 
 
-Structure screenshot 
-{png here} 
+Click this link to see the  <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/structure/structure-start.pdf" target="_blank">Structure screenshot</a> - start.
+
+/workspace/
 
 [Back to top ⇧](#filmzone)
 
