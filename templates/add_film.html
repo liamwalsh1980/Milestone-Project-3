@@ -51,13 +51,14 @@
                         <label for="best_bit">Best Bit</label>
                     </div>
                 </div>
-                <!-- Add Film Image (optional) -->
+                <!-- Add Film Image -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-image prefix"></i>
-                        <input id="image" name="image" type="url" pattern="https?://.+" title="Include http://" class="validate add_film_text">
+                        <input id="image" name="image" type="url" pattern="https?://.+" class="validate add_film_text" placeholder="https://" required>
                         <label for="image">Image URL</label>
                         <span data-error="enter valid URL" data-success="right"></span>
+                        <p class="info">Enter valid URL starting with https://</p>
                     </div>
                 </div>
                 <!-- Submit button to add a new film -->

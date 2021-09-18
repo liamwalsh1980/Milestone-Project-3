@@ -217,7 +217,6 @@ ul li a:hover {
 
 .input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
     font-family: 'Montserrat', sans-serif;
-    color: #EAE3EF;
 }
 
 .select-dropdown li.disabled {
@@ -256,6 +255,8 @@ ul li a:hover {
     color: #EAE3EF;
     font-size: 15px;
 }
+
+
 
 /* .input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label[genre_name] {
     color: #030001;
