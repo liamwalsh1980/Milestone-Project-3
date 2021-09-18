@@ -731,7 +731,7 @@ If Johnsmith is logged in they will be presented on their profile page like this
 
 Underneath and to the right side there is a text link called ‘Add New Film’ this has a font awesome ‘plus’ icon next to it. I gave this a colour of copper red from my pallet and a bottom border to stand out, making it visible for users to see and click on. This link will take users to the add film page.  
 
-Below I added a new section where I setup a Materialize collapsible unordered list also known as an accordion. Each field will have a film that has been added by the user and an ‘Edit’ and 'Remove' button for just the logged in user to update and delete if required.
+Below I added a new section where I setup a Materialize collapsible unordered list also known as an accordion. Each field will have a film that has been added by the user and an ‘Edit’ and 'Remove' button for just the logged in user to update and delete if required. When a user clicks the 'Remove' button, a modal message appears to give the user a chance to confirm they want to remove the selected film or cancel.  
 
 I then added a new function called profile(username) in my app.py python file. Using the app.route decorator, this function includes the GET and POST methods, username session cookie called ‘user’, return render_template to the user's profile along with return redirect to the login page if the user fails to login successfully. Effectively, this function grabs the session user’s username from the database.  
 
@@ -915,7 +915,7 @@ Using the base template and Jinja templating language i was able to offer the fo
 - 'Add a film' link with plus icon
 - Accordion/list of films added by the user that can be opened to view details of each film. 
 - Edit button
-- Remove button
+- Remove button (Modal Message to confirm remove request)
 - "Return to Films' link
 
 ### Add film page features
