@@ -1014,6 +1014,8 @@ ____
 
 ## Bugs
 Bugs – see JavaScript note for ‘dot’ bug on the add film template 
+
+loop.index to iterate through all film name when clicking remove and opening the modal checker
 ____
 [Back to top ⇧](#filmzone)
 

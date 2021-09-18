@@ -381,6 +381,22 @@ ul li a:hover {
     }
 }
 
+/* Modals */
+
+.modal-content, #modal-footer {
+    background-color: #030001;
+    border: #EAE3EF solid 1px;
+}
+
+.modal-text-title {
+    font-size: 20px;
+    color: #EAE3EF
+}
+
+.modal-close, #modal-link, .modal-film-name {
+    color: #D76848;
+}
+
 /* Footer */
 
 #footer-image {

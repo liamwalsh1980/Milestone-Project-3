@@ -3,6 +3,7 @@ $(document).ready(function(){
     $(".dropdown-trigger").dropdown();
     $('.collapsible').collapsible();
     $('select').formSelect();
+    $('.modal').modal();
 
     // Jquery code taken from the Materialize Form Validation CI lesson
     validateMaterializeSelect();
