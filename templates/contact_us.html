@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!-- Subheader text -->
+    <section>
+        <div class="row">
+            <div class="col-12 md-6 subheader">Contact FilmZone</div>
+        </div>
+    </section>
+    <!-- Card Panel from Materialize -->
+    <section>
+        <div class="row">
+            <!-- Contact form -->
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signup') }}">
+                <div class="card-panel">
+                    <!-- First Name -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-arrow-right prefix form-text"></i>
+                            <input id="firstname" name="firstname" type="text" minlength="1" maxlength="100" pattern="^[a-zA-Z]{1,100}$" class="validate" required>
+                            <label for="firstname">First Name</label>
+                            <p class="info">Only letters between 1-100 characters</p>
+                          </div>
+                    </div>
+                    <!-- Last Name -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-arrow-right prefix form-text"></i>
+                            <input id="lastname" name="lastname" type="text" minlength="1" maxlength="100" pattern="^[a-zA-Z]{1,100}$" class="validate" required>
+                            <label for="lastname">Last Name</label>
+                            <p class="info">Only letters between 1-100 characters</p>
+                          </div>
+                    </div>
+                    <!-- Username -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-user-cog prefix form-text"></i>
+                            <input id="username" name="username" type="text" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                            <label for="username">Username (FilmZone members only)</label>
+                            <p class="info">
+                                New here?
+                                <a href="{{ url_for('signup') }}" id="signup-text">Sign Up !</a>
+                            </p>
+                          </div>
+                    </div>
+                     <!-- Message -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-pen prefix form-text"></i>
+                            <textarea id="message" name="message" minlength="10" maxlength="500"
+                            class="validate materialize-textarea add_film_text" required></textarea>
+                            <label for="best_bit">Message</label>
+                            <p class="info">Minimum 10 and Maximum 500 characters</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit button -->
+                    <div class="row">
+                        <button type="submit" class="col s12 btn-large large-button btn-text">Submit<i class="fas fa-sign-in-alt"></i></button>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <p class="center-align mini-message-link">
+                                Already have an account?
+                                <a href="{{ url_for('login') }}" id="login-text">Login Here !</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}
