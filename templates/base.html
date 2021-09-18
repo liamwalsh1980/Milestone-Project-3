@@ -54,33 +54,6 @@
                 </div>
             </nav>
         </div>
-
-        <!-- Dropdown Structure for Main Navbar
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a href="{{ url_for('films') }}">All Films</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">Action</a></li>
-            <li><a href="#!">Adventure</a></li>
-            <li><a href="#!">Animated</a></li>
-            <li><a href="#!">Biography</a></li>
-            <li><a href="#!">Comedy</a></li>
-            <li><a href="#!">Crime</a></li>
-            <li><a href="#!">Cult</a></li>
-            <li><a href="#!">Drama</a></li>
-            <li><a href="#!">Fantasy</a></li>
-            <li><a href="#!">Horror</a></li>
-            <li><a href="#!">Historical</a></li>
-            <li><a href="#!">Musical</a></li>
-            <li><a href="#!">Romance</a></li>
-            <li><a href="#!">RomCom</a></li>
-            <li><a href="#!">Sci-Fi</a></li>
-            <li><a href="#!">Seasonal</a></li>
-            <li><a href="#!">Sport</a></li>
-            <li><a href="#!">Thriller</a></li>
-            <li><a href="#!">War</a></li>
-            <li><a href="#!">Western</a></li>
-        </ul> -->
-
         <!-- Mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
             <h4 class="center-align brand-logo"><i class="fas fa-film" id="sidenav-logo-icon"></i> filmzone</h4>
@@ -99,34 +72,7 @@
             {% endif %}
             <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
         </ul>
-
-        <!-- Dropdown Structure for Mobile sidenav
-        <ul id="dropdown2" class="dropdown-content">
-            <li><a href="{{ url_for('films') }}">All Films</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">Action</a></li>
-            <li><a href="#!">Adventure</a></li>
-            <li><a href="#!">Animated</a></li>
-            <li><a href="#!">Biography</a></li>
-            <li><a href="#!">Comedy</a></li>
-            <li><a href="#!">Crime</a></li>
-            <li><a href="#!">Cult</a></li>
-            <li><a href="#!">Drama</a></li>
-            <li><a href="#!">Fantasy</a></li>
-            <li><a href="#!">Horror</a></li>
-            <li><a href="#!">Historical</a></li>
-            <li><a href="#!">Musical</a></li>
-            <li><a href="#!">Romance</a></li>
-            <li><a href="#!">RomCom</a></li>
-            <li><a href="#!">Sci-Fi</a></li>
-            <li><a href="#!">Seasonal</a></li>
-            <li><a href="#!">Sport</a></li>
-            <li><a href="#!">Thriller</a></li>
-            <li><a href="#!">War</a></li>
-            <li><a href="#!">Western</a></li>
-        </ul> -->
     </header>
-
     <section>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
@@ -141,12 +87,11 @@
             {% endif %}
         {% endwith %}
     </section>
-
     <main>
         {% block content %}
         {% endblock %}
     </main>
-
+    <!-- Footer added using Materialize CSS -->
     <footer class="page-footer background-footer">
         <div class="container">
           <div class="row">
@@ -187,7 +132,6 @@
           </div>
         </div>
       </footer>
-
     <!-- JQuery script from https://code.jquery.com/ to enable JQuery usage -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
