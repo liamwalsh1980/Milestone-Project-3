@@ -383,6 +383,14 @@ ul li a:hover {
 
 /* Footer */
 
+#footer-image {
+    background: url("../images/popcorn.jpg") no-repeat center center; 
+    background-size: contain;
+    min-height: 250px;
+    width: 100%;
+    margin-top: 5px;
+}
+
 .footer-text {
     color: #030001;
 }

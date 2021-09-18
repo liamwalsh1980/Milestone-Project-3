@@ -52,6 +52,7 @@
     * [Contact Us page](#contact-us-page)
     * [Media Queries](#media-queries)
 1. [Features](#features)
+    * [All pages](#all-pages)
     * [Homepage features](#homepage-features) 
     * [Films page features](#films-page-features)
     * [Signup page features](#signup-page-features)
@@ -631,7 +632,7 @@ To finish, I applied the class ‘navbar-fixed’ inside a div element which is 
 
 ### Footer  
 
-With the footer added from the base.html file, each page footer is the same. This is designed for consistency and styling using the Materialize CSS framework. I chose a bright orange colour background from my chosen pallet to separate the colours to show good styling and usage of my pallet. The footer includes the Copyright icon connected to FilmZone and social media icons. I also added links to the footer which changes depending on whether a user is logged in or not. If a user is logged in, they will see links for ‘Homepage’, ‘Films’, ‘Profile’ and ‘Contact Us’. Logged out user will see all links except for the ‘Profile’ link. Instead, they will see a ‘Signup’ link. I used an ‘if’ statement and Jinja code to achieve this.  
+With the footer added from the base.html file, each page footer is the same. This is designed for consistency and styling using the Materialize CSS framework. I chose a bright orange colour background from my chosen pallet to separate the colours to show good styling and usage of my pallet. The footer includes the Copyright icon connected to FilmZone and social media icons. I also added links to the footer which changes depending on whether a user is logged in or not. If a user is logged in, they will see links for ‘Homepage’, ‘Films’, ‘Profile’ and ‘Contact Us’. Logged out user will see all links except for the ‘Profile’ link. Instead, they will see a ‘Signup’ link. I used an ‘if’ statement and Jinja code to achieve this. I decided to add a simple image of 'popcorn' to reflect on the most popular food choice when watching a film.
 
 >More to come - an image is to be added to the right of the links
 
@@ -878,6 +879,12 @@ ____
 
 ## Features 
 
+### All pages
+Using the base template and Jinja templating language i was able to offer the following features across all pages
+- FilmZone text logo and icon
+- Navigation bar showing only the relevant page links based on a user being logged in or logged out
+- Footer which includes internal links and social media links and popcorn image.
+
 ### Homepage features
 - Subheader
 - Hero Image
@@ -1013,8 +1020,13 @@ ____
 ## Credits
 
 ### Images
+
+- <a href="https://www.pexels.com/photo/time-lapse-photography-of-car-lights-in-front-of-cinema-436413/" target="_blank">Hero image</a> - Photo by Nathan Engel from Pexels
+- <a href="https://www.pexels.com/photo/popcorn-on-white-and-red-paper-bag-6188405/" target="_blank">Popcorn image</a> - Photo by Terrance Barksdale from Pexels
+
 ### Content
 ### Code
+- I us
 ### JavaScript
 ____
 [Back to top ⇧](#filmzone)
