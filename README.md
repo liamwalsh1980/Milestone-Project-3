@@ -52,7 +52,17 @@
     * [Contact Us page](#contact-us-page)
     * [Media Queries](#media-queries)
 1. [Features](#features)
-    * [Existing features](#existing-features)
+    * [Homepage features](#homepage-features) 
+    * [Films page features](#films-page-features)
+    * [Signup page features](#signup-page-features)
+    * [Login page features](#login-page-features)
+    * [Profile page features](#profile-page-features)
+    * [Add film page features](#add-film-page-features)
+    * [Edit film page features](#edit-film-page-features)
+    * [Genres page features](#genres-page-features)
+    * [Add genre page features](#add-genre-page-features)
+    * [Edit genre page features](#edit-genre-page-features)
+    * [Contact us page features](#contact-us-page-features)
     * [Features to implement](#features-to-implement)
 1. [Technologies used](#technologies-used)
     * [Languages](#languages)
@@ -867,8 +877,84 @@ ____
 [Back to top ⇧](#filmzone)
 
 ## Features 
-### Existing features 
+
+### Homepage features
+- Subheader
+- Hero Image
+- Welcome back/Signup content
+- Paragraph with add film link/signup link
+
+### Films page features
+- Subheader
+- Search facility with reset button
+- List of firms including film name, Genre, Actors, Best bit, image and user name who added the film. 
+
+### Signup page features
+- Subheader
+- Form for users to sign-up using a new username and password
+- Username and password instructions for validation
+- Signup button
+- Short paragraph with link to sign-in if users already are registered
+
+### Login page features
+- Subheader
+- Form for users to login using their username and password
+- Username and password instructions as a reminder
+- Login button
+- Short paragraph with link to signup if users having registered an account yet.
+
+### Profile page features
+- Subheader bespoke to username
+- 'Add a film' link with plus icon
+- Accordion/list of films added by the user that can be opened to view details of each film. 
+- Edit button
+- Remove button
+- "Return to Films' link
+
+### Add film page features
+- Subheader
+- Form for users to add a new film including, dropdown list of genre names, Film name, Actors, Best bit and Image.
+- Add button
+- Cancel button to return to user profile
+- Minimum and maximum character length requirements
+
+### Edit film page features
+- Subheader
+- Form for users to edit a film including, dropdown list of genre names, Film name, Actors, Best bit and Image. All fields have the information prefixed to override.
+- Edit button
+- Cancel button to return to user profile
+- Minimum and maximum character length requirements
+
+### Genres page features
+- Subheader
+- 'Add New Genre' link with plus icon
+- All genres to view 
+- Edit buttons
+- Delete buttons
+- "Return to Films' link
+
+### Add genre page features
+- Subheader
+- Form section to create a new Genre name
+- 'Add Genre' button
+- Cancel button to return to genres page
+- Minimum and maximum character length requirements
+
+### Edit genre page features
+- Subheader
+- Form section with prefixed Genre name to override and update
+- 'Edit Genre' button
+- Cancel button to return to genres page
+- Minimum and maximum character length requirements
+
+### Contact us page features
+- TBC
+
 ### Features to implement  
+- Homepage 'flicks of the week' in a carousel
+- Genre page that holds films specific to each genre type
+- Film page that holds more details information, external links to show where best to find/watch the film
+- Media clip field that users can include when adding a new film for users to then watch as a form of a trailer
 
 ____
 [Back to top ⇧](#filmzone)
@@ -880,7 +966,7 @@ ____
 * <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> - Used to add Materialize Initialization jQuery functions and form validation jQuery to support the 'Genre Name' selection on the 'add film' template.
 * <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python3</a> - To create all functions that allow the website to work and interactive between the application and mongoDB as well as importing several key dependencies i.e. os, flask, flash, render_template, redirect, request, session, url_for, PyMongo, ObjectId(bson.objectid),generate_password_hash, check_password_hash (werkzeug.security) and env.
 * <a href="https://en.wikipedia.org/wiki/Flask_(web_framework)" target="_blank">Flask</a> - Flask is a micro web framework written in Python.
-* <a href="https://en.wikipedia.org/wiki/Jinja_(template_engine)" target="_blank">Jinja Templating Language</a> - Assists with if statements, for loops and conditional logic. 
+* <a href="https://en.wikipedia.org/wiki/Jinja_(template_engine)" target="_blank">Jinja Templating Language</a> - Jinja is a web template engine for the Python programming language, that assisted me with if statements, for loops and conditional logic. 
 
 ### Frameworks and Libraries 
 * <a href="https://en.wikipedia.org/wiki/JQuery" target="_blank">JQuery</a> - used as a JavaScript library to assist with Javascript to reduce coding and maximise interaction by manipulating the <a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">DOM</a> (Document Object Model).
