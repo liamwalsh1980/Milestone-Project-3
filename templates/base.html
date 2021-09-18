@@ -49,7 +49,7 @@
                             <li><a href="{{ url_for('login') }}">Login</a></li>
                             <li><a href="{{ url_for('signup') }}">Signup</a></li>
                         {% endif %}
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -97,7 +97,7 @@
                 <li><a href="{{ url_for('login') }}">Login</a></li>
                 <li><a href="{{ url_for('signup') }}">Signup</a></li>
             {% endif %}
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
         </ul>
 
         <!-- Dropdown Structure for Mobile sidenav
@@ -150,11 +150,11 @@
     <footer class="page-footer background-footer">
         <div class="container">
           <div class="row">
-            <div class="col l4 s12 center-align">
+            <div class="col l4 m6 s12 center-align">
               <h5 class="footer-text">FilmZone</h5>
               <p class="footer-text"> Filmzone offers a free service to all users who want to take recommendations of films that have been recently watched by members of the site. Users can signup for free and add unlimited films to the site. The more films the better and with the option to edit and even delete films, users will find using FilmZone a great overall experience.</p>
             </div>
-            <div class="col l4 s12 center-align">
+            <div class="col l4 m6 s12 center-align">
               <h5 class="footer-text">Links</h5>
               <ul>
                 <li><a class="footer-text footer-text-link" href="{{ url_for('index') }}" >Home</a></li>
@@ -167,7 +167,7 @@
                 <li><a class="footer-text footer-text-link" href="#" >Contact Us</a></li>
               </ul>
             </div>
-            <div class="col l4 s12">
+            <div class="col l4 m6 s12">
                 <div id="footer-image"></div>
             </div>
           </div>

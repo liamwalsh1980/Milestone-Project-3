@@ -31,6 +31,12 @@ def index():
     return render_template("index.html", index=index)
 
 
+# Function for contact us page
+@app.route("/contact_us")
+def contact_us():
+    return render_template("contact_us.html")
+
+
 # Function to find and sort into alphabetical order all films
 @app.route("/films")
 def films():
