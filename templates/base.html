@@ -105,7 +105,7 @@
           <div class="row">
             <div class="col l4 m6 s12 center-align">
               <h5 class="footer-text">FilmZone</h5>
-              <p class="footer-text"> Filmzone offers a free service to all users who want to take recommendations of films that have been recently watched by members of the site. Users can signup for free and add unlimited films to the site. The more films the better and with the option to edit and even delete films, users will find using FilmZone a great overall experience.</p>
+              <p class="footer-text"> Filmzone offers a free service to all users who are looking for recommendations of films that have been recently watched by members of the site. Users can signup for free and add unlimited films to the site. The more films added the better and with the option to edit and even delete films, users will find using FilmZone a great overall experience and a lot of fun.</p>
             </div>
             <div class="col l4 m6 s12 center-align">
               <h5 class="footer-text">Links</h5>
@@ -114,6 +114,7 @@
                 <li><a class="footer-text footer-text-link" href="{{ url_for('films') }}">Films</a></li>
                 {% if session.user %}
                     <li><a class="footer-text footer-text-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                    <li><a class="footer-text footer-text-link" href="{{ url_for('add_film') }}">Add Film</a></li>
                 {% else %}
                     <li><a class="footer-text footer-text-link" href="{{ url_for('signup') }}">Signup</a></li>
                 {% endif %}

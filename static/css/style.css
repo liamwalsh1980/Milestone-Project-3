@@ -179,7 +179,7 @@ ul li a:hover {
 
 /* text and color changes */
 
-#signup-text, #login-text, #add-film {
+#signup-text, #login-text, #add-film, .films {
     color: #d76848;
 }
 
