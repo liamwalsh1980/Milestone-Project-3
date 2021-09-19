@@ -22,6 +22,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_72YpepHSLHlF3N4Wn6Vnw");
+        })();
+    </script>
     <title>FilmZone</title>
 </head>
 
@@ -138,8 +146,11 @@
     <!-- Compiled and minified JavaScript from Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- Local JS script for sendEmail.js -->
+    <script src="{{ url_for('static', filename='js/sendEmail.js') }}"></script>
     {% block scripts %}
     {% endblock %}
 </body>
 
 </html>
+
