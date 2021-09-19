@@ -243,8 +243,8 @@ ul li a:hover {
 
 .img_films {
     margin: 10px;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
 }
 
 .line-break {
@@ -393,8 +393,17 @@ ul li a:hover {
     color: #EAE3EF
 }
 
-.modal-close, #modal-link, .modal-film-name {
+.modal-close, #modal-link, .modal-film-name, .modal-genre-name {
     color: #D76848;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #D76848;
+    margin-right: 0;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+    color: #ffab40;
 }
 
 /* Footer */

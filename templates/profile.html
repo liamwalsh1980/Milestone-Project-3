@@ -32,15 +32,12 @@
                                 <div id="modal2{{ loop.index }}" class="modal">
                                     <div class="modal-content">
                                         <p class="modal-text-title center-align">Are you sure you want to remove the film <span class="modal-film-name">{{ film.film_name }}</span> ?</p>
-                        
                                     </div>
                                     <div class="modal-footer center-align" id="modal-footer">
                                         <a href="" class="modal-close btn-flat">Cancel</a>
                                         <a href="{{ url_for('delete_film', film_id=film._id) }}" class="modal-close btn-flat">Remove</a>
                                     </div>
                                 </div>
-                        
-                                
                             </div>
                         </div>
                         <div class="collapsible-body center-align">
@@ -61,6 +58,4 @@
             <div class="col-6 m6 s12 right"><a href="{{ url_for('films') }}" class="back-btn-text"><i class="fas fa-backward"></i> Return to Films</a></div>
         </div>
     </section>
-
-
 {% endblock %}

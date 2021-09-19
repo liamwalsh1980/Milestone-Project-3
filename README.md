@@ -19,6 +19,7 @@
     * [Structure](#structure)
     * [Skeleton](#skeleton)
         * [Balsamiq Wireframes](#balsamiq-wireframes)
+        * [Differences](#differences)
     * [Surface](#surface)
 1. [Development Environment](#development-environment )
 1. [Deployment](#deployment)
@@ -315,12 +316,24 @@ For this part of the design process, I used Balsamiq to sketch out all web pages
 
 #### Balsamiq Wireframes
 
-#### Please click <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/skeleton/wireframes/filmzone.pdf" target="_blank">PDF Wireframes </a> to see all versions 
+#### Please click <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/skeleton/wireframes/filmzone.pdf" target="_blank">PDF Wireframes </a> to see all versions
+
+#### Differences
 
 As the developer of FilmZone I put a lot of work into making sure that the Wireframes were as close as possible to the finished site. There were a few differences which are highlighted below: -  
 
-TBC 
-___
+* Navbar - I decided not to include a dropdown on the films link at this stage, however, it would be a feature that could be added as the site gains more a more films from registered users. 
+
+* Homepage - I decided not to add the search facility as it was already added to another page within the site. I also decided not to include the 'flicks of the week' in the form of a carousel, however, this would be a feature i would like to include in the future. 
+
+* Profile page/Add film pahe/Edit film page - I decided not to include the 'Media Clip' field at this stage as i wanted to focus more on the website style and to make sure the main features worked fully. This is a field that can be added at a later stage if demand is there to include it. 
+
+* Edit film page/Edit genre page - I dediced that a modal checker didn't need to be included for editing a film or genre name.
+
+* Genres page - At this stage i didn't include the 'other' genre due to the limited time i had left. If this was added there would be a little bit of python code required to wire up and make use of this. 
+
+* Contact us page - TBC
+
 [Back to top ⇧](#filmzone)
 
 ### Surface 
@@ -429,6 +442,12 @@ ___
 [Back to top ⇧](#filmzone)
 
 ## Deployment 
+
+I developed this project using Gitpod and GitHub as a remote repository to push all my commits. 
+
+Click <a href="https://github.com/liamwalsh1980/Milestone-Project-3" target="_blank">here</a> to view the Github Repository
+
+Click <a href="https://filmzone-project.herokuapp.com/" target="_blank">here</a> to view FilmZone live</a>
 
 ### Requirements
 - Github
@@ -540,16 +559,48 @@ ___
 
 ### Clone project
 
+Click <a href="https://github.com/liamwalsh1980/Milestone-Project-3" target="_blank">here</a> to view the Github Repository
+
+You can clone this repository from GitHub to your local computer to make it easier to fix merge conflicts, add or remove files, and push larger commits. When you clone a repository, you copy the repository from GitHub to your local machine.
+
+Cloning a repository pulls down a full copy of all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project. You can push your changes to the remote repository on GitHub, or pull other people's changes from GitHub.
+
+1. On GitHub, navigate to the main page of the repository.
+
+2. Above the list of files, click  Code.
+
+![Image template](static/images/deployment/cloning/screenshot1.png)
+
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click 'clipboard'. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click 'clipboard'. To clone a repository using GitHub CLI, click Use GitHub CLI, then click 'clipboard'.
+
+![Image template](static/images/deployment/cloning/screenshot2.png)
+
+![Image template](static/images/deployment/cloning/screenshot3.png)
+
+4. Open Terminal.
+
+5. Change the current working directory to the location where you want the cloned directory.
+
+6. Type git clone, and then paste the URL you copied earlier.
+
+>$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+7. Press Enter to create your local clone.
+
+![Image template](static/images/deployment/cloning/screenshot4.png)
+
 ___
 [Back to top ⇧](#filmzone)
 
 ### Forking project
 
-___
-[Back to top ⇧](#filmzone)
+By forking the GitHub Repository, you can make a copy of my original repository on your GitHub account to view and/or make changes without affecting the original repository by doing the following: -
 
+1. Log in to GitHub and locate the GitHub Repository
+1. At the top of the Repository click the settings option on the menu, locate and click the "Fork" Button which is at the top right of the page.
+1. You should now have a copy of the original repository in your GitHub account.
 
-## End of deployment 
+For a more in-depth guide about how to Fork a repo please <a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo" target="_blank">click here</a>.
 
 ___
 [Back to top ⇧](#filmzone)
@@ -794,7 +845,7 @@ This page is for editing films already added and therefore covers the 'U' for up
 
 ### Genres page 
 
-I started by creating a new html template called ‘genres.html’ for the purpose of storing all Genres in the form of cards. I added a subheader at the top of the page with the title of ‘Genres’. With the help of Materialize and my own custom styling I created a basic card. With some Jinja code I created a for loop to iterate through all Genres from MongoDB creating a card for each genre. Within each card I added a button for editing and a button for deleting.  
+I started by creating a new html template called ‘genres.html’ for the purpose of storing all Genres in the form of cards. I added a subheader at the top of the page with the title of ‘Genres’. With the help of Materialize and my own custom styling I created a basic card. With some Jinja code I created a for loop to iterate through all Genres from MongoDB creating a card for each genre. Within each card I added a button for editing and a button for deleting. When the admin user clicks the 'Delete' button, a modal message appears to give this user a chance to confirm if they want to delete the selected genre or cancel.  
 
 In the base template I added the link for this page to the Main Navbar and Mobile Navbar. However, in order to make sure that this page is only accessed by the ‘Admin’ user I added some conditional validation using Jinja code ‘if statement’ making sure to close the ‘if statement’ after the genres.html link.  
 
@@ -929,7 +980,7 @@ Using the base template and Jinja templating language i was able to offer the fo
 - 'Add New Genre' link with plus icon
 - All genres to view 
 - Edit buttons
-- Delete buttons
+- Delete buttons (Modal Message to confirm delete request)
 - "Return to Films' link
 
 ### Add genre page features
@@ -964,6 +1015,7 @@ ____
 * <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS3</a> - Cascading Style Sheet used to provide custom styling througout the website to make it look unique. Thois would include changes to fonts, colors, images, positioning and unique features like the search facility on the films page for example and media queries for the back responsive website on all screen sizes.
 * <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> - Used to add Materialize Initialization jQuery functions and form validation jQuery to support the 'Genre Name' selection on the 'add film' template.
 * <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python3</a> - To create all functions that allow the website to work and interactive between the application and mongoDB as well as importing several key dependencies i.e. os, flask, flash, render_template, redirect, request, session, url_for, PyMongo, ObjectId(bson.objectid),generate_password_hash, check_password_hash (werkzeug.security) and env.
+* <a href="https://docs.mongodb.com/drivers/pymongo/">Pymongo</a> - Python API for MongoDB that enables me to link up the data from the back-end database to the front-end appplication.
 * <a href="https://en.wikipedia.org/wiki/Flask_(web_framework)" target="_blank">Flask</a> - Flask is a micro web framework written in Python.
 * <a href="https://en.wikipedia.org/wiki/Jinja_(template_engine)" target="_blank">Jinja Templating Language</a> - Jinja is a web template engine for the Python programming language, that assisted me with if statements, for loops and conditional logic. 
 
@@ -1005,9 +1057,16 @@ Testing information can be found in a separate
 ____
 
 ## Bugs
-Bugs – see JavaScript note for ‘dot’ bug on the add film template 
 
-loop.index to iterate through all film name when clicking remove and opening the modal checker
+Films template: - Whitespace when using Jinja 'for' loop to iterate through a collection from my MongoDB for my MS3 project. Its working however the results appear to create random white space on the page. On middle screen sizes and bigger i set the column to spam 2 items across the screen and on small screens 1 item using the materialize classes of “col m6 s12' I get several gaps on the middle screen sizes and upwards (Logged on slack)
+
+Add Film template: - Border bottom on the Genre name field stays red when a selection is made. It should turn green like the other fields when they are successfully filled in
+
+Add Film template: – With the JQuery copied from a code institute lesson from the 'Task Manager' mini project, what appears just below the Genre name section is a random 'white dot' which has the list of genres stored. By adjusting the code (change display to display:none) this appears to remove the ‘white dot’. However, i'm not sure whether this then causes the next issue.
+
+Add Film template: - On touch screen likes mobiles and tablets the genre list doesn't fully work. When you try and select a specific genre another one is selected at random. 
+
+Modals: - When selected any random film/genre to remove/delete using the delete/remove button within that film/genre, the same and first film/genre in the list is selected. I knew i needed to set a loop to iterate through all films/genre names. I used loop.index to iterate through all film names in the profile page and all genre names in the genres page when clicking remove/delete which then and opens the modal checker. 
 ____
 [Back to top ⇧](#filmzone)
 
@@ -1019,9 +1078,11 @@ ____
 - <a href="https://www.pexels.com/photo/popcorn-on-white-and-red-paper-bag-6188405/" target="_blank">Popcorn image</a> - Photo by Terrance Barksdale from Pexels
 
 ### Content
+- The content of this website was entirely written by the myself, the developer.
+
 ### Code
-- I us
-### JavaScript
+- The main guide i used throughout this project was boththe 'Task Manager' mini project within Code Institute and my detailed notes in reference to this. 
+
 ____
 [Back to top ⇧](#filmzone)
 
@@ -1029,6 +1090,9 @@ ____
 
 ## Notes
 
+This website is for educational purposes only and created for my Code Institute Python and Data Centric Development Milestone Project (MS3)
+
+During this project i contracted Covid-19 and was ill. 
 ____
 [Back to top ⇧](#filmzone) 
 

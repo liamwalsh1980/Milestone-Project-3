@@ -29,7 +29,7 @@
     <!-- Films section for all users to view -->
     {% if films|length > 0 %}
     <section>
-        <div class="row center">
+        <div class="row center-align">
             <!-- Jinja templating language -->
             <!-- for loop to iterate through the films from MongoDB --> 
             {% for film in films %}
@@ -38,7 +38,7 @@
                     <p>Genre: {{ film.genre_name }}</p><br>
                     <p>Actors: {{ film.actors }}</p><br>
                     <p>Best Bit: {{ film.best_bit }}</p><br>
-                    <img class="img_films center-align" src="{{ film.image }}" alt="film image">
+                    <img class="img_films" src="{{ film.image }}" alt="film image">
                     <div class="line-break container"></div>
                     <br> 
                     <p>Added by: {{ film.created_by }}</p>
