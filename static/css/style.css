@@ -235,16 +235,16 @@ ul li a:hover {
     color: #d76848
 }
 
-.img_film {
-    margin: 0;
-    width: 50%;
-    height: 50%;
+.img-films-desktop {
+    margin-bottom: 10px;
+    width: 45%;
+    height: 45%;
 }
 
-.img_films {
-    margin: 10px;
-    width: 30%;
-    height: 30%;
+.img-films-mobile {
+    margin-bottom: 10px;
+    width: 60%;
+    height: 60%;
 }
 
 .line-break {

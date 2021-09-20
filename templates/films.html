@@ -26,28 +26,54 @@
             </form>
         </div>
     </section>
-    <!-- Films section for all users to view -->
+    <!-- Films section for all users to view on mobile and tablet -->
     {% if films|length > 0 %}
     <section>
-        {% for film in films %}
-        <div class="row center-align">
+        <div class="row center-align show-on-small hide-on-med-and-up">
             <!-- Jinja templating language -->
             <!-- for loop to iterate through the films from MongoDB --> 
             {% for film in films %}
-                <div class="col m6 s12">
+                <div class="col s12">
                     <h4>{{ film.film_name }}</h4></br>
                     <p>Genre: {{ film.genre_name }}</p><br>
                     <p>Actors: {{ film.actors }}</p><br>
                     <p>Best Bit: {{ film.best_bit }}</p><br>
-                    <img class="img_films" src="{{ film.image }}" alt="film image">
+                    <img class="img-films-mobile" src="{{ film.image }}" alt="film image">
                     <div class="line-break container"></div>
                     <br> 
                     <p>Added by: {{ film.created_by }}</p>
                     <br>
                     <div class="line-break container"></div>
                 </div>
+            {% endfor %}    
         </div>
-        {% endfor %}
+    </section>
+    <!-- Message only appears if a search has no results for the user -->
+    {% else %}
+        <div class="col-12 no-results">No Film Found</div>
+    <br>
+    {% endif %}
+    <!-- Films section for all users to view on bigger screen sizes -->
+    {% if films|length > 0 %}
+    <section>
+        <div class="row center-align hide-on-small-only">
+            <!-- Jinja templating language -->
+            <!-- for loop to iterate through the films from MongoDB --> 
+            {% for film in films %}
+                <div class="col m6">
+                    <h4>{{ film.film_name }}</h4></br>
+                    <p>Genre: {{ film.genre_name }}</p><br>
+                    <p>Actors: {{ film.actors }}</p><br>
+                    <p>Best Bit: {{ film.best_bit }}</p><br>
+                    <img class="img-films-desktop" src="{{ film.image }}" alt="film image">
+                    <div class="line-break container"></div>
+                    <br> 
+                    <p>Added by: {{ film.created_by }}</p>
+                    <br>
+                    <div class="line-break container"></div>
+                </div>
+            {% endfor %}    
+        </div>
     </section>
     <!-- Message only appears if a search has no results for the user -->
     {% else %}
