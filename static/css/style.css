@@ -173,10 +173,6 @@ ul li a:hover {
     padding-bottom: 12px;
 }
 
-/* Films template */
-
-
-
 /* text and color changes */
 
 #signup-text, #login-text, #add-film, .films {
@@ -256,12 +252,6 @@ ul li a:hover {
     font-size: 15px;
 }
 
-
-
-/* .input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label[genre_name] {
-    color: #030001;
-} */
-
 /* Genres page */
 
 .genre-card {
@@ -283,11 +273,6 @@ ul li a:hover {
 .btn-small-genres:hover {
     background-color: #647737;
 }
-
-/* .btn-text-profile {
-    background-color: #d76848;
-    color: #EAE3EF;
-} */
 
 .btn-small-profile {
     margin: 10px 5px;
@@ -345,40 +330,6 @@ ul li a:hover {
     text-align: center;
     padding-top: 5px;
     color: #F8C149;
-}
-
-/* flash messages */
-
-.flash-messages {
-    color: #F8C149;
-    font-size: 24px;
-    text-align: center;
-    padding: 0px 5px 5px 0px;
-}
-
-@media screen and (min-width: 1440px) {
-    .flash-messages {
-        font-size: 25px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .flash-messages {
-        font-size: 40px;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    .flash-messages {
-        font-size: 60px;
-    }
-}
-
-@media screen and (min-width: 2400px) {
-    .flash-messages {
-        font-size: 80px;
-        padding-top: 50px;
-    }
 }
 
 /* Modals */
@@ -463,11 +414,66 @@ ul li a:hover {
 
 /* Media Queries */
 
+/* flash messages */
+
+.flash-messages {
+    color: #F8C149;
+    font-size: 24px;
+    text-align: center;
+    padding: 0px 5px 5px 0px;
+}
+
+@media screen and (min-width: 1440px) {
+    .flash-messages {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .flash-messages {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .flash-messages {
+        font-size: 80px;
+        padding-top: 50px;
+    }
+}
+
 /* Media query for logo icon positioning on mobile devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-height: 300px) {
     #logo-icon {
         padding-top: 20px;
         padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 299px) {
+    .nav-wrapper .brand-logo {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 299px) {
+    #logo-icon {
+        padding-top: 18px;
+        padding-left: 15px;
+    }
+}
+
+/* Media queries for header logo and navbar */
+
+@media screen and (min-width: 2400px) {
+    .nav-wrapper .brand-logo {
+        font-size: 64px;
+    }
+    #logo-icon {
+        font-size: 48px;
+    }
+    ul li a {
+        font-size: 32px;
     }
 }
 
@@ -651,12 +657,6 @@ ul li a:hover {
 
 @media screen and (min-width: 1440px) {
     .subheader {
-        font-size: 25px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .subheader {
         font-size: 30px;
     }
 }
@@ -672,6 +672,13 @@ ul li a:hover {
         font-size: 60px;
         padding-top: 50px;
     }
+    .uppercase-text {
+        font-size: 60px;
+        padding-bottom: 50px;
+    }
+    .homepage-content {
+        font-size: 40px;
+    }
 }
 
 /* Media queries for search facility */
@@ -682,20 +689,23 @@ ul li a:hover {
     }
 }
 
-/* Media query for footer */
+/* Media queries for footer */
+
 @media screen and (min-width: 2400px) {
-    .homepage-content {
-        font-size: 60px;
+    h5.footer-text {
+        font-size: 32px
+    }
+    p.footer-text, a.footer-text.footer-text-link {
+        font-size: 24px
+    }
+    #footer-image {
+        background-size: cover;
+        min-height: 450px;
+        width: 150%;
+        margin-top: 20px;
+    }
+    .lower-footer-text {
+        font-size: 30px;
     }
 }
-
-/* Media queries for 320px max */
-
-
-    
-
-
-
-
-
 

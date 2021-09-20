@@ -19,7 +19,7 @@
     * [Structure](#structure)
     * [Skeleton](#skeleton)
         * [Balsamiq Wireframes](#balsamiq-wireframes)
-        * [Differences](#differences)
+        * [Changes](#changes)
     * [Surface](#surface)
 1. [Development Environment](#development-environment )
 1. [Deployment](#deployment)
@@ -76,7 +76,6 @@
     * [Images](#images)
     * [Content](#content)
     * [Code](#code)
-    * [JavaScript](#javaScript)
 1. [Acknowledgements](#acknowledgements)
 1. [Notes](#notes)
 
@@ -318,7 +317,7 @@ For this part of the design process, I used Balsamiq to sketch out all web pages
 
 #### Please click <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/skeleton/wireframes/filmzone.pdf" target="_blank">PDF Wireframes </a> to see all versions
 
-#### Differences
+#### Changes
 
 As the developer of FilmZone I put a lot of work into making sure that the Wireframes were as close as possible to the finished site. There were a few differences which are highlighted below: -  
 
@@ -917,6 +916,18 @@ Several searches were then made to make sure this feature was working fully.
 
 ### Media Queries 
 
+- Flash messages: I made sure that all flash messages were sizes, positioned and had the relevant color based on the pallet i had available 
+
+- Navbar: Size and positioning of the FilmZone Logo and icon adjusted on smaller and bigger screen sizes and would be noticed across all pages as they navbar is shared. 
+
+- Footer: Size and positioning of the footer content, images and icons were adjusted for bigger screen sizes which would then be noticed across all the website as the footer is shared. 
+
+- Homepage: Heroimage across all screen sizes to make sure the image covers the screen using the css property of 'min-height' with the right value for each screen size. The content within the body of this page was also adjusted in size for bigger screen sizes.
+
+- Subheader: All pages havea subheader title. I added media queries for the font-size of the subheaders across the bigger screen sizes for readablility. 
+
+- Search facility has some information text which i adjusted for smaller screen sizes to fit better within the feature. 
+
 ____
 [Back to top ⇧](#filmzone)
 
@@ -1081,7 +1092,7 @@ ____
 - The content of this website was entirely written by the myself, the developer.
 
 ### Code
-- The main guide i used throughout this project was boththe 'Task Manager' mini project within Code Institute and my detailed notes in reference to this. 
+- The main guide i used throughout this project was both the 'Task Manager' mini project within Code Institute and the detailed notes i made during these lessons. 
 
 ____
 [Back to top ⇧](#filmzone)
