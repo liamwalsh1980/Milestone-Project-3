@@ -53,35 +53,33 @@
                     <!-- Submit button -->
                     <div class="row">
                         <!-- Modal Trigger -->
-                        <button type="submit" href="#modal1" class="col s12 btn-large large-button btn-text modal-trigger">Submit <i class="fas fa-sign-in-alt"></i></button>
+                        <button type="submit" class="col s12 btn-large large-button btn-text modal-trigger">Submit <i class="fas fa-sign-in-alt"></i></button>
                     </div>
-                    <!-- <div class="row">
-                        <a class="col s12 btn-large large-button btn-text modal-trigger" href="#modal1">Submit <i class="fas fa-sign-in-alt"></i></a>
-                    </div> -->
-                    <div class="row">
-                        <div class="col s12">
-                            <p class="center-align mini-message-link">
-                                Already have an account?
-                                <a href="{{ url_for('login') }}" id="login-text">Login Here </a>!
-                            </p>
+                    {% if session.user %}
+                    {% else %}
+                        <div class="row">
+                            <div class="col s12">
+                                <p class="center-align mini-message-link">
+                                    Already have an account?
+                                    <a href="{{ url_for('login') }}" id="login-text">Login Here </a>!
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <p class="center-align mini-message-link">
-                                New here?
-                                <a href="{{ url_for('signup') }}" id="signup-text">Sign Up </a>!
-                            </p>
+                        <div class="row">
+                            <div class="col s12">
+                                <p class="center-align mini-message-link">
+                                    New here?
+                                    <a href="{{ url_for('signup') }}" id="signup-text">Sign Up </a>!
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    {% endif %}
                 </div>
             </form>
             <!-- Modal Structure -->
-            <div id="modal1" class="modal">
+            <div id="modal" class="modal">
                 <div class="modal-content">
-                    <p class="modal-text-title center-align">Thank you for your message</p>
-                    <br>
-                    <p class="modal-text-message center-align">If you haven't already signed up to FilmZone, give it a go by <a href="{{ url_for('signup') }}" id="modal-link">clicking here</a>.</p>
+                    <p class="modal-text-message center-align">Thank you for your message. If you haven't already signed up to FilmZone, give it a go by <a href="{{ url_for('signup') }}" id="modal-link">clicking here</a>.</p>
                 </div>
                 <div class="modal-footer center-align" id="modal-footer">
                     <a href="{{ url_for('contact_us') }}" class="modal-close btn-flat" id="closing-btn">Close</a>
