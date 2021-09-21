@@ -2,6 +2,7 @@ function sendMail(contactForm) {
     // sets a new variable ready to use further down the code
     var modal = document.getElementById("modal");
 
+    // Source of code from EmailJS using Email templates. This enables all successful feedback forms to be sent as an email
     emailjs.send("gmail", "filmzone", {
             "firstname": contactForm.firstname.value,
             "lastname": contactForm.lastname.value,
@@ -12,7 +13,7 @@ function sendMail(contactForm) {
             function (response) {
                 console.log("SUCCESS", response);
                 // Bespoke message to the user specifically to the 'name' of the user within the Modal
-                $(".modal-text-message").text("Thank you for your message " + contactForm.firstname.value + ". If you haven't already signed up to FilmZone, register for free today");
+                $(".modal-text-message").text("Thank you for your message " + contactForm.firstname.value + ". If you haven't already signed up to FilmZone, register for free today.");
                 modal.style.display = "block";
                 // reloads the form once the user clicks the close button in the Modal
                 $("#closing-btn").click(function () {
@@ -32,4 +33,6 @@ function sendMail(contactForm) {
     // Blocks the form from loading 
     return false;
 }
+
+
 

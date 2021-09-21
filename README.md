@@ -914,6 +914,29 @@ Several searches were then made to make sure this feature was working fully.
 
 ### Contact Us page 
 
+To design this page, I duplicated the signup page to keep everything the same. I adjusted the fields according to make sure that the contact us page had the following input fields: - 
+
+- First Name  
+- Last Name 
+- Email Address
+- Message 
+
+Each field had a relevant icon to the left, label text and information confirming what and how many characters to include.  All fields are required to have information added. If the form is submitted without all fields completed correctly, the user will be shown a ‘Please fill in this field’ message.  
+
+At the bottom there is a submit button to click and submit message.  
+
+The contact us page is available to all users, therefore, if a user isn’t logged in or signup there is links below to prompt them. If a user is logged in these links aren’t shown. I achieved this with a Jinja if statement.  
+
+When the form is completed and submitted the user will be shown a ‘thank you’ message in the form of a modal. The message will be specific to the user by first name showing the message to be personal to that individual. There is a close button at the bottom of the modal and when clicked will return the user to the contact us page with all fields empty again. If for whatever reason the form was completed and submitted but couldn’t reach FilmZone, another message is shown saying “Sorry (user) something went wrong. Please try submitting your message again!”.  
+
+Both modals were designed in a new JavaScript file called ‘sendEmail.js’ using a function called sendMail(contactForm) to hold the code along with the source code from EmailJS.  
+
+In the Python app.py file I added a function to wire up and return users back to the same page when finished.  
+
+In my HTML base template, I made sure to add the external and local scripts in order which would feed across all templates I.e. contact_us.html.  
+
+In my contact_us template I made sure to add the ‘onsubmit’ event attribute to the form opening tag and modal trigger in the submit button opening tag followed by the original modal structure below the closing tag form.  
+
 ### Media Queries 
 
 - Flash messages: I made sure that all flash messages were sizes, positioned and had the relevant color based on the pallet i had available 
@@ -924,7 +947,7 @@ Several searches were then made to make sure this feature was working fully.
 
 - Homepage: Heroimage across all screen sizes to make sure the image covers the screen using the css property of 'min-height' with the right value for each screen size. The content within the body of this page was also adjusted in size for bigger screen sizes.
 
-- Subheader: All pages havea subheader title. I added media queries for the font-size of the subheaders across the bigger screen sizes for readablility. 
+- Subheader: All pages have a subheader title. I added media queries for the font-size of the subheaders across the bigger screen sizes for readability. 
 
 - Search facility has some information text which i adjusted for smaller screen sizes to fit better within the feature. 
 
@@ -1009,7 +1032,13 @@ Using the base template and Jinja templating language i was able to offer the fo
 - Minimum and maximum character length requirements
 
 ### Contact us page features
-- TBC
+- Subheader 
+- Form for all users to make contact by completing all fields, First Name, Last Name, Email Address and a message with a minimum of 10 characters.  
+- Relevant icons to the left of each field giving the form a little styling.  
+- All fields have validation instructions 
+- 'Submit' button 
+- Short paragraphs with links to sign in or login (only if users aren’t logged in) 
+- Upon successfully submitting the contact form, users will be greeted with a ‘thank you’ message 
 
 ### Features to implement  
 - Homepage 'flicks of the week' in a carousel
