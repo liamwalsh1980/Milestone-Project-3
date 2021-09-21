@@ -71,7 +71,7 @@
                     <button type="submit" class="btn-large btn-text button-padding">Edit Film <i class="far fa-edit right"></i></button>
                     <!-- Cancel Edit and return to user profile -->
                     <div class="col s12"></div>
-                    <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large btn-text button-padding">Cancel<i class="far fa-times-circle right"></i></a>
+                    <a aria-label="Jump to your Profile page" href="{{ url_for('profile', username=session['user']) }}" class="btn-large btn-text button-padding">Cancel<i class="far fa-times-circle right"></i></a>
                 </div>
             </form>
         </div>
