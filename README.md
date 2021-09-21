@@ -151,13 +151,13 @@ ___
 - Successful deployment adding to the developer portfolio. 
 
 ### User Stories 
-- A user that doesn’t have an account visits FilmZone and wants ideas on what film to watch for the evening. This user enjoys all types of Films and likes the Actor Al Pacino. 
-- A registered user to FilmZone that has just watched a new Film and wants to offer a review for others to consider watching it.  
-- A registered user that just finished watching their favourite Film. After which they want to update the Film record on FilmZone to show all site visitors more information i.e. More actors, a different image, a favourite scene change. 
-- I’m a regular visitor to FilmZone and would be keen to gain access to my own profile to add my own favourite Films.  
-- I have noticed that one of my Films I added last week is now in the ‘Other’ Genre when I originally allocated it to relevant Genre. How can I get feedback on this?
-- The Developer/Site Owner sees that there is a quite a few Films being added by registered users into the ‘Other’ Genre category. Quick research shows that a new Genre(s) Category needs to be added to accommodate these Films.  
-- Due to a News Report a Film Actor has been discredited and therefore all Films associated to this Actor needs to be removed from the Internet. 
+1. A user that doesn’t have an account visits FilmZone and wants ideas on what film to watch for the evening. This user enjoys all types of Films and likes the Actor Al Pacino. 
+1. A registered user to FilmZone that has just watched a new Film and wants to offer a review for others to consider watching it.  
+1. A registered user that just finished watching their favourite Film. After which they want to update the Film record on FilmZone to show all site visitors more information i.e. More actors, a different image, a favourite scene change. 
+1. I’m a regular visitor to FilmZone and would be keen to gain access to my own profile to add my own favourite Films.  
+1. I've noticed that there a particular Genre not listed for me to add a film to. How can i arrange for a new Genre type to be added? 
+1. Due to a News Report a Film Actor has been discredited and therefore all Films associated to this Actor needs to be removed from the Internet. 
+1. I've just come out of the cinema after watching a great film. I'm keen to add this to my FilmZone profile but I'm not going to be at my computer until tomorrow morning now. 
 
 ___
 [Back to top ⇧](#filmzone) 
