@@ -274,6 +274,16 @@ ul li a:hover {
     background-color: #647737;
 }
 
+.btn-small-genres-edit {
+    background-color: #EAE3EF;
+    color: #030001;
+}
+
+.btn-small-genres-edit:hover {
+    background-color: #647737;
+    color: #EAE3EF;
+}
+
 .btn-small-profile {
     margin: 10px 5px;
     background-color: #d76848;
@@ -281,6 +291,16 @@ ul li a:hover {
 }
 
 .btn-small-profile:hover {
+    background-color: #647737;
+    color: #EAE3EF;
+}
+
+.btn-small-profile-reset {
+    background-color: #030001;
+    color: #EAE3EF;
+}
+
+.btn-small-profile-reset:hover {
     background-color: #647737;
     color: #EAE3EF;
 }
@@ -294,18 +314,18 @@ ul li a:hover {
     background-color: #647737;
 }
 
-#cancel-btn {
+.cancel-btn {
     background-color: #EAE3EF;
     color: #D76848;
 }
 
-#cancel-btn:hover {
+.cancel-btn:hover {
     background-color: #647737;
     color: #EAE3EF;
 }
 
 .button-padding {
-    margin: 5px;l
+    margin: 5px;
 }
 
 /* Search function */
@@ -326,6 +346,17 @@ ul li a:hover {
 
 .btn-small-search:hover {
     background-color: #647737;
+}
+
+.btn-small-search-reset {
+    background-color: #EAE3EF;
+    color: #d76848;
+    margin-left: 5px;
+}
+
+.btn-small-search-reset:hover {
+    background-color: #647737;
+    color: #EAE3EF;
 }
 
 .info-search {

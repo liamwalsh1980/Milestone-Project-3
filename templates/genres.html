@@ -19,7 +19,7 @@
             </div>
             <!-- Buttons to submit a change to genre or delete a genre -->
             <div class="card-action center-align">
-                <a href="{{ url_for('edit_genre',genre_id=genre._id) }}" id="genre-btn" class="btn-small btn-small-genres">Edit</a>
+                <a href="{{ url_for('edit_genre',genre_id=genre._id) }}" id="genre-btn" class="btn-small btn-small-genres-edit">Edit</a>
                 <!-- Modal Trigger for removing a film -->
                 <a href="#modal3{{ loop.index }}" class="btn-small btn-small-genres modal-trigger">Delete</a>
                 <!-- Modal Structure  -->
