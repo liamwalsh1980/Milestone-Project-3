@@ -38,7 +38,7 @@
                     <p>Genre: {{ film.genre_name }}</p><br>
                     <p>Actors: {{ film.actors }}</p><br>
                     <p>Best Bit: {{ film.best_bit }}</p><br>
-                    <div id="image-size"><img class="img-films-mobile" src="{{ film.image }}" alt="film image"></div>
+                    <div><img class="img-films-mobile" src="{{ film.image }}" alt="film image"></div>
                     <div class="line-break container"></div>
                     <br> 
                     <p>Added by: {{ film.created_by }}</p>
@@ -65,7 +65,7 @@
                     <p>Genre: {{ film.genre_name }}</p><br>
                     <p>Actors: {{ film.actors }}</p><br>
                     <p>Best Bit: {{ film.best_bit }}</p><br>
-                    <img class="img-films-desktop" src="{{ film.image }}" alt="film image">
+                    <div><img id="image-size" class="img-films-desktop" src="{{ film.image }}" alt="film image"></div>
                     <div class="line-break container"></div>
                     <br> 
                     <p>Added by: {{ film.created_by }}</p>
@@ -75,7 +75,6 @@
             {% endfor %}    
         </div>
     </section>
-    <!-- Message only appears if a search has no results for the user -->
     {% else %}
     {% endif %}
 

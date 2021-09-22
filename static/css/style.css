@@ -233,14 +233,31 @@ ul li a:hover {
 
 .img-films-desktop {
     margin-bottom: 10px;
-    width: 45%;
-    height: 45%;
+    width: 50%;
+    height: 50%;
 }
 
 .img-films-mobile {
     margin-bottom: 10px;
     width: 60%;
     height: 60%;
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .img-films-mobile {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+#image-size {
+    max-height: 450px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    #image-size {
+        max-height: 450px;
+    }
 }
 
 .line-break {
@@ -452,8 +469,6 @@ ul li a:hover {
 #youtube:hover {
     color: #ed3833;
 }
-
-/* Media Queries */
 
 /* flash messages */
 

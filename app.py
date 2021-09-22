@@ -184,6 +184,7 @@ def edit_film(film_id):
         }
         mongo.db.films.update({"_id": ObjectId(film_id)}, edit)
         flash("Film Updated Successfully")
+        return redirect(url_for("films"))
     # This is using the ObjectId imported at the top of this file
     # The Id needs to be converted into a BSON data-type
     film = mongo.db.films.find_one({"_id": ObjectId(film_id)})
@@ -196,7 +197,7 @@ def edit_film(film_id):
 def delete_film(film_id):
     mongo.db.films.remove({"_id": ObjectId(film_id)})
     flash("Film Successfully Removed")
-    return redirect(url_for("films"))
+    return redirect(url_for("profile", username=session["user"]))
 
 
 # Function to grab all genre names from MongoDB
