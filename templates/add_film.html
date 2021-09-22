@@ -67,7 +67,7 @@
                     <button type="submit" class="btn-large btn-text button-padding">Add Film <i class="fas fa-plus-circle right"></i></button>
                     <!-- Cancel Edit and return to user profile -->
                     <div class="col s12"></div>
-                    <a aria-label="Jump to your Profile page" href="{{ url_for('profile', username=session['user']) }}" class="btn-large btn-text button-padding">Cancel<i class="far fa-times-circle right"></i></a>
+                    <a aria-label="Jump to your Profile page" href="{{ url_for('profile', username=session['user']) }}" class="btn-large btn-text button-padding" id="cancel-btn">Cancel<i class="far fa-times-circle right"></i></a>
                 </div>
             </form>
         </div>
