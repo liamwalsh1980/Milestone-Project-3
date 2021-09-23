@@ -23,11 +23,18 @@
         * [Story 5](#story-5)
         * [Story 6](#story-6)
     * [W3C Markup Validation Service](#w3c-markup-validation-service)
+        * [Base template tested](#base-template-tested)
         * [Homepage tested](#homepage-tested)
-        * [Tournament page tested](#tournament-page-tested) 
-        * [Quiz page tested](#quiz-page-tested)
-        * [Feedback page tested](#feedback-page-tested)
-        * [Answers page tested](#answers-page-tested)
+        * [Films page tested](#films-page-tested) 
+        * [Signup page tested](#signup-page-tested)
+        * [Login page tested](#login-page-tested)
+        * [Profile page tested](#profile-page-tested)
+        * [Add Film page tested](#add-film-page-tested)
+        * [Edit Film page tested](#edit-film-page-tested)
+        * [Genres page tested](#genres-page-tested)
+        * [Add genre page tested](#add-genre-page-tested)
+        * [Edit genre page tested](#edit-genre-page-tested)
+        * [Contact Us page tested](#contact-us-page-tested)
     * [W3C CSS Validation Service](#w3c-css-validation-service)
         * [CSS coding tested](#css-coding-tested)
     * [JS Hint Javascript code validator](#js-hint-javascript-code-validator)
@@ -62,6 +69,41 @@
 Return to my [README.md](README.md) 
 
 [Back to top ⇧](#filmzone)
+
+## Testing
+
+I decided to use the Materialize CSS grid (rows and columns) to structure the website offering good UX on all screen sizes. With this in mind the Laptop and Desktop screens (large) layout is different to tablet and mobile screens (small) on many pages. For example, on the Films page users can see 2 films side by side on bigger screens and 1 on smaller screen sizes.  
+
+#### Large screens
+![Image template](static/images/testing/screen_sizes/films-large-screen.png)
+
+#### Small screens
+![Image template](static/images/testing/screen_sizes/films-small-screen.png)
+
+### Navigation bar menu
+#### Full screen navigation bar
+On big screens the navigation bar has page titles. Any page title that's hovered over changes color to indicate its a clickable link. I testing different styles for the Navbar however, i wanted to keep it clean and tidy. At one stage the 'Films' link was a dropdown menu giving users the option to click a film based on Genre. I decided to remove this feature for now to keep the navbar simple and easy to use. I added a search facility on the 'Films' page instead to make it easy for users to find a specific film based on Genre type. 
+
+##### Logged out users
+![Image template](static/images/testing/navbar/navbar-logged-out.png)
+
+##### Logged in users
+![Image template](static/images/testing/navbar/navbar-logged-in-user.png)
+
+##### Logged in Admin user
+![Image template](static/images/testing/navbar/navbar-logged-in-admin-user.png)
+
+#### Hamburger navigation bar
+When testing the navigation bar I wanted to make sure that it collapses into a hamburger menu (3 horizontal bars) on smaller screens. This is common practice to have and offers the user the option to look and click onto another page within the website. I made sure that the FilmZone logo and icon was shown at the top of the hamburder menu when a user opens the navnar on a smaller screen like a mobile or tablet. 
+
+##### Logged out users
+![Image template](static/images/testing/navbar/mob-navbar-logged-out.png)
+
+##### Logged in Admin user
+![Image template](static/images/testing/navbar/mob-navbar-logged-in-user.png)
+
+##### Logged in Admin user
+![Image template](static/images/testing/navbar/mob-navbar-logged-in-admin-user.png)
 
 ### User Stories tested
 #### **Story 1**
@@ -107,7 +149,42 @@ I've noticed that theres a particular Genre type not listed for me to add a film
 ![Image template](static/images/testing/user_stories/user-story-5.png)
 
 #### **Story 6**
-- Due to a News Report a Film Actor has been discredited and therefore all Films associated to this Actor needs to be removed from the Internet. 
+I've just come out of the cinema after watching a great film. I'm keen to add this to my FilmZone profile but I'm not going to be at my computer until tomorrow morning now. 
+- FilmZone can be accessed on any device. Therefore, this user can login to their FilmZone account profile and add a film on their smartphone just as easily as on desktop or laptop. They can then check the films page and profile page to see their new film thats just been added. 
 
-#### **Story 7**
-- I've just come out of the cinema after watching a great film. I'm keen to add this to my FilmZone profile but I'm not going to be at my computer until tomorrow morning now. 
+![Image template](static/images/testing/user_stories/user-story-6-1.png)
+
+![Image template](static/images/testing/user_stories/user-story-6-2.png)
+
+![Image template](static/images/testing/user_stories/user-story-6-3.png)
+
+![Image template](static/images/testing/user_stories/user-story-6-4.png)
+
+![Image template](static/images/testing/user_stories/user-story-6-5.png)
+
+![Image template](static/images/testing/user_stories/user-story-6-6.png)
+
+![Image template](static/images/testing/user_stories/user-story-6-7.png)
+
+![Image template](static/images/testing/user_stories/user-story-6-8.png)
+
+![Image template](static/images/testing/user_stories/user-story-6-9.png)
+
+### W3C Markup Validation Service
+
+#### Base template tested
+#### Homepage tested
+#### Films page tested
+#### Signup page tested
+#### Login page tested
+#### Profile page tested
+#### Add Film page tested
+#### Edit Film page tested
+#### Genres page tested
+#### Add genre page tested
+#### Edit genre page tested
+#### Contact Us page tested
+
+### W3C CSS Validation Service
+
+#### CSS coding tested

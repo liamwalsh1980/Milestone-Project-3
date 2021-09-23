@@ -249,7 +249,7 @@ ul li a:hover {
     max-height: 450px;
 }
 
-h4 {
+.films-name {
     font-size: 1.8rem;
 }
 
@@ -761,13 +761,13 @@ h4 {
 /* Media queries for films image formatting */
 
 @media screen and (min-width: 200px) and (max-width: 349px) {
-    h4 {
+    .films-name {
         font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 350px) and (max-width: 499px) {
-    h4 {
+    .films-name {
         font-size: 1.2rem;
     }
 }
@@ -777,7 +777,7 @@ h4 {
         width: 40%;
         height: 40%;
     }
-    h4 {
+    .films-name {
         font-size: 1.5rem;
     }
 }
@@ -786,7 +786,7 @@ h4 {
     #image-size {
         max-height: 350px;
     }
-    h4 {
+    .films-name {
         font-size: 1.5rem;
     }
 }
@@ -795,7 +795,7 @@ h4 {
     #image-size {
         max-height: 190px;
     }
-    h4 {
+    .films-name{
         font-size: 1.0rem;
     }
     #actors {
@@ -807,7 +807,7 @@ h4 {
     #image-size {
         max-height: 230px;
     }
-    h4 {
+    .films-name{
         font-size: 1.2rem;
     }
 }
@@ -816,7 +816,7 @@ h4 {
     #image-size {
         max-height: 265px;
     }
-    h4 {
+    .films-name {
         font-size: 1.4rem;
     }
 }
@@ -825,7 +825,7 @@ h4 {
     #image-size {
         max-height: 300px;
     }
-    h4 {
+    .films-name {
         font-size: 1.6rem;
     }
 }
@@ -834,7 +834,7 @@ h4 {
     #image-size {
         max-height: 340px;
     }
-    h4 {
+    .films-name {
         font-size: 1.7rem;
     }
 }

@@ -156,7 +156,6 @@ ___
 1. A registered user that just finished watching their favourite Film. After which they want to update the Film record on FilmZone to show all site visitors more information i.e. More actors, a different image, a favourite scene change. 
 1. I’m a regular visitor to FilmZone and would be keen to gain access to my own profile to add my own favourite Films.  
 1. I've noticed that there a particular Genre not listed for me to add a film to. How can i arrange for a new Genre type to be added? 
-1. Due to a News Report a Film Actor has been discredited and therefore all Films associated to this Actor needs to be removed from the Internet. 
 1. I've just come out of the cinema after watching a great film. I'm keen to add this to my FilmZone profile but I'm not going to be at my computer until tomorrow morning now. 
 
 ___
