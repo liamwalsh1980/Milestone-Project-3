@@ -231,6 +231,8 @@ ul li a:hover {
     color: #d76848
 }
 
+/* Films image */
+
 .img-films-desktop {
     margin-bottom: 10px;
     width: 50%;
@@ -256,9 +258,73 @@ ul li a:hover {
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
     #image-size {
-        max-height: 450px;
+        max-height: 350px;
     }
 }
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+    #image-size {
+        max-height: 200px;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+    #image-size {
+        max-height: 240px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+    #image-size {
+        max-height: 280px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+    #image-size {
+        max-height: 320px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    #image-size {
+        max-height: 350px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    #image-size {
+        max-height: 420px;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+    #image-size {
+        max-height: 500px;
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1800px) {
+    #image-size {
+        max-height: 550px;
+    }
+}
+
+@media screen and (min-width: 1801px) and (max-width: 2000px) {
+    #image-size {
+        max-height: 600px;
+    }
+}
+
+@media screen and (min-width: 2001px) and (max-width: 2600px) {
+    #image-size {
+        max-height: 800px;
+    }
+}
+
 
 .line-break {
     border-bottom: 1px solid #d76848;
