@@ -38,8 +38,8 @@
                     <p class="genre-name">Genre: {{ film.genre_name }}</p><br>
                     <p class="actors">Actors:<hr>{{ film.actors }}</p><br>
                     <p class="best-bit">My Best Bit:<hr>{{ film.best_bit }}</p><br>
-                    <img class="img-films-mobile" src="{{ film.image }}" alt="film image">
-                    <div class="line-break container"></div>
+                    <div id="image-size"><img class="img-films-mobile" src="{{ film.image }}" alt="film image"></div>
+                    <div class="line-break container margin"></div>
                     <br> 
                     <p>Added by: {{ film.created_by }}</p>
                     <br>

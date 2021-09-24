@@ -786,7 +786,7 @@ ul li a:hover {
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
     #image-size {
-        max-height: 350px;
+        max-height: 500px;
     }
     .films-name {
         font-size: 1.5rem;
