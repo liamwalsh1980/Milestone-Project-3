@@ -235,22 +235,24 @@ ul li a:hover {
 
 .img-films-desktop {
     margin-bottom: 10px;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 30%;
 }
 
 .img-films-mobile {
     margin-bottom: 10px;
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
 }
 
-#image-size {
+/* #image-size {
     max-height: 450px;
-}
+} */
 
 .films-name {
     font-size: 1.8rem;
+    color: #F8C149;
+    text-transform: uppercase;
 }
 
 .line-break {
@@ -774,8 +776,8 @@ ul li a:hover {
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
     .img-films-mobile {
-        width: 40%;
-        height: 40%;
+        width: 50%;
+        height: 50%;
     }
     .films-name {
         font-size: 1.5rem;
@@ -793,28 +795,35 @@ ul li a:hover {
 
 @media screen and (min-width: 601px) and (max-width: 700px) {
     #image-size {
-        max-height: 190px;
+        max-height: 155px;
     }
     .films-name{
         font-size: 1.0rem;
     }
-    #actors {
-        font-size: 0.9rem;
-    }
 }
 
-@media screen and (min-width: 701px) and (max-width: 800px) {
+@media screen and (min-width: 701px) and (max-width: 750px) {
     #image-size {
-        max-height: 230px;
+        max-height: 185px;
     }
     .films-name{
         font-size: 1.2rem;
     }
 }
 
+@media screen and (min-width: 751px) and (max-width: 800px) {
+    #image-size {
+        max-height: 195px;
+    }
+    .films-name {
+        font-size: 1.2rem;
+    }
+}
+
+
 @media screen and (min-width: 801px) and (max-width: 900px) {
     #image-size {
-        max-height: 265px;
+        max-height: 210px;
     }
     .films-name {
         font-size: 1.4rem;
@@ -823,7 +832,7 @@ ul li a:hover {
 
 @media screen and (min-width: 901px) and (max-width: 1000px) {
     #image-size {
-        max-height: 300px;
+        max-height: 240px;
     }
     .films-name {
         font-size: 1.6rem;
@@ -832,7 +841,7 @@ ul li a:hover {
 
 @media screen and (min-width: 1001px) and (max-width: 1100px) {
     #image-size {
-        max-height: 340px;
+        max-height: 270px;
     }
     .films-name {
         font-size: 1.7rem;
@@ -841,48 +850,105 @@ ul li a:hover {
 
 @media screen and (min-width: 1101px) and (max-width: 1200px) {
     #image-size {
-        max-height: 375px;
+        max-height: 300px;
+    }
+    .films-name {
+        font-size: 1.8rem;
     }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
     #image-size {
-        max-height: 410px;
+        max-height: 328px;
+    }
+    .films-name {
+        font-size: 1.9rem;
+    }
+    .genre-name, .actors, .best-bit {
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (min-width: 1401px) and (max-width: 1600px) {
     #image-size {
-        max-height: 480px;
+        max-height: 385px;
+    }
+    .films-name {
+        font-size: 2.0rem;
+    }
+    .genre-name, .actors, .best-bit {
+        font-size: 1.4rem;
     }
 }
 
 @media screen and (min-width: 1601px) and (max-width: 1800px) {
     #image-size {
-        max-height: 550px;
+        max-height: 440px;
+    }
+    .films-name {
+        font-size: 2.0rem;
+    }
+    .genre-name, .actors, .best-bit {
+        font-size: 1.4rem;
     }
 }
 
 @media screen and (min-width: 1801px) and (max-width: 2000px) {
     #image-size {
-        max-height: 600px;
+        max-height: 490px;
+    }
+    .films-name {
+        font-size: 2.5rem;
+    }
+    .genre-name {
+        font-size: 1.6rem
     }
 }
 
-@media screen and (min-width: 2001px) and (max-width: 2600px) {
+@media screen and (min-width: 2001px) and (max-width: 2300px) {
+    #image-size {
+        max-height: 550px;
+    }
+    .films-name {
+        font-size: 2.5rem;
+    }
+    .genre-name, .actors, .best-bit {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 2301px) and (max-width: 2500px) {
+    #image-size {
+        max-height: 630px;
+    }
+    .films-name {
+        font-size: 2.8rem;
+    }
+    .genre-name, .actors, .best-bit {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 2501px) and (max-width: 2800px) {
     #image-size {
         max-height: 690px;
     }
-}
-
-@media screen and (min-width: 2301px) and (max-width: 2600px) {
-    #image-size {
-        max-height: 750px;
+    .films-name {
+        font-size: 2.8rem;
+    }
+    .genre-name, .actors, .best-bit {
+        font-size: 1.8rem;
     }
 }
 
-@media screen and (min-width: 2501px) {
+@media screen and (min-width: 2801px) {
     #image-size {
-        max-height: 850px;
+        max-height: 780px;
+    }
+    .films-name {
+        font-size: 3.0rem;
+    }
+    .genre-name, .actors, .best-bit {
+        font-size: 2.0rem;
     }
 }
