@@ -38,9 +38,11 @@
     * [W3C CSS Validation Service](#w3c-css-validation-service)
         * [CSS coding tested](#css-coding-tested)
     * [JS Hint Javascript code validator](#js-hint-javascript-code-validator)
-        * [Maps.js](#maps.js)
-        * [Quiz.js](#quiz.js)
+        * [Script.js](#script.js)
         * [sendEmail.js](#sendemail.js)
+    * [PEP8 online validator](#pep8-online-validator)
+        * [App file](#app-file)
+        * [Env file](#env-file)
     * [Web Browsers](#web-browsers)
         * [Google Chrome](#google-chrome)
         * [Apple Safari](#apple-safari)
@@ -55,9 +57,7 @@
         * [Desktop results](#desktop-results)
         * [Mobile results](#mobile-results)
     * [Issues found](#issues-found)
-        * [API key](#api-key)
-        * [Quiz images](#quiz-images)
-        * [Feedback form](#feedback-form)
+        * [Films page layout](#films-page-layout)
         * [Modal issues](#modal-issues)
         * [EmailJS](#emailjs)
     * [Further testing](#further-testing)
@@ -72,6 +72,7 @@ Return to my [README.md](README.md)
 
 ## Testing
 
+### Screen sizes
 I decided to use the Materialize CSS grid (rows and columns) to structure the website offering good UX on all screen sizes. With this in mind the Laptop and Desktop screens (large) layout is different to tablet and mobile screens (small) on many pages. For example, on the Films page users can see 2 films side by side on bigger screens and 1 on smaller screen sizes.  
 
 #### Large screens
@@ -188,3 +189,255 @@ I've just come out of the cinema after watching a great film. I'm keen to add th
 ### W3C CSS Validation Service
 
 #### CSS coding tested
+* 0 errors returned
+* 1 warning returned
+    - Imported style sheets are not checked in direct input and file upload modes (line 2)
+
+![Image template](static/images/testing/validator/css-validator.png)
+
+#### JS Hint JavaScript code validator
+
+#### Script.js
+* (0 errors found)
+* (2 warnings found)
+    - Line 12: let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
+    - Line 13: let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
+
+![Image template](static/images/testing/validator/js-validator-script.png)
+
+#### sendEmail.js
+* (0 errors found)
+* (0 warnings found)
+
+![Image template](static/images/testing/validator/js-validator-sendemail.png)
+
+#### PEP8 online validator
+
+#### App file
+* No errors
+
+![Image template](static/images/testing/validator/python-app.png)
+
+#### Env file
+* 1 Error (line 12: line too long (126 > 79 characters))
+
+**Fixed by moving around half the code onto another line below.**
+
+Note: No image applied for security of password
+
+### Web Browsers
+
+I tested the website across four different web browsers making sure that links worked and pages loaded properly. 
+
+### Google Chrome
+The site was developed using Chrome and therefore testing was being done daily on this browser.
+
+**Homepage**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-homepage-top.png)
+
+![Image template](static/images/testing/web_browser/chrome/chrome-homepage-bottom.png)
+
+**Films page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-films-page-top.png)
+
+![Image template](static/images/testing/web_browser/chrome/chrome-films-page-bottom.png)
+
+**Signup page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-signup-page.png)
+
+**Login page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-login-page.png)
+
+**Profile page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-profile-page-top.png)
+
+![Image template](static/images/testing/web_browser/chrome/chrome-profile-page-bottom.png)
+
+**Add film page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-add-film-page-top.png)
+
+![Image template](static/images/testing/web_browser/chrome/chrome-add-film-page-bottom.png)
+
+**Edit film page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-edit-film-page-top.png)
+
+![Image template](static/images/testing/web_browser/chrome/chrome-edit-film-page-bottom.png)
+
+**Genres page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-genre-page-top.png)
+
+![Image template](static/images/testing/web_browser/chrome/chrome-genre-page-bottom.png)
+
+**Add genre page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-add-genre-page.png)
+
+**Edit genre page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-edit-genre-page.png)
+
+**Contact us page**
+
+![Image template](static/images/testing/web_browser/chrome/chrome-contact-us-page.png)
+
+### Apple Safari
+
+**Homepage**
+
+![Image template](static/images/testing/web_browser/safari/safari-homepage-top.png)
+
+![Image template](static/images/testing/web_browser/safari/safari-homepage-bottom.png)
+
+**Films page**
+
+![Image template](static/images/testing/web_browser/safari/safari-films-page-top.png)
+
+![Image template](static/images/testing/web_browser/safari/safari-films-page-bottom.png)
+
+**Signup page**
+
+![Image template](static/images/testing/web_browser/safari/safari-signup-page.png)
+
+**Login page**
+
+![Image template](static/images/testing/web_browser/safari/safari-login-page.png)
+
+**Profile page**
+
+![Image template](static/images/testing/web_browser/safari/safari-profile-page-top.png)
+
+![Image template](static/images/testing/web_browser/safari/safari-profile-page-bottom.png)
+
+**Edit film page**
+
+![Image template](static/images/testing/web_browser/safari/safari-edit-film-page-top.png)
+
+![Image template](static/images/testing/web_browser/safari/safari-edit-film-page-bottom.png)
+
+**Genres page**
+
+![Image template](static/images/testing/web_browser/safari/safari-genre-page-top.png)
+
+![Image template](static/images/testing/web_browser/safari/safari-genre-page-bottom.png)
+
+**Add genre page**
+
+![Image template](static/images/testing/web_browser/safari/safari-add-genre-page.png)
+
+**Edit genre page**
+
+![Image template](static/images/testing/web_browser/safari/safari-edit-genre-page.png)
+
+**Contact us page**
+
+![Image template](static/images/testing/web_browser/safari/safari-contact-us-page.png)
+
+### Microsoft Edge
+
+**Homepage**
+
+
+
+**Films page**
+
+
+
+**Signup page**
+
+
+
+**Login page**
+
+
+
+**Profile page**
+
+
+
+**Add film page**
+
+
+
+**Edit film page**
+
+
+
+**Genres page**
+
+
+
+**Add genre page**
+
+
+
+**Edit genre page**
+
+
+
+**Contact us page**
+
+### Mozilla Firefox
+
+**Homepage**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-homepage-top.png)
+
+![Image template](static/images/testing/web_browser/firefox/firefox-homepage-bottom.png)
+
+**Films page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-films-page-top.png)
+
+![Image template](static/images/testing/web_browser/firefox/firefox-films-page-bottom.png)
+
+**Signup page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-signup-page.png)
+
+**Login page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-login-page.png)
+
+**Profile page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-profile-page-top.png)
+
+![Image template](static/images/testing/web_browser/firefox/firefox-profile-page-bottom.png)
+
+**Add film page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-add-film-page-top.png)
+
+![Image template](static/images/testing/web_browser/firefox/firefox-add-film-page-bottom.png)
+
+**Edit film page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-edit-film-page-top.png)
+
+![Image template](static/images/testing/web_browser/firefox/firefox-edit-film-page-bottom.png)
+
+**Genres page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-genre-page-top.png)
+
+![Image template](static/images/testing/web_browser/firefox/firefox-genre-page-bottom.png)
+
+**Add genre page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-add-genre-page.png)
+
+**Edit genre page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-edit-genre-page.png)
+
+**Contact us page**
+
+![Image template](static/images/testing/web_browser/firefox/firefox-contact-us-page.png)

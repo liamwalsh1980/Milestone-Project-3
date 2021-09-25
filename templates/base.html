@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
+    <title>FilmZone</title>
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
@@ -31,7 +32,6 @@
             emailjs.init("user_72YpepHSLHlF3N4Wn6Vnw");
         })();
     </script>
-    <title>FilmZone</title>
 </head>
 
 <body>
@@ -45,8 +45,8 @@
                     <a aria-label="Jump to the Homepage" href="{{ url_for('index') }}" class="brand-logo left"><i class="fas fa-film" id="logo-icon"></i>filmzone</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                     <ul class="right hide-on-med-and-down">
-                            <li><a aria-label="Jump to the Homepage" href="{{ url_for('index') }}">Home</a></li>
-                            <li><a aria-label="Jump to the Films page" href="{{ url_for('films') }}">Films</a></li>
+                        <li><a aria-label="Jump to the Homepage" href="{{ url_for('index') }}">Home</a></li>
+                        <li><a aria-label="Jump to the Films page" href="{{ url_for('films') }}">Films</a></li>
                         {% if session.user %}
                             <li><a aria-label="Jump to your Profile page" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                             <li><a aria-label="Jump to the Add Film page" href="{{ url_for('add_film') }}">Add Film</a></li>
@@ -58,7 +58,7 @@
                             <li><a aria-label="Jump to the Login page" href="{{ url_for('login') }}">Login</a></li>
                             <li><a aria-label="Jump to the Signup page" href="{{ url_for('signup') }}">Signup</a></li>
                         {% endif %}
-                            <li><a aria-label="Jump to the Contact Us page" href="{{ url_for('contact_us') }}">Contact Us</a></li>
+                        <li><a aria-label="Jump to the Contact Us page" href="{{ url_for('contact_us') }}">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -68,17 +68,17 @@
             <h4 class="center-align brand-logo"><i class="fas fa-film" id="sidenav-logo-icon"></i> filmzone</h4>
                 <li><a aria-label="Jump to the Homepage" href="{{ url_for('index') }}">Home</a></li>
                 <li><a aria-label="Jump to the Films page" href="{{ url_for('films') }}">Films</a></li>
-            {% if session.user %}
+                {% if session.user %}
                 <li><a aria-label="Jump to your Profile page" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a aria-label="Jump to the Add Film page" href="{{ url_for('add_film') }}">Add Film</a></li>
-                {% if session.user|lower == "admin"|lower %}
+                    {% if session.user|lower == "admin"|lower %}
                     <li><a aria-label="Jump to the Genres page" href="{{ url_for('genres') }}">Manage Genres</a></li>
-                {% endif %}
+                    {% endif %}
                 <li><a aria-label="Logout of your profile" href="{{ url_for('logout') }}">Logout</a></li>
-            {% else %}
+                {% else %}
                 <li><a aria-label="Jump to the Login page" href="{{ url_for('login') }}">Login</a></li>
                 <li><a aria-label="Jump to the Signup page" href="{{ url_for('signup') }}">Signup</a></li>
-            {% endif %}
+                {% endif %}
             <li><a aria-label="Jump to the Contact Us page" href="{{ url_for('contact_us') }}">Contact Us</a></li>
         </ul>
     </header>

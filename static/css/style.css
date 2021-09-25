@@ -14,9 +14,6 @@ body {
     background-color: #030001;
 }
 
-/* colors */
-
-
 /* Navbar and Logo */
 .brand-logo {
     font-family: 'Holtwood One SC', serif;
@@ -80,7 +77,6 @@ ul li a:hover {
 }
 
 /* Side/Mobile Navbar */
-
 #mobile-demo {
     background-color: #030001;
 }
@@ -116,7 +112,6 @@ ul li a:hover {
 }
 
 /* Hero Image with Subheader */
-
 #hero-image {
     background: url("../images/hero-image.jpg") no-repeat center center; 
     background-size: cover;
@@ -125,7 +120,6 @@ ul li a:hover {
 }
 
 /* Subheader on all relevant pages */
-
 .subheader-home {
     font-size: 24px;
     text-align: center;
@@ -140,7 +134,6 @@ ul li a:hover {
 }
 
 /* Profile template */
-
 .collapsible-header .col .fa-film  {
     padding: 20px;
     line-height: 20px;
@@ -162,7 +155,6 @@ ul li a:hover {
 }
 
 /* Homepage content */
-
 .homepage-content {
     font-size: 16px;
     padding: 0 10px;
@@ -174,7 +166,6 @@ ul li a:hover {
 }
 
 /* text and color changes */
-
 #signup-text, #login-text, #add-film, .films {
     color: #d76848;
 }
@@ -205,7 +196,6 @@ ul li a:hover {
 }
 
 /* Add film template */
-
 .select-wrapper input.select-dropdown {
     font-family: 'Montserrat', sans-serif;
     color: #9E9E9E;
@@ -232,7 +222,6 @@ ul li a:hover {
 }
 
 /* Films image */
-
 .img-films-desktop {
     margin-bottom: 10px;
     width: 40%;
@@ -244,10 +233,6 @@ ul li a:hover {
     width: 50%;
     height: 50%;
 }
-
-/* #image-size {
-    max-height: 450px;
-} */
 
 .films-name {
     font-size: 1.8rem;
@@ -265,7 +250,6 @@ ul li a:hover {
 }
 
 /* Genres page */
-
 .genre-card {
     background-color: #d76848;;
     border-radius: 10%;
@@ -276,7 +260,6 @@ ul li a:hover {
 }
 
 /* Buttons */
-
 .btn-small-genres {
     background-color: #030001;
     margin: 10px 5px;
@@ -341,7 +324,6 @@ ul li a:hover {
 }
 
 /* Search function */
-
 .search-card {
     background-color: #030001;
 }
@@ -386,7 +368,6 @@ ul li a:hover {
 }
 
 /* Modals */
-
 .modal-content, #modal-footer {
     background-color: #030001;
     border: #EAE3EF solid 1px;
@@ -411,7 +392,6 @@ ul li a:hover {
 }
 
 /* Footer */
-
 #footer-image {
     background: url("../images/popcorn.jpg") no-repeat center center; 
     background-size: contain;
@@ -466,7 +446,6 @@ ul li a:hover {
 }
 
 /* flash messages */
-
 .flash-messages {
     color: #F8C149;
     font-size: 24px;
@@ -493,7 +472,7 @@ ul li a:hover {
     }
 }
 
-/* Media query for logo icon positioning on mobile devices */
+/* Media queries for logo icon positioning on mobile devices */
 @media screen and (max-width: 600px) and (min-height: 300px) {
     #logo-icon {
         padding-top: 20px;
@@ -515,7 +494,6 @@ ul li a:hover {
 }
 
 /* Media queries for header logo and navbar */
-
 @media screen and (min-width: 2400px) {
     .nav-wrapper .brand-logo {
         font-size: 64px;
@@ -529,7 +507,6 @@ ul li a:hover {
 }
 
 /* Media queries for hero image to stretch according to screen size */
-
 @media screen and (min-width: 375px) {
     #hero-image {
         min-height: 300px;
@@ -704,8 +681,7 @@ ul li a:hover {
     }
 }
 
-/* Media query for subheader */
-
+/* Media queries for subheader */
 @media screen and (min-width: 1440px) {
     .subheader {
         font-size: 30px;
@@ -733,7 +709,6 @@ ul li a:hover {
 }
 
 /* Media queries for search facility */
-
 @media screen and (max-width: 350px) {
     .info-search {
         font-size: 8px;
@@ -741,7 +716,6 @@ ul li a:hover {
 }
 
 /* Media queries for footer */
-
 @media screen and (min-width: 2400px) {
     h5.footer-text {
         font-size: 32px
@@ -761,7 +735,6 @@ ul li a:hover {
 }
 
 /* Media queries for films image formatting */
-
 @media screen and (min-width: 200px) and (max-width: 349px) {
     .films-name {
         font-size: 1rem;
@@ -819,7 +792,6 @@ ul li a:hover {
         font-size: 1.2rem;
     }
 }
-
 
 @media screen and (min-width: 801px) and (max-width: 900px) {
     #image-size {

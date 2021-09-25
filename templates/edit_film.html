@@ -4,7 +4,7 @@
     <!-- Subheader text -->
     <section>
         <div class="row">
-            <div class="col-12 md-6 subheader">Edit Film</div>
+            <h2 class="col-12 md-6 subheader">Edit Film</h2>
         </div>
     </section>
     <!-- Edit a Film using a form from Materialize -->
@@ -65,7 +65,7 @@
                         <input id="image" name="image" type="url" pattern="https?://.+" value="{{ film.image }}"
                         class="validate edit_film_text">
                         <label for="image">Image URL</label>
-                        <span class="helper-text" data-error="enter valid URL" data-success="right"></span>
+                        <span data-error="enter valid URL" data-success="right"></span>
                         <p class="info">Enter valid URL starting with https://</p>
                     </div>
                 </div>
