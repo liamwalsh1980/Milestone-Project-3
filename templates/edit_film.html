@@ -32,10 +32,10 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-film prefix"></i> 
-                        <input id="film_name" name="film_name" minlength="1" maxlength="30" 
+                        <input id="film_name" name="film_name" minlength="1" maxlength="40" 
                             value="{{ film.film_name }}" type="text" class="validate edit_film_text" required>
                         <label for="film_name">Film Name</label>
-                        <p class="info">Maximum 30 characters</p>
+                        <p class="info">Maximum 40 characters</p>
                     </div>
                 </div>
                 <!-- Edit Actor names from film being added -->
@@ -52,10 +52,10 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-thumbs-up prefix"></i>
-                        <textarea id="best_bit" name="best_bit" minlength="1" maxlength="30"
+                        <textarea id="best_bit" name="best_bit" minlength="1" maxlength="40"
                         class="validate materialize-textarea edit_film_text" required>{{ film.best_bit }}</textarea>
                         <label for="best_bit">Best Bit</label>
-                        <p class="info">Maximum 30 characters</p>
+                        <p class="info">Maximum 40 characters</p>
                     </div>
                 </div>
                 <!-- Edit Film Image (optional) -->
