@@ -469,17 +469,43 @@ I tested the site using Chrome development tools on four different screen sizes 
 
 **Homepage**
 
+![Image template](static/images/testing/responsiveness/mobile/mobile-homepage-top.png)
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-homepage-bottom.png)
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-homepage-navbar.png)
+
 **Films page**
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-films-page.png)
 
 **Signup page**
 
+![Image template](static/images/testing/responsiveness/mobile/mobile-signup-page.png)
+
 **Login page**
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-login-page.png)
 
 **Profile page**
 
+![Image template](static/images/testing/responsiveness/mobile/mobile-profile-page-top.png)
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-profile-page-middle.png)
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-profile-page-bottom.png)
+
 **Add film page**
 
+![Image template](static/images/testing/responsiveness/mobile/mobile-add-film-page-top.png)
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-add-film-page-bottom.png)
+
 **Edit film page**
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-edit-film-page-top.png)
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-edit-film-page-bottom.png)
 
 **Genres page**
 
