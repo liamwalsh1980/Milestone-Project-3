@@ -4,7 +4,7 @@
     <!-- Subheader text -->
     <section>
         <div class="row">
-            <div class="col-12 md-6 subheader">Add Genre</div>
+            <h2 class="col-12 md-6 subheader">Add Genre</h2>
         </div>
     </section>
     <!-- Add a new genre using a form from Materialize -->
@@ -26,7 +26,7 @@
                     <button type="submit" class="btn-large btn-text button-padding">Add Genre <i class="fas fa-plus-circle right"></i></button>
                     <!-- Cancel and return to manage genres page -->
                     <div class="col s12"></div>
-                    <a aria-label="Jump to your Genres page" href="{{ url_for('genres') }}" class="btn-large btn-text button-padding">Cancel<i class="far fa-times-circle right"></i></a>
+                    <a aria-label="Jump to your Genres page" href="{{ url_for('genres') }}" class="btn-large btn-text button-padding cancel-btn">Cancel<i class="far fa-times-circle right"></i></a> 
                 </div>
             </form>
         </div>
