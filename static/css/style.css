@@ -64,7 +64,7 @@ ul li a:hover {
     font-size: 24px;
 }
 
-#dropdown1 {
+/* #dropdown1 {
     background-color: #030001;
 }
 
@@ -74,7 +74,7 @@ ul li a:hover {
 
 #dropdown1 a:hover {
     color: #E89549;
-}
+} */
 
 /* Side/Mobile Navbar */
 #mobile-demo {
@@ -259,6 +259,12 @@ ul li a:hover {
     font-size: 20px;
 }
 
+/* Add/Edit genre page */
+
+.margin-push {
+    margin-bottom: 40%;
+}
+
 /* Buttons */
 .btn-small-genres {
     background-color: #030001;
@@ -417,7 +423,7 @@ ul li a:hover {
 }
 
 .footer-padding {
-    padding-left: 10px;
+    padding: 0 5px;
     font-size: 16px;
 }
 

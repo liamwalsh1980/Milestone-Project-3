@@ -52,7 +52,6 @@
         * [Mobile screenshots](#mobile-screenshots)
         * [Tablet screenshots](#tablet-screenshots)
         * [Desktop screenshots](#desktop-screenshots)
-        * [Large Desktop screenshots](#large-desktop-screenshots)
     * [Lighthouse testing](#lighthouse-testing)
         * [Desktop results](#desktop-results)
         * [Mobile results](#mobile-results)
@@ -62,11 +61,9 @@
         * [EmailJS](#emailjs)
     * [Further testing](#further-testing)
         * [Mobile first](#mobile-first)
-        * [External links](#external-links)
-        * [Internal links](#internal-links)
     * [Bugs outstanding](#bugs-outstanding)
 
-Return to my [README.md](README.md) 
+Return to my [README Doc](README.md) 
 
 [Back to top ⇧](#filmzone)
 
@@ -94,6 +91,8 @@ On big screens the navigation bar has page titles. Any page title that's hovered
 ##### Logged in Admin user
 ![Image template](static/images/testing/navbar/navbar-logged-in-admin-user.png)
 
+[Back to top ⇧](#filmzone)
+
 #### Hamburger navigation bar
 When testing the navigation bar I wanted to make sure that it collapses into a hamburger menu (3 horizontal bars) on smaller screens. This is common practice to have and offers the user the option to look and click onto another page within the website. I made sure that the FilmZone logo and icon was shown at the top of the hamburder menu when a user opens the navnar on a smaller screen like a mobile or tablet. 
 
@@ -105,6 +104,8 @@ When testing the navigation bar I wanted to make sure that it collapses into a h
 
 ##### Logged in Admin user
 ![Image template](static/images/testing/navbar/mob-navbar-logged-in-admin-user.png)
+
+[Back to top ⇧](#filmzone)
 
 ### User Stories tested
 #### **Story 1**
@@ -122,6 +123,8 @@ I'm a registered user to FilmZone and I've just watched a new Film and want to o
 ![Image template](static/images/testing/user_stories/user-story-2-2.png)
 
 ![Image template](static/images/testing/user_stories/user-story-2-3.png)
+
+[Back to top ⇧](#filmzone)
 
 #### **Story 3**  
 A registered user that just finished watching their favourite Film. After which they want to update the Film record on FilmZone to show all site visitors more information i.e. More actors, a different image, a favourite scene change. 
@@ -149,6 +152,8 @@ I've noticed that theres a particular Genre type not listed for me to add a film
 
 ![Image template](static/images/testing/user_stories/user-story-5.png)
 
+[Back to top ⇧](#filmzone)
+
 #### **Story 6**
 I've just come out of the cinema after watching a great film. I'm keen to add this to my FilmZone profile but I'm not going to be at my computer until tomorrow morning now. 
 - FilmZone can be accessed on any device. Therefore, this user can login to their FilmZone account profile and add a film on their smartphone just as easily as on desktop or laptop. They can then check the films page and profile page to see their new film thats just been added. 
@@ -171,6 +176,8 @@ I've just come out of the cinema after watching a great film. I'm keen to add th
 
 ![Image template](static/images/testing/user_stories/user-story-6-9.png)
 
+[Back to top ⇧](#filmzone)
+
 ### W3C Markup Validation Service
 
 #### Base template tested
@@ -185,6 +192,8 @@ I've just come out of the cinema after watching a great film. I'm keen to add th
 #### Add genre page tested
 #### Edit genre page tested
 #### Contact Us page tested
+
+[Back to top ⇧](#filmzone)
 
 ### W3C CSS Validation Service
 
@@ -225,11 +234,13 @@ I've just come out of the cinema after watching a great film. I'm keen to add th
 
 Note: No image applied for security of password
 
+[Back to top ⇧](#filmzone)
+
 ### Web Browsers
 
 I tested the website across four different web browsers making sure that links worked and pages loaded properly. 
 
-### Google Chrome
+#### Google Chrome
 The site was developed using Chrome and therefore testing was being done daily on this browser.
 
 **Homepage**
@@ -289,7 +300,9 @@ Note: Adjustment made to the color of the 'Cancel' button to keep the theme of t
 
 ![Image template](static/images/testing/web_browser/chrome/chrome-contact-us-page.png)
 
-### Apple Safari
+[Back to top ⇧](#filmzone)
+
+#### Apple Safari
 
 **Homepage**
 
@@ -334,7 +347,6 @@ Note: Adjustment made to the color of the 'Cancel' button to keep the theme of t
 
 ![Image template](static/images/testing/web_browser/safari/safari-add-genre-page.png)
 
-
 **Edit genre page**
 
 ![Image template](static/images/testing/web_browser/safari/safari-edit-genre-page.png)
@@ -343,7 +355,9 @@ Note: Adjustment made to the color of the 'Cancel' button to keep the theme of t
 
 ![Image template](static/images/testing/web_browser/safari/safari-contact-us-page.png)
 
-### Microsoft Edge
+[Back to top ⇧](#filmzone)
+
+#### Microsoft Edge
 
 **Homepage**
 
@@ -402,7 +416,9 @@ Note: Adjustment made to the color of the 'Cancel' button to keep the theme of t
 
 ![Image template](static/images/testing/web_browser/edge/edge-contact-us-page.png)
 
-### Mozilla Firefox
+[Back to top ⇧](#filmzone)
+
+#### Mozilla Firefox
 
 **Homepage**
 
@@ -463,7 +479,7 @@ Note: Adjustment made to the color of the 'Cancel' button to keep the theme of t
 
 ### Testing responsiveness
 
-I tested the site using Chrome development tools on four different screen sizes to make sure that all features, content, images, links, search facility, card panels, accordion and buttons worked across all screen sizes.
+I tested the site using Chrome development tools on three different screen sizes to make sure that all features, content, images, links, search facility, card panels, accordion and buttons worked across all screen sizes.
 
 #### Mobile screenshots
 
@@ -509,84 +525,210 @@ I tested the site using Chrome development tools on four different screen sizes 
 
 **Genres page**
 
+![Image template](static/images/testing/responsiveness/mobile/mobile-genre-page.png)
+
 **Add genre page**
+
+![Image template](static/images/testing/responsiveness/mobile/mobile-add-genre-page.png)
 
 **Edit genre page**
 
+![Image template](static/images/testing/responsiveness/mobile/mobile-edit-genre-page.png)
+
 **Contact us page**
 
+![Image template](static/images/testing/responsiveness/mobile/mobile-contact-us-page.png)
 
+[Back to top ⇧](#filmzone)
 
 #### Tablet screenshots
 
 **Homepage**
 
+![Image template](static/images/testing/responsiveness/tablet/tablet-homepage-top.png)
+
+![Image template](static/images/testing/responsiveness/tablet/tablet-homepage-bottom.png)
+
+![Image template](static/images/testing/responsiveness/tablet/tablet-homepage-navbar.png)
+
 **Films page**
+
+![Image template](static/images/testing/responsiveness/tablet/tablet-films-page.png)
 
 **Signup page**
 
+![Image template](static/images/testing/responsiveness/tablet/tablet-signup-page.png)
+
 **Login page**
+
+![Image template](static/images/testing/responsiveness/tablet/tablet-login-page.png)
 
 **Profile page**
 
+![Image template](static/images/testing/responsiveness/tablet/tablet-profile-page-top.png)
+
+![Image template](static/images/testing/responsiveness/tablet/tablet-profile-page-middle.png)
+
+![Image template](static/images/testing/responsiveness/tablet/tablet-profile-page-bottom.png)
+
 **Add film page**
+
+![Image template](static/images/testing/responsiveness/tablet/tablet-add-film-page.png)
 
 **Edit film page**
 
+![Image template](static/images/testing/responsiveness/tablet/tablet-edit-film-page.png)
+
 **Genres page**
+
+![Image template](static/images/testing/responsiveness/tablet/tablet-genre-page.png)
 
 **Add genre page**
 
+![Image template](static/images/testing/responsiveness/tablet/tablet-add-genre-page.png)
+
 **Edit genre page**
+
+![Image template](static/images/testing/responsiveness/tablet/tablet-edit-genre-page.png)
 
 **Contact us page**
 
+![Image template](static/images/testing/responsiveness/tablet/tablet-contact-us-page.png)
+
+[Back to top ⇧](#filmzone)
 
 #### Desktop screenshots
 
 **Homepage**
 
-**Films page**
+![Image template](static/images/testing/responsiveness/desktop/desktop-homepage-top.png)
 
-**Signup page**
-
-**Login page**
-
-**Profile page**
-
-**Add film page**
-
-**Edit film page**
-
-**Genres page**
-
-**Add genre page**
-
-**Edit genre page**
-
-**Contact us page**
-
-
-#### Large Desktop screenshots
-
-**Homepage**
+![Image template](static/images/testing/responsiveness/desktop/desktop-homepage-bottom.png)
 
 **Films page**
 
+![Image template](static/images/testing/responsiveness/desktop/desktop-films-page-top.png)
+
+![Image template](static/images/testing/responsiveness/desktop/desktop-films-page-bottom.png)
+
 **Signup page**
+
+![Image template](static/images/testing/responsiveness/desktop/desktop-signup-page.png)
 
 **Login page**
 
+![Image template](static/images/testing/responsiveness/desktop/desktop-login-page.png)
+
 **Profile page**
+
+![Image template](static/images/testing/responsiveness/desktop/desktop-profile-page-top.png)
+
+![Image template](static/images/testing/responsiveness/desktop/desktop-profile-page-middle.png)
+
+![Image template](static/images/testing/responsiveness/desktop/desktop-profile-page-bottom.png)
 
 **Add film page**
 
+![Image template](static/images/testing/responsiveness/desktop/desktop-add-film-page.png)
+
 **Edit film page**
+
+![Image template](static/images/testing/responsiveness/desktop/desktop-edit-film-page.png)
 
 **Genres page**
 
+![Image template](static/images/testing/responsiveness/desktop/desktop-genre-page-top.png)
+
+![Image template](static/images/testing/responsiveness/desktop/desktop-genre-page-bottom.png)
+
 **Add genre page**
+
+![Image template](static/images/testing/responsiveness/desktop/desktop-add-genre-page.png)
 
 **Edit genre page**
 
+![Image template](static/images/testing/responsiveness/desktop/desktop-edit-genre-page.png)
+
 **Contact us page**
+
+![Image template](static/images/testing/responsiveness/desktop/desktop-contact-us-page.png)
+
+[Back to top ⇧](#filmzone)
+
+### Lighthouse testing
+
+#### Desktop results
+
+* Performance 85% (Issue: Largest Contentful Paint)
+* Accessibility 90% 
+* Best Practices 93%
+* SEO 100%
+
+![Image template](static/images/testing/lighthouse/lighthouse-desktop.png)
+
+
+#### Mobile results
+
+* Performance 64% (Issues: Largest Contentful Paint and Time to Interactive)
+* Accessibility 90%
+* Best Practices 93%
+* SEO 91%
+
+![Image template](static/images/testing/lighthouse/lighthouse-mobile.png)
+
+Note: Unfortunately, I didn't have any time left on this project to look into the issues properly. With more time i would investigate why the Performance scores are lower than i would like and also why the Accessibility score is low compared to previous projects. 
+
+[Back to top ⇧](#filmzone)
+
+### Issues found
+
+#### Films page layout
+
+On the Films page. I had an issue with the layout as films were being added. Big gaps appeared making the page look untidy. I spoke with a couple of other students on slack and with the help of my Mentor i fixed the issue using media queries in my custom styling file. I also applied some maxlenth attributes to the fields within the HTML file to restrict content. Before and after images below.
+
+**Before**
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-1.png)
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-2.png)
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-3.png)
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-4.png)
+
+**After**
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-fixed1.png)
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-fixed2.png)
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-fixed3.png)
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-fixed4.png)
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-fixed5.png)
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-fixed6.png)
+
+![Image template](static/images/testing/issues/films_page/issue-films-page-fixed7.png)
+
+[Back to top ⇧](#filmzone)
+
+#### Modal issues
+
+On the profile page and genres page theres a remove/delete button to remove a film or delete a genre type. I added defensive code using a modal from Materialize. It didn't work at first because there was no index.loop supporting the href and the id in the modal structure was connected to the modal-trigger properly. After some research using the Materialize website i was able to successfully use a Modal. This now allows users to confirm whether they want to remove/delete a film or genre type or cancel the request to remove/delete. 
+
+![Image template](static/images/testing/issues/modals/modal-profile-page.png)
+
+![Image template](static/images/testing/issues/modals/modal-genres-page.png)
+
+[Back to top ⇧](#filmzone)
+
+### Further testing
+#### Mobile first
+        
+[Back to top ⇧](#filmzone)
+
+Return to my [README.md](README.md) to continue reading
+
+### End of TESTING Document
