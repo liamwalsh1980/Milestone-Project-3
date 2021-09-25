@@ -276,7 +276,8 @@ The site was developed using Chrome and therefore testing was being done daily o
 
 ![Image template](static/images/testing/web_browser/chrome/chrome-genre-page-bottom.png)
 
-**Add genre page**
+**Add genre page**<br>
+Note: Adjustment made to the color of the 'Cancel' button to keep the theme of the site consistant
 
 ![Image template](static/images/testing/web_browser/chrome/chrome-add-genre-page.png)
 
@@ -328,9 +329,11 @@ The site was developed using Chrome and therefore testing was being done daily o
 
 ![Image template](static/images/testing/web_browser/safari/safari-genre-page-bottom.png)
 
-**Add genre page**
+**Add genre page**<br>
+Note: Adjustment made to the color of the 'Cancel' button to keep the theme of the site consistant
 
 ![Image template](static/images/testing/web_browser/safari/safari-add-genre-page.png)
+
 
 **Edit genre page**
 
@@ -344,45 +347,60 @@ The site was developed using Chrome and therefore testing was being done daily o
 
 **Homepage**
 
+![Image template](static/images/testing/web_browser/edge/edge-homepage-top.png)
 
+![Image template](static/images/testing/web_browser/edge/edge-homepage-bottom.png)
 
 **Films page**
 
+![Image template](static/images/testing/web_browser/edge/edge-films-page-top.png)
 
+![Image template](static/images/testing/web_browser/edge/edge-films-page-bottom.png)
 
 **Signup page**
 
-
+![Image template](static/images/testing/web_browser/edge/edge-signup-page.png)
 
 **Login page**
 
-
+![Image template](static/images/testing/web_browser/edge/edge-login-page.png)
 
 **Profile page**
 
+![Image template](static/images/testing/web_browser/edge/edge-profile-page-top.png)
 
+![Image template](static/images/testing/web_browser/edge/edge-profile-page-bottom.png)
 
 **Add film page**
 
+![Image template](static/images/testing/web_browser/edge/edge-add-film-page-top.png)
 
+![Image template](static/images/testing/web_browser/edge/edge-add-film-page-bottom.png)
 
 **Edit film page**
 
+![Image template](static/images/testing/web_browser/edge/edge-edit-film-page-top.png)
 
+![Image template](static/images/testing/web_browser/edge/edge-edit-film-page-bottom.png)
 
 **Genres page**
 
+![Image template](static/images/testing/web_browser/edge/edge-genre-page-top.png)
 
+![Image template](static/images/testing/web_browser/edge/edge-genre-page-bottom.png)
 
 **Add genre page**
+Note: Adjustment made to the color of the 'Cancel' button to keep the theme of the site consistant - **Adjustment made**
 
-
+![Image template](static/images/testing/web_browser/edge/edge-add-genre-page.png)
 
 **Edit genre page**
 
-
+![Image template](static/images/testing/web_browser/edge/edge-edit-genre-page.png)
 
 **Contact us page**
+
+![Image template](static/images/testing/web_browser/edge/edge-contact-us-page.png)
 
 ### Mozilla Firefox
 
@@ -430,7 +448,8 @@ The site was developed using Chrome and therefore testing was being done daily o
 
 ![Image template](static/images/testing/web_browser/firefox/firefox-genre-page-bottom.png)
 
-**Add genre page**
+**Add genre page**<br>
+Note: Adjustment made to the color of the 'Cancel' button to keep the theme of the site consistant - **Adjustment made**
 
 ![Image template](static/images/testing/web_browser/firefox/firefox-add-genre-page.png)
 
@@ -441,3 +460,107 @@ The site was developed using Chrome and therefore testing was being done daily o
 **Contact us page**
 
 ![Image template](static/images/testing/web_browser/firefox/firefox-contact-us-page.png)
+
+### Testing responsiveness
+
+I tested the site using Chrome development tools on four different screen sizes to make sure that all features, content, images, links, search facility, card panels, accordion and buttons worked across all screen sizes.
+
+#### Mobile screenshots
+
+**Homepage**
+
+**Films page**
+
+**Signup page**
+
+**Login page**
+
+**Profile page**
+
+**Add film page**
+
+**Edit film page**
+
+**Genres page**
+
+**Add genre page**
+
+**Edit genre page**
+
+**Contact us page**
+
+
+
+#### Tablet screenshots
+
+**Homepage**
+
+**Films page**
+
+**Signup page**
+
+**Login page**
+
+**Profile page**
+
+**Add film page**
+
+**Edit film page**
+
+**Genres page**
+
+**Add genre page**
+
+**Edit genre page**
+
+**Contact us page**
+
+
+#### Desktop screenshots
+
+**Homepage**
+
+**Films page**
+
+**Signup page**
+
+**Login page**
+
+**Profile page**
+
+**Add film page**
+
+**Edit film page**
+
+**Genres page**
+
+**Add genre page**
+
+**Edit genre page**
+
+**Contact us page**
+
+
+#### Large Desktop screenshots
+
+**Homepage**
+
+**Films page**
+
+**Signup page**
+
+**Login page**
+
+**Profile page**
+
+**Add film page**
+
+**Edit film page**
+
+**Genres page**
+
+**Add genre page**
+
+**Edit genre page**
+
+**Contact us page**
