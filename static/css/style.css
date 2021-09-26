@@ -238,6 +238,7 @@ ul li a:hover {
     font-size: 1.8rem;
     color: #F8C149;
     text-transform: uppercase;
+    margin-top: 50px;
 }
 
 .line-break {
@@ -749,17 +750,17 @@ ul li a:hover {
 
 @media screen and (min-width: 350px) and (max-width: 499px) {
     .films-name {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
     .img-films-mobile {
-        width: 50%;
-        height: 50%;
+        width: 40%;
+        height: 40%;
     }
     .films-name {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -768,165 +769,207 @@ ul li a:hover {
         max-height: 500px;
     }
     .films-name {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 700px) {
     #image-size {
-        max-height: 155px;
+        height: 140px;
+        width: 30%;
     }
-    .films-name{
-        font-size: 1.0rem;
+    .films-name, .genre-name, .actors, .best-bit {
+        font-size: 10px;
+    }
+    .genre-name, .actors, .best-bit {
+        font-size: 10px;
     }
 }
 
 @media screen and (min-width: 701px) and (max-width: 750px) {
     #image-size {
-        max-height: 185px;
+        height: 160px;
+        width: 30%;
     }
-    .films-name{
-        font-size: 1.2rem;
+    .films-name, .genre-name, .actors, .best-bit {
+        font-size: 12px;
+    }
+    .genre-name, .actors, .best-bit {
+        font-size: 12px;
     }
 }
 
 @media screen and (min-width: 751px) and (max-width: 800px) {
     #image-size {
-        max-height: 195px;
+        height: 180px;
+        width: 30%;
     }
-    .films-name {
-        font-size: 1.2rem;
+    .films-name, .genre-name, .actors, .best-bit {
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width: 801px) and (max-width: 900px) {
     #image-size {
-        max-height: 210px;
+        height: 200px;
+        width: 30%;
     }
-    .films-name {
-        font-size: 1.4rem;
+    .films-name, .genre-name, .actors, .best-bit {
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width: 901px) and (max-width: 1000px) {
     #image-size {
-        max-height: 240px;
+        height: 220px;
+        width: 30%;
     }
-    .films-name {
-        font-size: 1.6rem;
+    .films-name, .genre-name, .actors, .best-bit {
+        font-size: 16px;
     }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1100px) {
     #image-size {
-        max-height: 270px;
+        height: 250px;
+        width: 30%;
     }
-    .films-name {
-        font-size: 1.7rem;
+    .films-name, .genre-name, .actors, .best-bit {
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1101px) and (max-width: 1200px) {
     #image-size {
-        max-height: 300px;
+        height: 270px;
+        width: 30%;
     }
-    .films-name {
-        font-size: 1.8rem;
+    .films-name, .genre-name, .actors, .best-bit {
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
     #image-size {
-        max-height: 328px;
+        height: 320px;
+        width: 35%;
     }
     .films-name {
-        font-size: 1.9rem;
+        font-size: 24px;
     }
     .genre-name, .actors, .best-bit {
-        font-size: 1.3rem;
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1401px) and (max-width: 1600px) {
     #image-size {
-        max-height: 385px;
+        height: 380px;
+        width: 35%;
     }
     .films-name {
-        font-size: 2.0rem;
+        font-size: 28px;
     }
     .genre-name, .actors, .best-bit {
-        font-size: 1.4rem;
+        font-size: 20px;
+    }
+    .created-by {
+        font-size: 16px;
     }
 }
 
 @media screen and (min-width: 1601px) and (max-width: 1800px) {
     #image-size {
-        max-height: 440px;
+        height: 480px;
+        width: 40%
     }
     .films-name {
-        font-size: 2.0rem;
+        font-size: 30px;
     }
     .genre-name, .actors, .best-bit {
-        font-size: 1.4rem;
+        font-size: 22px;
+    }
+    .created-by {
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1801px) and (max-width: 2000px) {
     #image-size {
-        max-height: 490px;
+        height: 530px;
+        width: 40%
     }
     .films-name {
-        font-size: 2.5rem;
+        font-size: 32px;
     }
-    .genre-name {
-        font-size: 1.6rem
+    .genre-name, .actors, .best-bit {
+        font-size: 24px;
+    }
+    .created-by {
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 2001px) and (max-width: 2300px) {
     #image-size {
-        max-height: 550px;
+        height: 600px;
+        width: 40%
     }
     .films-name {
-        font-size: 2.5rem;
+        font-size: 38px;
     }
     .genre-name, .actors, .best-bit {
-        font-size: 1.6rem;
+        font-size: 30px;
+    }
+    .created-by {
+        font-size: 24px;
     }
 }
 
 @media screen and (min-width: 2301px) and (max-width: 2500px) {
     #image-size {
-        max-height: 630px;
+        height: 680px;
+        width: 40%
     }
     .films-name {
-        font-size: 2.8rem;
+        font-size: 44px;
     }
     .genre-name, .actors, .best-bit {
-        font-size: 1.8rem;
+        font-size: 32px;
+    }
+    .created-by {
+        font-size: 26px;
     }
 }
 
 @media screen and (min-width: 2501px) and (max-width: 2800px) {
     #image-size {
-        max-height: 690px;
+        height: 800px;
+        width: 40%
     }
     .films-name {
-        font-size: 2.8rem;
+        font-size: 46px;
     }
     .genre-name, .actors, .best-bit {
-        font-size: 1.8rem;
+        font-size: 34px;
+    }
+    .created-by {
+        font-size: 26px;
     }
 }
 
 @media screen and (min-width: 2801px) {
     #image-size {
-        max-height: 780px;
+        height: 850px;
+        width: 40%
     }
     .films-name {
-        font-size: 3.0rem;
+        font-size: 50px;
     }
     .genre-name, .actors, .best-bit {
-        font-size: 2.0rem;
+        font-size: 36px;
+    }
+    .created-by {
+        font-size: 30px;
     }
 }
