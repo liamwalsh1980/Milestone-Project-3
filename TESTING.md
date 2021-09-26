@@ -55,7 +55,7 @@
     * [Lighthouse testing](#lighthouse-testing)
         * [Desktop results](#desktop-results)
         * [Mobile results](#mobile-results)
-    * [Issues found](#issues-found)
+    * [Issues fixed](#issues-fixed)
         * [Films page layout](#films-page-layout)
         * [Modal issues](#modal-issues)
         * [EmailJS](#emailjs)
@@ -680,7 +680,7 @@ Note: Unfortunately, I didn't have any time left on this project to look into th
 
 [Back to top ⇧](#filmzone)
 
-### Issues found
+### Issues fixed
 
 #### Films page layout
 

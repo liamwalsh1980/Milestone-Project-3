@@ -71,7 +71,8 @@
     * [Frameworks and Libraries](#frameworks-and-libraries)
     * [Other technologies](#other-technologies) 
 1. [Testing](#testing)
-1. [Bugs](#bugs)
+1. [Bugs fixed](#bugs-fixed)
+1. [Bugs outstanding](#bugs-outstanding)
 1. [Credits](#credits)
     * [Images](#images)
     * [Content](#content)
@@ -1097,23 +1098,31 @@ Testing information can be found in a separate
 [Testing document](TESTING.md)
 ____
 
-## Bugs
+## Bugs fixed
 
-Films template: - Whitespace when using Jinja 'for' loop to iterate through a collection from my MongoDB for my MS3 project. Its working however the results appear to create random white space on the page. On middle screen sizes and bigger i set the column to spam 2 items across the screen and on small screens 1 item using the materialize classes of “col m6 s12' I get several gaps on the middle screen sizes and upwards (Logged on slack). See more in testing file in reference to this issue.
+Films template: - Whitespace when using Jinja 'for' loop to iterate through a collection from my MongoDB for my MS3 project. Its working however the results appear to create random white space on the page. On middle screen sizes and bigger i set the column to spam 2 items across the screen and on small screens 1 item using the materialize classes of “col m6 s12' I get several gaps on the middle screen sizes and upwards. See more in testing file in reference to this issue.
 
-Add Film template: - Border bottom on the Genre name field stays red when a selection is made. It should turn green like the other fields when they are successfully filled in. Bug still outstanding
+Modals: - When selected any random film/genre to remove/delete using the delete/remove button within that film/genre, the same and first film/genre in the list is selected. I knew i needed to set a loop to iterate through all films/genre names. I used loop.index to iterate through all film names in the profile page and all genre names in the genres page when clicking remove/delete which then and opens the modal checker. 
+
+Search Facility: - When a search is completed by a user the results don't come back in alphabetical order. I was able to resolve this by using the .sort() method, however it was a little tricky to make sure the method was added correctly.
+
+>films = list(mongo.db.films.find({"$text": {"$search": query}}).sort("film_name", 1))
+
+## Bugs outstanding
+
+Add Film template: - Border bottom on the Genre name field stays red when a selection is made. It should turn green like the other fields when they are successfully filled in. This only seems to appear on all screen sizes via Dev tools, however on real mobile it doesn't. 
+
+![Image template](static/images/testing/bugs/desktop-bug-redline.png)
+
+![Image template](static/images/testing/bugs/devtools-mobile-bug-redline.png)
+
+![Image template](static/images/testing/bugs/mobile-bug-redline.png)
 
 Add Film template: – With the JQuery copied from a code institute lesson from the 'Task Manager' mini project, what appears just below the Genre name section is a random 'white dot' which has the list of genres stored. By adjusting the code (change display to display:none) this appears to remove the ‘white dot’. However, i'm not sure whether this then causes the next issue.
 
 Add Film template: - On touch screen likes mobiles and tablets (specifically Apple devices) the genre list doesn't fully work. When you try and select a specific genre another one is selected at random. 
 
-Modals: - When selected any random film/genre to remove/delete using the delete/remove button within that film/genre, the same and first film/genre in the list is selected. I knew i needed to set a loop to iterate through all films/genre names. I used loop.index to iterate through all film names in the profile page and all genre names in the genres page when clicking remove/delete which then and opens the modal checker. 
-
-Head Icon: - All pages except for the Profile page, Edit Film page and Edit Genre page doesn't seem to show the 'Film' icon added to the head in the base template. This is something i would need to check at a later time. Bug still outstanding
-
-Search Facility: - When a search is completed by a user the results don't come back in alphabetical order. I was able to resolve this by using the .sort() method, however it was a little tricky to make sure the method was added correctly.
-
->films = list(mongo.db.films.find({"$text": {"$search": query}}).sort("film_name", 1))
+Head Icon: - All pages except for the Profile page, Edit Film page and Edit Genre page doesn't seem to show the 'Film' icon added to the head in the base template. This is something i would need to check at a later time. 
 ____
 [Back to top ⇧](#filmzone)
 
