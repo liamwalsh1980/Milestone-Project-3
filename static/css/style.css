@@ -347,6 +347,10 @@ ul li a:hover {
     color: #EAE3EF;
 }
 
+.homepage-search {
+    font-weight: 900;
+}
+
 .btn-small-search {
     background-color: #d76848;
     color: #EAE3EF;
