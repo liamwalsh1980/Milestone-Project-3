@@ -259,7 +259,7 @@ After looking at all possible users, features and user stories from my Strategy 
 
 ### Structure 
 
-This website will hold **??12??** HTML web pages and therefore I wanted to make sure that all pages followed the same theme using CSS styling and Materialize (Responsive CSS Framework). What I focused on: -  
+This website will hold 12 HTML web pages and therefore I wanted to make sure that all pages followed the same theme using CSS styling and Materialize (Responsive CSS Framework). What I focused on: -  
 
 Navbar made specific to logged out, logged in and Admin users 
 
@@ -301,7 +301,7 @@ Add Genre page gives the admin user the option to add a new Genre to the databas
 
 Edit Genre page will be very similar to the Add Genre page. The only difference is the admin user will need to override the current genre name and click ‘Edit Genre’ to make the change. Again, there will be a ‘Cancel’ button available in case the admin user decides not to edit. 
 
-Contact Us page - TBC 
+Contact Us page is available for all users to make contact with FilmZone by including their name, email address and message. All fields are mandatory. When the contact us form is submitted the information is sent to FilmZone via EmailJS and the user receives an automatic email to say thank you.  
 
 Click this link to see the  <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/structure/structure-start.pdf" target="_blank">Structure screenshot</a> - start.
 
@@ -645,7 +645,7 @@ The header and footer within the body of the base.html file is structured for co
 
 ### Navbar 
 
-I decided to position the ‘FILMZONE’ text logo on the left side of the Navbar in the chosen font of Holtwood One SC. I added a ‘Film’ icon from Font Awesome that is positioned to the left of the text logo. When hovering over the text logo the user will see that this changes colour to indicate that it can be clicked and doing so will return the user to the homepage at any time. The page links are positioned on the right side of the Navbar. I made sure the font for these links remained the same as the default setup at the beginning of my CSS custom styling file. As a reminder this font is called Montserrat. 
+I decided to position the ‘FILMZONE’ text logo on the left side of the Navbar in the chosen font of Holtwood One SC. I added a ‘Film’ icon from Font Awesome that is positioned to the left of the text logo. When hovering over the text logo the user will see that this changes colour to indicate that it can be clicked and doing so will return the user to the homepage at any time. The page links are positioned on the right side of the Navbar. I made sure the font for these links remained the same as the default setup at the beginning of my CSS custom styling file. As a reminder this font is called Montserrat. I decided to add an 'Search' Icon to the main Navbar for users to click on. This takes the user to the films page where they can then search for a firm. 
 
 ### Mobile SideNav
 
@@ -682,7 +682,7 @@ With the footer added from the base.html file, each page footer is the same. Thi
 
 Also known as the index.html template, I started by adding a sub header “We all love a good film” to the top centre of the page. Below is a hero image of a movie theatre at night. This blends well into my default colour background colour with bright, eye-catching colours within the image. Below is a short paragraph about FilmZone and a strip line with a link to encourage users to ‘signup’. If a user is logged in, the short paragraph is a ‘welcome’ message and the strip line link is to click to add a film. Again, I used an ‘if’ statement and Jinja code to achieve this. 
 
->More to come – search bar, flicks of the week and potentially a carousel.  
+I decided to adjust the subheader and inbed it into the hero image using some custom styling. I then added a button for users to click called 'Find Film' with a search icon within the button to the left of the text. This clearly shows to the user that they can find a film quickly and easily. 
 
 ### Films page 
 
@@ -963,7 +963,7 @@ Using the base template and Jinja templating language i was able to offer the fo
 - Footer which includes internal links and social media links and popcorn image.
 
 ### Homepage features
-- Subheader
+- Subheader inbedded in the heroimage with a button to the films page
 - Hero Image
 - Welcome back/Signup content
 - Paragraph with add film link/signup link

@@ -58,8 +58,8 @@
     * [Issues fixed](#issues-fixed)
         * [Films page layout](#films-page-layout)
         * [Modal issues](#modal-issues)
-        * [EmailJS](#emailjs)
     * [Further testing](#further-testing)
+        * [EmailJS](#emailjs)
         * [Mobile first](#mobile-first)
     * [Bugs outstanding](#bugs-outstanding)
 
@@ -725,7 +725,34 @@ On the profile page and genres page theres a remove/delete button to remove a fi
 [Back to top ⇧](#filmzone)
 
 ### Further testing
+
+#### EmailJS
+
+Screenshots below showing that the Contact Us page is fully working
+
+**Contact us page completed**
+
+![Image template](static/images/testing/emailjs/contact-us-completed.png)
+
+**Contact us page submitted/Modal message**
+
+![Image template](static/images/testing/emailjs/contact-us-submitted.png)
+
+**Auto message sent to user**
+
+![Image template](static/images/testing/emailjs/user-auto-reply.png)
+
+**Message from user to FilmZone**
+
+![Image template](static/images/testing/emailjs/message-from-user.png)
+
 #### Mobile first
+* I know it's important to build a new site as a mobile first application, therefore, during the design process and building the site I made sure that extensive testing was done on all mobile screen sizes using <a href="https://developer.chrome.com/docs/devtools/" target="_blank">Chrome development tools</a>. I worked with the following screen sizes making sure that all users can enjoy the site using any type of smartphone device: - 
+
+    - 320px (iPhone 5 size)
+    - 360px (Moto G4 and Galaxy S5) 
+    - 375px (iPhone 6/7/8/X size)
+    - 411px (Pixel 2/XL and iPhone 6/7/8 plus) 
         
 [Back to top ⇧](#filmzone)
 
