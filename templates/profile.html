@@ -25,9 +25,9 @@
                             <div class="col l4 s12 center-align">
                                 <a aria-label="Jump to the Edit Films page" href="{{ url_for('edit_film', film_id=film._id) }}" class="btn-small btn-small-profile">Edit</a>
                                 <!-- Modal Trigger for removing a film -->
-                                <a href="#modal2{{ loop.index }}" class="btn-small btn-small-profile-reset modal-trigger">Remove</a>
+                                <a href="#modal2{{loop.index}}" class="btn-small btn-small-profile-reset modal-trigger">Remove</a>
                                 <!-- Modal Structure  -->
-                                <div id="modal2{{ loop.index }}" class="modal">
+                                <div id="modal2{{loop.index}}" class="modal">
                                     <div class="modal-content">
                                         <p class="modal-text-title center-align">Are you sure you want to remove the film <span class="modal-film-name">{{ film.film_name }}</span> ?</p>
                                     </div>

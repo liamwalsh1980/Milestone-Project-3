@@ -50,7 +50,8 @@ def films():
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
-    films = list(mongo.db.films.find({"$text": {"$search": query}}).sort("film_name", 1))
+    films = list(mongo.db.films.find(
+        {"$text": {"$search": query}}).sort("film_name", 1))
     return render_template("films.html", films=films)
 
 

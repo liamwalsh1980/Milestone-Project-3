@@ -20,14 +20,11 @@
         type="text/css">
     <!-- Local script for CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-    {% block styles %}
-    {% endblock %}
     <title>FilmZone</title>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
     <!-- External script with emailjs with unique user ID added -->
-    <script type="text/javascript">
+    <script>
         (function(){
             emailjs.init("user_72YpepHSLHlF3N4Wn6Vnw");
         })();
@@ -35,7 +32,6 @@
 </head>
 
 <body>
-
     <header>
         <!-- Main Navbar -->
         <div class="navbar-fixed">
@@ -66,7 +62,7 @@
         </div>
         <!-- Mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
-            <h4 class="center-align brand-logo"><i class="fas fa-film" id="sidenav-logo-icon"></i> filmzone</h4>
+            <li class="center-align brand-logo" id="brand-logo-mobile"><i class="fas fa-film" id="sidenav-logo-icon"></i> filmzone</li>
                 <li><a aria-label="Jump to the Homepage" href="{{ url_for('index') }}">Home</a></li>
                 <li><a aria-label="Jump to the Films page" href="{{ url_for('films') }}">Films</a></li>
                 {% if session.user %}

@@ -23,18 +23,6 @@
         * [Story 5](#story-5)
         * [Story 6](#story-6)
     * [W3C Markup Validation Service](#w3c-markup-validation-service)
-        * [Base template tested](#base-template-tested)
-        * [Homepage tested](#homepage-tested)
-        * [Films page tested](#films-page-tested) 
-        * [Signup page tested](#signup-page-tested)
-        * [Login page tested](#login-page-tested)
-        * [Profile page tested](#profile-page-tested)
-        * [Add Film page tested](#add-film-page-tested)
-        * [Edit Film page tested](#edit-film-page-tested)
-        * [Genres page tested](#genres-page-tested)
-        * [Add genre page tested](#add-genre-page-tested)
-        * [Edit genre page tested](#edit-genre-page-tested)
-        * [Contact Us page tested](#contact-us-page-tested)
     * [W3C CSS Validation Service](#w3c-css-validation-service)
         * [CSS coding tested](#css-coding-tested)
     * [JS Hint Javascript code validator](#js-hint-javascript-code-validator)
@@ -65,6 +53,7 @@
 
 Return to my [README Doc](README.md) 
 
+____
 [Back to top ⇧](#filmzone)
 
 ## Testing
@@ -91,6 +80,7 @@ On big screens the navigation bar has page titles. Any page title that's hovered
 ##### Logged in Admin user
 ![Image template](static/images/testing/navbar/navbar-logged-in-admin-user.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 #### Hamburger navigation bar
@@ -105,6 +95,7 @@ When testing the navigation bar I wanted to make sure that it collapses into a h
 ##### Logged in Admin user
 ![Image template](static/images/testing/navbar/mob-navbar-logged-in-admin-user.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 ### User Stories tested
@@ -152,6 +143,7 @@ I've noticed that theres a particular Genre type not listed for me to add a film
 
 ![Image template](static/images/testing/user_stories/user-story-5.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 #### **Story 6**
@@ -176,23 +168,38 @@ I've just come out of the cinema after watching a great film. I'm keen to add th
 
 ![Image template](static/images/testing/user_stories/user-story-6-9.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 ### W3C Markup Validation Service
 
-#### Base template tested
-#### Homepage tested
-#### Films page tested
-#### Signup page tested
-#### Login page tested
-#### Profile page tested
-#### Add Film page tested
-#### Edit Film page tested
-#### Genres page tested
-#### Add genre page tested
-#### Edit genre page tested
-#### Contact Us page tested
+#### Most HTML templates had the following errors and warnings. 
 
+- Warning:  Consider adding a lang attribute to the html start tag to declare the language of this document.<br>
+**Lang attribute is already in place on the base template which is extended to this HTML template.**
+
+- Error: Non-space characters found without seeing a doctype first. Expected DOCTYPE html<br>
+**This is already in place on the base template which is extended to this HTML template.**
+
+- Error: Element head is missing a required instance of child element title.<br>
+**This is already in place on the base template which is extended to this HTML template.**
+
+- Error: Bad value {{ url_for..... }} for attribute href/src/action on element a: Illegal character in path segment: { is not allowed.<br>
+**Bad value: 'url for' is common across all HTML template files. It was also to be expected, as the validator was not anticipating to find href="...url_for..."**
+
+- Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.<br>
+**By adjusting the code and using an h1 element for example, this then causes an error - Element div not allowed as child of element h1 in this context. (Suppressing further errors from this subtree.).**
+
+- Error: Text not allowed in element ul in this context - {% for film in user_films %} and {% endfor %}<br>
+**Jinja for loop used inside an unordered list which cannot be changed for anything else in order for it to work**
+
+- Error: Text not allowed in element select in this context - {% for genre in genres %} and {% endfor %}<br>
+**Jinja for loop used inside a select element which cannot be changed for anything else in order for it to work**
+
+- Error: Text not allowed in element select in this context - {% if genre.genre_name == film.genre_name %} and {% endif %}<br>
+**Jinja if statement used inside a select element which cannot be changed for anything else in order for it to work**
+
+____
 [Back to top ⇧](#filmzone)
 
 ### W3C CSS Validation Service
@@ -230,10 +237,11 @@ I've just come out of the cinema after watching a great film. I'm keen to add th
 #### Env file
 * 1 Error (line 12: line too long (126 > 79 characters))
 
-**Fixed by moving around half the code onto another line below.**
+**Fixed by moving half the code onto another line below, however doing this causes more serious errors.**
 
 Note: No image applied for security of password
 
+____
 [Back to top ⇧](#filmzone)
 
 ### Web Browsers
@@ -300,6 +308,7 @@ Note: Adjustment made to the color of the 'Cancel' button to keep the theme of t
 
 ![Image template](static/images/testing/web_browser/chrome/chrome-contact-us-page.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 #### Apple Safari
@@ -355,6 +364,7 @@ Note: Adjustment made to the color of the 'Cancel' button to keep the theme of t
 
 ![Image template](static/images/testing/web_browser/safari/safari-contact-us-page.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 #### Microsoft Edge
@@ -416,6 +426,7 @@ Note: Adjustment made to the color of the 'Cancel' button to keep the theme of t
 
 ![Image template](static/images/testing/web_browser/edge/edge-contact-us-page.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 #### Mozilla Firefox
@@ -539,6 +550,7 @@ I tested the site using Chrome development tools on three different screen sizes
 
 ![Image template](static/images/testing/responsiveness/mobile/mobile-contact-us-page.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 #### Tablet screenshots
@@ -595,6 +607,7 @@ I tested the site using Chrome development tools on three different screen sizes
 
 ![Image template](static/images/testing/responsiveness/tablet/tablet-contact-us-page.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 #### Desktop screenshots
@@ -653,6 +666,7 @@ I tested the site using Chrome development tools on three different screen sizes
 
 ![Image template](static/images/testing/responsiveness/desktop/desktop-contact-us-page.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 ### Lighthouse testing
@@ -677,7 +691,7 @@ I tested the site using Chrome development tools on three different screen sizes
 ![Image template](static/images/testing/lighthouse/lighthouse-mobile.png)
 
 Note: Unfortunately, I didn't have any time left on this project to look into the issues properly. With more time i would investigate why the Performance scores are lower than i would like and also why the Accessibility score is low compared to previous projects. 
-
+____
 [Back to top ⇧](#filmzone)
 
 ### Issues fixed
@@ -712,6 +726,7 @@ On the Films page. I had an issue with the layout as films were being added. Big
 
 ![Image template](static/images/testing/issues/films_page/issue-films-page-fixed7.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 #### Modal issues
@@ -722,6 +737,7 @@ On the profile page and genres page theres a remove/delete button to remove a fi
 
 ![Image template](static/images/testing/issues/modals/modal-genres-page.png)
 
+____
 [Back to top ⇧](#filmzone)
 
 ### Further testing
@@ -753,9 +769,9 @@ Screenshots below showing that the Contact Us page is fully working
     - 360px (Moto G4 and Galaxy S5) 
     - 375px (iPhone 6/7/8/X size)
     - 411px (Pixel 2/XL and iPhone 6/7/8 plus) 
-        
+____        
 [Back to top ⇧](#filmzone)
 
 Return to my [README.md](README.md) to continue reading
 
-### End of TESTING Document
+### End of TESTING Documentation
