@@ -1122,6 +1122,8 @@ Add Film template: – With the JQuery copied from a code institute lesson from 
 Add Film template: - On touch screens likes mobiles and tablets (specifically Apple devices) the genre list doesn't fully work. When you try and select a specific genre another one is selected at random. 
 
 Head Icon: - All pages except for the Profile page, Edit Film page and Edit Genre page doesn't seem to show the 'Film' icon added to the head in the base template. This is something i would need to check at a later time. 
+
+Add film image: - When adding a film I added a placeholder "https://" to show users that the image being added needs to start with https://. However, from testing this page several times, certain images found on the internet still aren't compatiable even if it starts with https://. From testing this over and over i found that only images from Wikipedia and imdb.com seem to work. In general this part of the add film page is a little bit hit and miss and ideally i would have liked to of had more time to come up with a better option i.e. a download button, however, this option comes with its complications as well. 
 ____
 [Back to top ⇧](#filmzone)
 
