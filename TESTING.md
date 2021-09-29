@@ -26,8 +26,8 @@
     * [W3C CSS Validation Service](#w3c-css-validation-service)
         * [CSS coding tested](#css-coding-tested)
     * [JS Hint Javascript code validator](#js-hint-javascript-code-validator)
-        * [Script.js](#script.js)
-        * [sendEmail.js](#sendemail.js)
+        * [ScriptJS](#scriptjs)
+        * [sendEmailJS](#sendemailjs)
     * [PEP8 online validator](#pep8-online-validator)
         * [App file](#app-file)
         * [Env file](#env-file)
@@ -47,6 +47,10 @@
         * [Films page layout](#films-page-layout)
         * [Modal issues](#modal-issues)
     * [Further testing](#further-testing)
+        * [Internal links](#internal-links)
+        * [External links](#external-links)
+        * [Search facility](#search-facility)
+        * [Testing functions](#testing-functions)
         * [EmailJS](#emailjs)
         * [Mobile first](#mobile-first)
     * [Bugs outstanding](#bugs-outstanding)
@@ -213,7 +217,7 @@ ____
 
 #### JS Hint JavaScript code validator
 
-#### Script.js
+#### ScriptJS
 * (0 errors found)
 * (2 warnings found)
     - Line 12: let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
@@ -221,7 +225,7 @@ ____
 
 ![Image template](static/images/testing/validator/js-validator-script.png)
 
-#### sendEmail.js
+#### sendEmailJS
 * (0 errors found)
 * (0 warnings found)
 
@@ -741,6 +745,151 @@ ____
 [Back to top ⇧](#filmzone)
 
 ### Further testing
+
+#### Internal links
+
+All internal links tested: -
+- Text logo on desktop 
+- Navbar links
+- Mobile Nav links
+- Footer links
+- Homepage links
+- Films page search button links
+- Signup page links
+- Login page links
+- Profile links and buttons links
+- Add page button links
+- Edit page button links
+- Genres page links and button links
+- Add page button links
+- Edit page button links
+- Contact us page links 
+
+#### External links
+
+All social media links tested within the footer: -
+- YouTube
+- Spotify
+- Twitter
+- Instagram
+- Facebook
+
+#### Search facility
+
+Testing completed on the search bar found in the films page.
+
+Testing based on name (Robert)
+
+![Image template](static/images/testing/search/search.png)
+
+![Image template](static/images/testing/search/search-robert.png)
+
+![Image template](static/images/testing/search/search-robert-results1.png)
+
+![Image template](static/images/testing/search/search-robert-results2.png)
+
+![Image template](static/images/testing/search/search-robert-results3.png)
+
+![Image template](static/images/testing/search/search-robert-results4.png)
+
+Testing based on genre type (Comedy)
+
+![Image template](static/images/testing/search/search.png)
+
+![Image template](static/images/testing/search/search-comedy.png)
+
+![Image template](static/images/testing/search/search-comedy-results1.png)
+
+![Image template](static/images/testing/search/search-comedy-results2.png)
+
+Testing based on film name (airplane)
+
+![Image template](static/images/testing/search/search.png)
+
+![Image template](static/images/testing/search/search-film-name.png)
+
+![Image template](static/images/testing/search/search-film-name-result.png)
+
+### Testing functions
+
+#### Signup page
+
+![Image template](static/images/testing/testing_functions/signup-existing-username.png)
+
+![Image template](static/images/testing/testing_functions/signup.png)
+
+![Image template](static/images/testing/testing_functions/signed-in.png)
+
+#### Login page
+
+![Image template](static/images/testing/testing_functions/login.png)
+
+![Image template](static/images/testing/testing_functions/logged-in.png)
+
+#### Logout function 
+
+![Image template](static/images/testing/testing_functions/logged-out.png)
+
+#### Add film page
+
+![Image template](static/images/testing/testing_functions/add-film.png)
+
+![Image template](static/images/testing/testing_functions/added-film.png)
+
+#### Edit film page 
+
+![Image template](static/images/testing/testing_functions/edit-film.png)
+
+![Image template](static/images/testing/testing_functions/editing-film.png)
+
+![Image template](static/images/testing/testing_functions/edited-film.png)
+
+![Image template](static/images/testing/testing_functions/edit-successfully.png)
+
+![Image template](static/images/testing/testing_functions/edit-result.png)
+
+#### Delete/Remove film function
+
+![Image template](static/images/testing/testing_functions/delete-film.png)
+
+![Image template](static/images/testing/testing_functions/delete-modal.png)
+
+![Image template](static/images/testing/testing_functions/delete-film-successful.png)
+
+![Image template](static/images/testing/testing_functions/delete-film-search.png)
+
+
+#### Add genre page
+
+![Image template](static/images/testing/testing_functions/add-genre.png)
+
+![Image template](static/images/testing/testing_functions/adding-genre.png)
+
+![Image template](static/images/testing/testing_functions/genre-added.png)
+
+![Image template](static/images/testing/testing_functions/genre-added-result.png)
+
+#### Edit genre page
+
+![Image template](static/images/testing/testing_functions/edit-genre.png)
+
+![Image template](static/images/testing/testing_functions/edit-genre-page.png)
+
+![Image template](static/images/testing/testing_functions/editing-genre.png)
+
+![Image template](static/images/testing/testing_functions/edited-genre-successful.png)
+
+![Image template](static/images/testing/testing_functions/edit-genre-successful.png)
+
+#### Delete genre page
+
+![Image template](static/images/testing/testing_functions/delete-genre.png)
+
+![Image template](static/images/testing/testing_functions/delete-genre-modal.png)
+
+![Image template](static/images/testing/testing_functions/genre-deleted-successfully.png)
+
+![Image template](static/images/testing/testing_functions/genre-deleted.png)
 
 #### EmailJS
 

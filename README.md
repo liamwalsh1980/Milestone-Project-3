@@ -332,8 +332,6 @@ As the developer of FilmZone I put a lot of work into making sure that the Wiref
 
 * Genres page - At this stage i didn't include the 'other' genre due to the limited time i had left. If this was added there would be a little bit of python code required to wire up and make use of this. 
 
-* Contact us page - TBC
-
 [Back to top ⇧](#filmzone)
 
 ### Surface 
@@ -677,7 +675,7 @@ To finish, I applied the class ‘navbar-fixed’ inside a div element which is 
 
 ### Footer  
 
-With the footer added from the base.html file, each page footer is the same. This is designed for consistency and styling using the Materialize CSS framework. I chose a bright orange colour background from my chosen pallet to separate the colours to show good styling and usage of my pallet. The footer includes the Copyright icon connected to FilmZone and social media icons. I also added links to the footer which changes depending on whether a user is logged in or not. If a user is logged in, they will see links for ‘Homepage’, ‘Films’, ‘Profile’, 'Add Film' and ‘Contact Us’. Logged out user will see all links except for the ‘Profile’ and 'Add Film' links. Instead, they will see a ‘Signup’ link. I used an ‘if’ statement and Jinja code to achieve this. I decided to add a simple image of 'overflowing popcorn' to reflect on the most popular food choice when watching a film.
+With the footer added from the base.html file, each page footer is the same. This is designed for consistency and styling using the Materialize CSS framework. I chose a bright orange colour background from my chosen pallet to separate the colours to show good styling and usage of my pallet. The footer includes the Copyright icon connected to FilmZone and social media icons. When hovering over each of these social media icons they change colour to the relevant colour based on the social media logo color i.e. Youtube icon turns red when hovering over it. I also added links to the footer which changes depending on whether a user is logged in or not. If a user is logged in, they will see links for ‘Homepage’, ‘Films’, ‘Profile’, 'Add Film' and ‘Contact Us’. Logged out user will see all links except for the ‘Profile’ and 'Add Film' links. Instead, they will see a ‘Signup’ link. I used an ‘if’ statement and Jinja code to achieve this. I decided to add a simple image of 'overflowing popcorn' to reflect on the most popular food choice when watching a film.
 
 ### Homepage
 
