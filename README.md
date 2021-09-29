@@ -1044,7 +1044,7 @@ Using the base template and Jinja templating language i was able to offer the fo
 - Genre page that holds films specific to each genre type
 - Film page that holds more details information, external links to show where best to find/watch the film
 - Media clip field that users can include when adding a new film for users to then watch as a form of a trailer
-- For logged in users, the option to change their userr and/or password
+- For logged in users, the option to change their username and/or password
 - For users with an account to close/delete their profile if they no longer want to use FilmZone
 - The option for users to add a profile picture to make it more personal
 
