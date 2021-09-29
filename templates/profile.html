@@ -5,6 +5,7 @@
     <section>
         <div class="row container">
             <h2 class="col-6 m6 s12 subheader">{{ username }}'s Films</h2>
+            <!-- Add new film link -->
             <div class="col-6 m6 s12 right"><a aria-label="Jump to the Add Films page" href="{{ url_for('add_film') }}" class="add-btn-text">Add New Film <i class="fas fa-plus-circle add-new-film-link"></i></a></div>
         </div>
     </section>
@@ -22,15 +23,17 @@
                                 <i class="fas fa-film film-icon"></i>
                                 {{ film.film_name }}
                             </div>
+                            <!-- Edit film button -->
                             <div class="col l4 s12 center-align">
                                 <a aria-label="Jump to the Edit Films page" href="{{ url_for('edit_film', film_id=film._id) }}" class="btn-small btn-small-profile">Edit</a>
-                                <!-- Modal Trigger for removing a film -->
+                                <!-- Modal Trigger for removing a film button -->
                                 <a href="#modal2{{loop.index}}" class="btn-small btn-small-profile-reset modal-trigger">Remove</a>
                                 <!-- Modal Structure  -->
                                 <div id="modal2{{loop.index}}" class="modal">
                                     <div class="modal-content">
                                         <p class="modal-text-title center-align">Are you sure you want to remove the film <span class="modal-film-name">{{ film.film_name }}</span> ?</p>
                                     </div>
+                                    <!-- Cancel and remove button -->
                                     <div class="modal-footer center-align" id="modal-footer">
                                         <a href="" class="modal-close btn-flat">Cancel</a>
                                         <a aria-label="Delete film" href="{{ url_for('delete_film', film_id=film._id) }}" class="modal-close btn-flat">Remove</a>
@@ -38,6 +41,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Materialize collasible feature -->
                         <div class="collapsible-body center-align">
                             <p>Genre: {{ film.genre_name }}</p><br>
                             <p>Actors: {{ film.actors }}</p><br>
@@ -52,6 +56,7 @@
         </div>
     </section>
     <section>
+        <!-- Return to films link -->
         <div class="row container margin-push-profile">
             <div class="col-6 m6 s12 right"><a aria-label="Jump to the Films page" href="{{ url_for('films') }}" class="back-btn-text"><i class="fas fa-backward"></i> Return to Films</a></div>
         </div>

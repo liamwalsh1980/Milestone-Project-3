@@ -1,11 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
+
+    <!-- Subheader text -->
     <section>
         <div class="row">
             <div class="col-12">
+                <!-- Hero image of a cinema outside at night -->
                 <div id="hero-image">
+                    <!-- Sub header in bedded in the hero image -->
                     <div class="col s6 center-align" id="homepage-border">Welcome to FilmZone
                         <br>
+                        <!-- Find film button taking user to the films page -->
                         <div class="btn btn-small-search-homepage">
                             <a class="homepage-search" aria-label="Jump to the Films page" href="{{ url_for('films') }}"><i class="fas fa-search left"></i> Find Film</a>
                         </div>
@@ -15,21 +20,27 @@
         </div>
     </section>
     <section>
+    <!-- text section with relevant links based on a user being logged in logged out using Jinja if statements -->
         <div class="row">
             <div class="col-12 subheader-home">We all love a good film !</div>
             <br>
+            <!-- logged in users only -->
             {% if session.user %}
                 <p class="container-fluid col-12 md-6 center-align homepage-content">Welcome back, seen any new films that's worth adding to FilmZone ?</p>
+            <!-- logged out/unregistered users -->
             {% else %}
                 <p class="container-fluid col-12 md-6 center-align homepage-content">If you love films you’re in the right place. Take a look at the <a class="films" aria-label="Jump to the Films page" href="{{ url_for('films') }}">Films</a> section and see what our current FilmZone members are recommending. At FilmZone you can add your own favourite films by signing up for free. </p>
             {% endif %}
         </div> 
     </section>
+    <!-- text section with relevant links based on a user being logged in logged out using Jinja if statements -->
     <section>
         <div class="container-fluid">
             <div class="row">
+                <!-- logged in users only -->
                 {% if session.user %}
                     <p class="col-12 center-align homepage-stripline uppercase-text">add your favourite films - <a aria-label="Jump to the Add Films page" href="{{ url_for('add_film') }}" id="add-film">Add Film</a> !</p>
+                <!-- logged out/unregistered users -->
                 {% else %}
                     <p class="col-12 center-align homepage-stripline uppercase-text">add your favourite films - <a aria-label="Jump to the Signup page" href="{{ url_for('signup') }}" id="signup-text">Signup</a> !</p>
                 {% endif %}

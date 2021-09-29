@@ -33,7 +33,7 @@
 
 <body>
     <header>
-        <!-- Main Navbar -->
+        <!-- Main Navbar with Jinja if statement for logged out and logged in users -->
         <div class="navbar-fixed">
             <nav class="nav-extended background-color">
                 <div class="nav-wrapper">
@@ -60,27 +60,27 @@
                 </div>
             </nav>
         </div>
-        <!-- Mobile sidenav -->
+        <!-- Mobile sidenav with Jinja if statement for logged out and logged in users  -->
         <ul class="sidenav" id="mobile-demo">
             <li class="center-align brand-logo" id="brand-logo-mobile"><i class="fas fa-film" id="sidenav-logo-icon"></i> filmzone</li>
-                <li><a aria-label="Jump to the Homepage" href="{{ url_for('index') }}">Home</a></li>
-                <li><a aria-label="Jump to the Films page" href="{{ url_for('films') }}">Films</a></li>
-                {% if session.user %}
-                <li><a aria-label="Jump to your Profile page" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                <li><a aria-label="Jump to the Add Film page" href="{{ url_for('add_film') }}">Add Film</a></li>
-                    {% if session.user|lower == "admin"|lower %}
-                    <li><a aria-label="Jump to the Genres page" href="{{ url_for('genres') }}">Manage Genres</a></li>
-                    {% endif %}
-                <li><a aria-label="Logout of your profile" href="{{ url_for('logout') }}">Logout</a></li>
-                {% else %}
-                <li><a aria-label="Jump to the Login page" href="{{ url_for('login') }}">Login</a></li>
-                <li><a aria-label="Jump to the Signup page" href="{{ url_for('signup') }}">Signup</a></li>
+            <li><a aria-label="Jump to the Homepage" href="{{ url_for('index') }}">Home</a></li>
+            <li><a aria-label="Jump to the Films page" href="{{ url_for('films') }}">Films</a></li>
+            {% if session.user %}
+            <li><a aria-label="Jump to your Profile page" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+            <li><a aria-label="Jump to the Add Film page" href="{{ url_for('add_film') }}">Add Film</a></li>
+                {% if session.user|lower == "admin"|lower %}
+                <li><a aria-label="Jump to the Genres page" href="{{ url_for('genres') }}">Manage Genres</a></li>
                 {% endif %}
-                <li><a aria-label="Jump to the Contact Us page" href="{{ url_for('contact_us') }}">Contact Us</a></li>
+            <li><a aria-label="Logout of your profile" href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+            <li><a aria-label="Jump to the Login page" href="{{ url_for('login') }}">Login</a></li>
+            <li><a aria-label="Jump to the Signup page" href="{{ url_for('signup') }}">Signup</a></li>
+            {% endif %}
+            <li><a aria-label="Jump to the Contact Us page" href="{{ url_for('contact_us') }}">Contact Us</a></li>
         </ul>
     </header>
     <section>
-        <!-- flash messages -->
+        <!-- flash messages with Jinja if statments, with statements and for loops -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
@@ -97,7 +97,7 @@
         {% block content %}
         {% endblock %}
     </main>
-    <!-- Footer added using Materialize CSS -->
+    <!-- Footer added using Materialize CSS using Jinja if statements -->
     <footer class="page-footer background-footer">
         <div class="container">
           <div class="row">
@@ -127,14 +127,11 @@
         <div class="footer-copyright" id="lower-footer-background">
           <div class="container lower-footer-text">
           © 2021 FilmZone
+          <!-- social media icon external links -->
             <a id="facebook" class="lower-footer-text right footer-padding" href="https://www.facebook.com/" aria-label="Find us on Facebook (opens in new tab)" target="_blank"><i class="fab fa-facebook"></i></a>
-
             <a id="instagram" class="lower-footer-text right footer-padding" href="https://www.instagram.com/" aria-label="Find us on Instagram (opens in new tab)" target="_blank"><i class="fab fa-instagram"></i></a>
-
             <a id="twitter" class="lower-footer-text right footer-padding" href="https://twitter.com/" aria-label="Find us on Twitter (opens in new tab)" target="_blank"><i class="fab fa-twitter"></i></a>
-
             <a id="spotify" class="lower-footer-text right footer-padding" href="https://www.spotify.com" aria-label="Find us on Spotify (opens in new tab)" target="_blank"><i class="fab fa-spotify"></i></a>
-
             <a id="youtube" class="lower-footer-text right footer-padding" href="https://www.youtube.com" aria-label="Find us on Youtube (opens in new tab)" target="_blank"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
