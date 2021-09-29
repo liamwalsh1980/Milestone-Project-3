@@ -275,9 +275,9 @@ ul li a:hover {
     font-size: 20px;
 }
 
-/* Add/Edit genre page */
+/* Add genre, Edit genre, Profile, Films pages */
 .margin-push {
-    margin-bottom: 40%;
+    margin-bottom: 20%;
 }
 
 /* Buttons */
@@ -381,7 +381,7 @@ ul li a:hover {
 }
 
 .no-results {
-    font-size: 24px;
+    font-size: 36px;
     text-align: center;
     padding-top: 5px;
     color: #F8C149;
