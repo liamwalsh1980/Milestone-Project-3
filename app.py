@@ -24,6 +24,7 @@ mongo = PyMongo(app)
 # An instance of PyMongo using a Constructor method to add 'app' from above
 
 
+# Function for homepage/index
 @app.route("/")
 @app.route("/index")
 def index():
@@ -55,6 +56,7 @@ def search():
     return render_template("films.html", films=films)
 
 
+# Function to signup with username and password
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
     if request.method == "POST":
@@ -87,6 +89,7 @@ def signup():
     return render_template("signup.html")
 
 
+# Function to login with created username and password
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -117,6 +120,7 @@ def login():
     return render_template("login.html")
 
 
+# Function for profile page specific to logged in user
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # Only users can access their own profile
@@ -141,6 +145,7 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+# Function for user to logout
 @app.route("/logout")
 def logout():
     # Remove user from session cookie
@@ -250,5 +255,5 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-# During development we want debug=True to see any potential errors appear
-# This will be updated to debug=False when deploying site and submitted project
+# During development the debug=True to see any potential errors appear
+# This was updated to debug=False when the site was deployed and submitted.
