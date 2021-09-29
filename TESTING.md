@@ -23,6 +23,7 @@
         * [Story 5](#story-5)
         * [Story 6](#story-6)
     * [W3C Markup Validation Service](#w3c-markup-validation-service)
+        * [HTML templates](#html-templates)
     * [W3C CSS Validation Service](#w3c-css-validation-service)
         * [CSS coding tested](#css-coding-tested)
     * [JS Hint Javascript code validator](#js-hint-javascript-code-validator)
@@ -53,7 +54,6 @@
         * [Testing functions](#testing-functions)
         * [EmailJS](#emailjs)
         * [Mobile first](#mobile-first)
-    * [Bugs outstanding](#bugs-outstanding)
 
 Return to my [README Doc](README.md) 
 
@@ -177,7 +177,9 @@ ____
 
 ### W3C Markup Validation Service
 
-#### Most HTML templates had the following errors and warnings. 
+#### HTML templates
+
+Most HTML templates had the following errors and warnings. 
 
 - Warning:  Consider adding a lang attribute to the html start tag to declare the language of this document.<br>
 **Lang attribute is already in place on the base template which is extended to this HTML template.**

@@ -1133,13 +1133,13 @@ ____
 
 - <a href="https://www.pexels.com/photo/time-lapse-photography-of-car-lights-in-front-of-cinema-436413/" target="_blank">Hero image</a> - Photo by Nathan Engel from Pexels
 - <a href="https://www.pexels.com/photo/popcorn-on-white-and-red-paper-bag-6188405/" target="_blank">Popcorn image</a> - Photo by Terrance Barksdale from Pexels
+- All film images were sourced from various websites like <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">wikipedia</a> wikipedia and <a href="https://www.imdb.com/" target="_blank">IMDB</a> 
 
 ### Content
 - The content of this website was entirely written by the myself, the developer.
 
 ### Code
-- The main guide i used throughout this project was both the 'Task Manager' mini project within Code Institute and the detailed notes i made during these lessons. 
-
+- The main guide I used throughout this project was both the <a href="https://www.youtube.com/watch?v=y72Dq3GRxhc" target="_blank">Task Manager</a> mini project within Code Institute and the detailed notes i made during these lessons. 
 ____
 [Back to top ⇧](#filmzone)
 
