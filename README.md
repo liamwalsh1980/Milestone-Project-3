@@ -1161,10 +1161,12 @@ ____
 
 ## Final step
 
+In the app.py file: -
+
 >During development the debug=True to see any potential errors appear
 
 >This was updated to debug=False when the site was deployed and submitted.
 ____
 
-###End of README Documentation
+### End of README Documentation
 

@@ -1,3 +1,4 @@
+// Jquery code take from Materialize CSS 
 $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"});
     $(".dropdown-trigger").dropdown();
