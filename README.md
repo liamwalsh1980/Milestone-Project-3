@@ -2,7 +2,7 @@
 
 ## Code Institute - Milestone Project 3
 
-![Image template](static/images/testing/iamresponsive.png)
+![Image template](static/images/testing/fullyresponsive.png)
 
 <a href="https://filmzone-project.herokuapp.com/" target="_blank">Click here to view FilmZone live</a>
 
