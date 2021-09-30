@@ -933,7 +933,7 @@ The contact us page is available to all users, therefore, if a user isn’t logg
 
 When the form is completed and submitted the user will be shown a ‘thank you’ message in the form of a modal. The message will be specific to the user by first name showing the message to be personal to that individual. There is a close button at the bottom of the modal and when clicked will return the user to the contact us page with all fields empty again. If for whatever reason the form was completed and submitted but couldn’t reach FilmZone, another message is shown saying “Sorry (user) something went wrong. Please try submitting your message again!”.  
 
-Both modals were designed in a new JavaScript file called ‘sendEmail.js’ using a function called sendMail(contactForm) to hold the code along with the source code from EmailJS.  
+All modals were designed in a new JavaScript file called ‘sendEmail.js’ using a function called sendMail(contactForm) to hold the code along with the source code from EmailJS.  
 
 In the Python app.py file I added a function to wire up and return users back to the same page when finished.  
 
@@ -975,6 +975,9 @@ Using the base template and Jinja templating language I was able to offer the fo
 ### Films page features
 - Subheader
 - Search facility with reset button
+- Login link
+- Signup link
+- Add film link (logged in only)
 - List of firms including film name, Genre, Actors, Best bit, image and user name who added the film. 
 
 ### Signup page features
@@ -1075,8 +1078,8 @@ ____
 * <a href="https://slack.com/intl/en-gb/" target="_blank">Slack</a> - To communicate with my mentor and other students to get help at times.
 * <a href="https://developer.chrome.com/docs/devtools/" target="_blank">Chrome DevTools</a> - This tool was very useful for amending code, finding where bugs were coming from and help with all code and console errors during the time of being the feedback form page. Used to examine the overall performance of the site with Lighthouse as well. 
 * <a href="https://balsamiq.com/wireframes/?gclid=CjwKCAjw6fCCBhBNEiwAem5SO0TfrA7AKJnwXKFEJStjRK5qFYRfJ7jLW6Vdt4F1CdcujCZRm9Zr7xoC3oUQAvD_BwE" target="_blank">Balsamiq</a> -  Used to create wireframes for all pages on all screen sizes. 
-* <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> - I many bespoke icons and social media icons across all pages of the website.
-* <a href="https://pexels.com/" target="_blank">Pexels</a> - I used one "free' <a href="https://www.pexels.com/photo/time-lapse-photography-of-car-lights-in-front-of-cinema-436413/" target="_blank">image</a> from this site for the homepage.
+* <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> - I used many bespoke icons and social media icons across all pages of the website. 
+* <a href="https://pexels.com/" target="_blank">Pexels</a> - I used two "free' images from this site for the homepage and footer. The <a href="https://www.pexels.com/photo/time-lapse-photography-of-car-lights-in-front-of-cinema-436413/" target="_blank">hero image</a> for the homepage and the <a href="https://www.pexels.com/photo/popcorn-on-white-and-red-paper-bag-6188405/" target="_blank">Footer image</a> for the footer. 
 * <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> - I used two font families on my website. I used the font Montserrat with sans-serif and fallback for most of the website content and Holtwood One SC with Serif as a fallback for the text logo. Fallbacks will only work if the main fonts fail. 
 * <a href="https://gitpod.io/" target="_blank">Gitpod</a> - Used to complete my HTML, CSS, JavaScript/JQuery and Python coding for my MS3 project.
 * <a href="https://github.com/" target="_blank">Github</a> - GitHub is used to store the projects code after being pushed from Git.
@@ -1108,6 +1111,8 @@ Films template: - Whitespace when using Jinja 'for' loop to iterate through a co
 
 Modals: - When selected any random film/genre to remove/delete using the delete/remove button within that film/genre, the same and first film/genre in the list is selected. I knew I needed to set a loop to iterate through all films/genre names. I used loop.index to iterate through all film names in the profile page and all genre names in the genres page when clicking remove/delete which then and opens the modal checker. See more in testing file in reference to this issue.
 
+All modals now have button links replacing text links for better UX.
+
 Search Facility: - When a search is completed by a user the results don't come back in alphabetical order. I was able to resolve this by using the .sort() method, however it was a little tricky to make sure the method was added correctly.
 
 >films = list(mongo.db.films.find({"$text": {"$search": query}}).sort("film_name", 1))
@@ -1122,11 +1127,9 @@ Add Film template: - Border bottom on the Genre name field stays red when a sele
 
 ![Image template](static/images/testing/bugs/mobile-bug-redline.png)
 
-Add Film template: – With the JQuery copied from a code institute lesson from the 'Task Manager' mini project, what appears just below the Genre name section is a random 'white dot' which has the list of genres stored. By adjusting the code (change display to display:none) this appears to remove the ‘white dot’. However, i'm not sure whether this then causes the next issue. In the end I decided to keep this code as it was with the dot showing as it would cause issues with the validation if it was removed. 
+Add Film template: – With the JQuery copied from a code institute lesson from the 'Task Manager' mini project, what appears just below the Genre name section is a random 'white dot' which has the list of genres stored. By adjusting the code (change display to display:none) this appears to remove the ‘white dot’. However, i'm not sure whether this then causes the next issue. In the end I decided to keep this code as it was with the dot showing as it would cause issues with the validation if it was removed. This is fixed the above bug as well. 
 
 Add Film template: - On touch screens likes mobiles and tablets (specifically Apple devices) the genre list doesn't fully work. When you try and select a specific genre another one is selected at random. 
-
-Add Film template: - If a user adds a film without selecting a Genre type, the film won't be added because of the Javs
 
 Add film image: - When adding a film I added a placeholder "https://" to show users that the image being added needs to start with https://. However, from testing this page several times, certain images found on the internet still aren't compatiable even if it starts with https://. From testing this over and over I found that only images from Wikipedia and imdb.com seem to work. In general this part of the add film page is a little bit hit and miss and ideally I would have liked to of had more time to come up with a better option i.e. a download button, however, this option comes with its complications as well. 
 
@@ -1153,8 +1156,8 @@ ____
 
 ## Acknowledgements
 
-* A 'thank you' to my Mentor - Seun Owonikoko 
-* The Slack community (Claire lemonnier and Michael Walsh - no relation)
+* A big 'thank you' to my Mentor - Seun Owonikoko 
+* The Slack community (Claire Lemonnier and Michael Walsh - no relation)
 * My family for taking the time to signup and contribute to the films page and provide feedback
 * My wife for supporting me and the many cups of tea to get me through.
 
