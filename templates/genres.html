@@ -29,8 +29,8 @@
                         <p class="modal-text-title center-align">Are you sure you want to delete the genre <span class="modal-genre-name">{{ genre.genre_name }}</span> ?</p>
                     </div>
                     <div class="modal-footer center-align" id="modal-footer">
-                        <a href="" class="modal-close btn-flat">Cancel</a>
-                        <a href="{{ url_for('delete_genre',genre_id=genre._id) }}" class="modal-close btn-flat">Delete</a>
+                        <a href="" id="btn-small-cancel"class="modal-close btn-small-profile btn-flat">Cancel</a>
+                        <a href="{{ url_for('delete_genre',genre_id=genre._id) }}" id="btn-small-remove" class="modal-close btn-small-remove btn-flat">Delete</a>
                     </div>
                 </div>
             </div>

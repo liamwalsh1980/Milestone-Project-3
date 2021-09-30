@@ -288,7 +288,7 @@ ul li a:hover {
 }
 
 .margin-push-profile {
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }
 
 /* Buttons */
@@ -355,6 +355,10 @@ ul li a:hover {
     margin: 5px;
 }
 
+#btn-small-cancel {
+    color: #EAE3EF;
+}
+
 /* Search function */
 .search-card {
     background-color: #030001;
@@ -409,8 +413,27 @@ ul li a:hover {
     color: #EAE3EF
 }
 
-.modal-close, #modal-link, .modal-film-name, .modal-genre-name {
+#modal-link, .modal-film-name, .modal-genre-name {
     color: #D76848;
+}
+
+.modal-cancel {
+    color: #EAE3EF;
+}
+
+.btn-small-remove {
+    margin-left: 20px;
+    background-color: #EAE3EF;
+    color: #D76848;
+}   
+
+.btn-small-remove:hover {
+    background-color: #647737;
+    color: #EAE3EF;
+}
+
+#btn-small-remove:hover {
+    color: #EAE3EF;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
@@ -486,19 +509,19 @@ ul li a:hover {
 
 @media screen and (min-width: 1440px) {
     .flash-messages {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
 @media screen and (min-width: 1800px) {
     .flash-messages {
-        font-size: 60px;
+        font-size: 40px;
     }
 }
 
 @media screen and (min-width: 2400px) {
     .flash-messages {
-        font-size: 80px;
+        font-size: 60px;
         padding-top: 50px;
     }
 }
