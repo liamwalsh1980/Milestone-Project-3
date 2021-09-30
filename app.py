@@ -255,6 +255,6 @@ def delete_genre(genre_id):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
 # During development the debug=True to see any potential errors appear
 # This was updated to debug=False when the site was deployed and submitted.
