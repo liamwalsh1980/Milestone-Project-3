@@ -306,7 +306,7 @@ Contact Us page is available for all users to make contact with FilmZone by incl
 
 Click this link to see the  <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/structure/structure-start.pdf" target="_blank">Structure screenshot</a> - start.
 
-Click this link to see the  <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/structure/structure-start.pdf" target="_blank">Structure screenshot</a> - finish.
+Click this link to see the  <a href="https://github.com/liamwalsh1980/Milestone-Project-3/blob/master/static/images/ux/structure/structure-finish.pdf" target="_blank">Structure screenshot</a> - finish.
 
 [Back to top ⇧](#filmzone)
 
