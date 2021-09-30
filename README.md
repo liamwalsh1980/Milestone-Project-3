@@ -514,12 +514,14 @@ Once configuration coding is added on the app.py file I then retrieved the MONGO
 - Select the latest version (for me it was ‘3.12 or later’) 
 
 ![Image template](static/images/deployment/connecting-mongodb-to-flask.png)
+
 (passwords are removed for security) 
 
 - Copy the string using the icon on the righthand side of the string.  
 - Paste this as the second argument inside the app.py file for the MONGO URI and then paste it in the Config Vars in Heroku.  
 
 ![Image template](static/images/deployment/config-vars-complete.png)
+
 (passwords are removed for security)
 
 Back in the app.py file add the following instance of PyMongo 
