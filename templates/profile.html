@@ -33,10 +33,10 @@
                                     <div class="modal-content">
                                         <p class="modal-text-title center-align">Are you sure you want to remove the film <span class="modal-film-name">{{ film.film_name }}</span> ?</p>
                                     </div>
-                                    <!-- Cancel and remove button -->
+                                    <!-- Cancel and remove film -->
                                     <div class="modal-footer center-align" id="modal-footer">
                                         <a href="" class="modal-close btn-flat">Cancel</a>
-                                        <a aria-label="Delete film" href="{{ url_for('delete_film', film_id=film._id) }}" class="modal-close btn-flat">Remove</a>
+                                        <a aria-label="Delete film" href="{{ url_for('delete_film', film_id=film._id) }}" class="modal-close btn-flat ">Remove</a>  
                                     </div>
                                 </div>
                             </div>

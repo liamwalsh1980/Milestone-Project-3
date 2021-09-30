@@ -22,8 +22,13 @@
                         </button>
                         <a aria-label="Jump to the Films page" href="{{ url_for('films') }}" class="btn btn-small-search-reset">Reset</a>
                     </div>
+                    {% if session.user %}
                     <!-- Add film link -->
-                    <div class="col-6 m6 s12 right"><a aria-label="Jump to the Add Films page" href="{{ url_for('add_film') }}" class="add-btn-text">Add New Film <i class="fas fa-plus-circle add-new-film-link"></i></a></div>
+                        <div class="col-6 m6 s12 right"><a aria-label="Jump to the Add Films page" href="{{ url_for('add_film') }}" class="add-btn-text">Add New Film <i class="fas fa-plus-circle add-new-film-link"></i></a></div>
+                    {% else %}
+                        <div class="col-6 m6 s12 right"><a aria-label="Jump to the Add Films page" href="{{ url_for('signup') }}" class="signup-btn-text">Signup <i class="fas fa-sign-in-alt add-new-film-link"></i></a></div>
+                        <div class="col-6 m6 s12 left"><a aria-label="Jump to the Add Films page" href="{{ url_for('login') }}" class="signup-btn-text">Login <i class="fas fa-sign-in-alt add-new-film-link"></i></a></div>
+                    {% endif %}
                 </div>
             </form>
         </div>

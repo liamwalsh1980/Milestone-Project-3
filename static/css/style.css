@@ -150,6 +150,12 @@ ul li a:hover {
     font-size: 16px;
 }
 
+.signup-btn-text {
+    color: #d76848;
+    border-bottom: 2px solid #d76848;
+    font-size: 20px;
+}
+
 .back-btn-text {
     color: #F8C149;
     font-size: 16px;
