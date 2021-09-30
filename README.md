@@ -97,6 +97,8 @@ One of the key aims is to make sure that users can Create, Read, Update and Dele
 
 FilmZone is a friendly, easy to use Website for all film lovers to visit. Users can view another users' favourite films and add their own films by signing up to a user account with a username and password of their choosing. With a search facility available, users can quickly find a particular film based on Genre, Actor or Film name keyword. As a keen film lover, I thought of this idea based on my own experiences and thinking that it would be good to have a platform on the internet to tell others what my favourites films are and why. As users aren’t restricted to how many films they can add, I believe that with just a few registered users the library of films within Filmzone could quickly grow and therefore offers new users a broad range of Films to consider watching next.  
 
+As I was coming to the end of building this application, I realised that this site is perfect for reminding film lovers of films that they may have watched a long time ago and therefore gives them the reminder of what great films there are going back over the years. i.e. I can search for comedy films and see that I haven't watched The Mask starring Jim Carrey (originally realised in 1994) for a long time. I can then source this film and watch it. 
+
 I used a core base template during development to keep the Header and Footer the same throughout the whole site for all users to see. The site will have three different types of users: - 
 
 ### User One: The logged out/unregistered user 
@@ -324,13 +326,13 @@ As the developer of FilmZone I put a lot of work into making sure that the Wiref
 
 * Navbar - I decided not to include a dropdown on the films link at this stage, however, it would be a feature that could be added as the site gains more a more films from registered users. 
 
-* Homepage - I decided not to add the search facility as it was already added to another page within the site. I also decided not to include the 'flicks of the week' in the form of a carousel, however, this would be a feature i would like to include in the future. 
+* Homepage - I decided not to add the search facility as it was already added to another page within the site. I also decided not to include the 'flicks of the week' in the form of a carousel, however, this would be a feature I would like to include in the future. 
 
-* Profile page/Add film pahe/Edit film page - I decided not to include the 'Media Clip' field at this stage as i wanted to focus more on the website style and to make sure the main features worked fully. This is a field that can be added at a later stage if demand is there to include it. 
+* Profile page/Add film pahe/Edit film page - I decided not to include the 'Media Clip' field at this stage as I wanted to focus more on the website style and to make sure the main features worked fully. This is a field that can be added at a later stage if demand is there to include it. 
 
 * Edit film page/Edit genre page - I dediced that a modal checker didn't need to be included for editing a film or genre name.
 
-* Genres page - At this stage i didn't include the 'other' genre due to the limited time i had left. If this was added there would be a little bit of python code required to wire up and make use of this. 
+* Genres page - At this stage I didn't include the 'other' genre due to the limited time I had left. If this was added there would be a little bit of python code required to wire up and make use of this. 
 
 [Back to top ⇧](#filmzone)
 
@@ -481,6 +483,7 @@ To connect the App, I used the ‘GitHub’ ‘Connect to GitHub’ option. This
 Before clicking ‘Enable Automatic Deploy’ I made sure that the hidden environment variables within env.py file is added within Heroku. Go to ‘Settings’ and then click ‘Reveal Config Vars’ to add the following: -  
 
 ![Image template](static/images/deployment/config-vars.png)
+
 (passwords are removed for security)
 
 Return to the Deploy section and click ‘Enable Automatic Deployment’ and with the Main branch in place click ‘Deploy Branch’. Heroku will then receive the code from GitHub and the app will start being built using the required packages. Once this is completed the message ‘Your App was successfully deployed’ will be shown. 
@@ -624,7 +627,7 @@ What is included is the header with navbar and footer. More information below fo
 ### Head 
 Only within the base template, I used a standard boilerplate in the header using the shorthand code of html:5 and clicking enter. This launched the standard boiler plate needed for all html templates to inherit. I made sure that all link elements and CDN’s were added in reference to Font Awesome for icons, Materialize for responsive design and my own custom CSS template was in place ready for adding my own styling throughout the project. I also added the following Jinja code so I could add my own custom styles that is applied from one of the child templates in the project.  
 
-Within the head element i added a head icon that is positioned in the tab of the broswer when the web page is open. The icon is the same as the 'film' icon to the left of the text logo on the website. The icon was sourced from https://gauger.io/fonticon/. 
+Within the head element I added a head icon that is positioned in the tab of the broswer when the web page is open. The icon is the same as the 'film' icon to the left of the text logo on the website. The icon was sourced from https://gauger.io/fonticon/. 
 
 ### Body 
 At the bottom of the body element, I added the script tags for external usage of Materialize and jQuery. I finished with adding my own custom script enabling me to write my own JavaScript/jQuery code when required. The Jinja code below was also added so I could add my own custom scripts that are applied from one of the child templates in the project. For reference instead of using Vanilla JavaScript jQuery was mainly used instead.  
@@ -685,7 +688,7 @@ I decided to adjust the subheader and inbed it into the hero image using some cu
 
 ### Films page 
 
-This page 'films.html' is for the purpose of holding all films added by all logged in users as a central page for everyone to view. Whether your logged in or not you will be able to access this page. The head and footer are identical to the rest of the site by using the Jinja templating language. Within the body of the page i added a subheader called 'Films' and below is a 'for' loop iterating through films which is the function name in my app.py file. The user will see all films added by all users. The layout will be as follows: -
+This page 'films.html' is for the purpose of holding all films added by all logged in users as a central page for everyone to view. Whether your logged in or not you will be able to access this page. The head and footer are identical to the rest of the site by using the Jinja templating language. Within the body of the page I added a subheader called 'Films' and below is a 'for' loop iterating through films which is the function name in my app.py file. The user will see all films added by all users. The layout will be as follows: -
 
 - Film name
 - Genre type
@@ -814,11 +817,11 @@ Before I started designing the ‘add film’ template I made sure that all film
 
 - All of the above fields have a relevant icons positioned to the left of fields and inside and to the right of the add button and cancel button. All icons were sourced from Font Awesome.
 
-- In the base template i added the link for this page to the Main Navbar and Mobile Navbar making sure its positioned within the if statement only for logged in users. This was achieved using conditional validation and Jinja templating language. 
+- In the base template I added the link for this page to the Main Navbar and Mobile Navbar making sure its positioned within the if statement only for logged in users. This was achieved using conditional validation and Jinja templating language. 
 
 ### Edit Film page 
 
-A started designing this page by duplicating the Add Film template and then made a few small changes. The subheader content changed to 'Edit Film' and using a for loop i was able to prefix the fields based on which film is being edited. See below.
+A started designing this page by duplicating the Add Film template and then made a few small changes. The subheader content changed to 'Edit Film' and using a for loop I was able to prefix the fields based on which film is being edited. See below.
 
 Edit Genre name
 - {% for genre in genres %} - 'For' Loop to iterate through all Genres
@@ -877,7 +880,7 @@ This edit genre function is the 'U' for update thats part of the CRUD convention
 
 ### Delete Genre function
 
-I added a python function called 'delete_genre' in the app.py file for the admin user to be able delete any genre already added by clicking the 'Delete' button within the manage genres page (genres.html) which is only available to the admin user. The function uses the app.route decorator with the genre_id from MongoDB in parentheses and variable i created called genre_id using ankle brackets I.e., <genre_id>. By using the 
+I added a python function called 'delete_genre' in the app.py file for the admin user to be able delete any genre already added by clicking the 'Delete' button within the manage genres page (genres.html) which is only available to the admin user. The function uses the app.route decorator with the genre_id from MongoDB in parentheses and variable I created called genre_id using ankle brackets I.e., <genre_id>. By using the 
 .remove method, the _id from MongoDB, ObjectId from MongoDB with the genre_id inside curly brackets, the admin user will be able to delete any genre already added. I also included a flash message to indicate to the admin user that the genre they wanted to delete has been successfully deleted. The flash message displays in the 'Genres' page as this is where the user is taken after a genre is deleted. I used the redirect import to achieve this. I then made sure that the relevant url_for link was added to the genres.html page for the delete button to work. 
 
 This Delete genre function is the 'D' for delete thats part of the CRUD convention. 
@@ -938,7 +941,7 @@ In my contact_us template I made sure to add the ‘onsubmit’ event attribute 
 
 ### Media Queries 
 
-- Flash messages: I made sure that all flash messages were sizes, positioned and had the relevant color based on the pallet i had available 
+- Flash messages: I made sure that all flash messages were sizes, positioned and had the relevant color based on the pallet I had available 
 
 - Navbar: Size and positioning of the FilmZone Logo and icon adjusted on smaller and bigger screen sizes and would be noticed across all pages as they navbar is shared. 
 
@@ -948,7 +951,7 @@ In my contact_us template I made sure to add the ‘onsubmit’ event attribute 
 
 - Subheader: All pages have a subheader title. I added media queries for the font-size of the subheaders across the bigger screen sizes for readability. 
 
-- Search facility has some information text which i adjusted for smaller screen sizes to fit better within the feature. 
+- Search facility has some information text which I adjusted for smaller screen sizes to fit better within the feature. 
 
 ____
 [Back to top ⇧](#filmzone)
@@ -956,7 +959,7 @@ ____
 ## Features 
 
 ### All pages
-Using the base template and Jinja templating language i was able to offer the following features across all pages
+Using the base template and Jinja templating language I was able to offer the following features across all pages
 - FilmZone text logo and icon
 - Navigation bar showing only the relevant page links based on a user being logged in or logged out
 - Footer which includes internal links and social media links and popcorn image.
@@ -1099,9 +1102,9 @@ ____
 
 ## Bugs fixed
 
-Films template: - Whitespace when using Jinja 'for' loop to iterate through a collection from my MongoDB for my MS3 project. Its working however the results appear to create random white space on the page. On middle screen sizes and bigger i set the column to spam 2 items across the screen and on small screens 1 item using the materialize classes of “col m6 s12' I get several gaps on the middle screen sizes and upwards. See more in testing file in reference to this issue.
+Films template: - Whitespace when using Jinja 'for' loop to iterate through a collection from my MongoDB for my MS3 project. Its working however the results appear to create random white space on the page. On middle screen sizes and bigger I set the column to spam 2 items across the screen and on small screens 1 item using the materialize classes of “col m6 s12' I get several gaps on the middle screen sizes and upwards. See more in testing file in reference to this issue.
 
-Modals: - When selected any random film/genre to remove/delete using the delete/remove button within that film/genre, the same and first film/genre in the list is selected. I knew i needed to set a loop to iterate through all films/genre names. I used loop.index to iterate through all film names in the profile page and all genre names in the genres page when clicking remove/delete which then and opens the modal checker. See more in testing file in reference to this issue.
+Modals: - When selected any random film/genre to remove/delete using the delete/remove button within that film/genre, the same and first film/genre in the list is selected. I knew I needed to set a loop to iterate through all films/genre names. I used loop.index to iterate through all film names in the profile page and all genre names in the genres page when clicking remove/delete which then and opens the modal checker. See more in testing file in reference to this issue.
 
 Search Facility: - When a search is completed by a user the results don't come back in alphabetical order. I was able to resolve this by using the .sort() method, however it was a little tricky to make sure the method was added correctly.
 
@@ -1117,13 +1120,13 @@ Add Film template: - Border bottom on the Genre name field stays red when a sele
 
 ![Image template](static/images/testing/bugs/mobile-bug-redline.png)
 
-Add Film template: – With the JQuery copied from a code institute lesson from the 'Task Manager' mini project, what appears just below the Genre name section is a random 'white dot' which has the list of genres stored. By adjusting the code (change display to display:none) this appears to remove the ‘white dot’. However, i'm not sure whether this then causes the next issue. In the end i decided to keep this code as it was with the dot showing as it would cause issues with the validation if it was removed. 
+Add Film template: – With the JQuery copied from a code institute lesson from the 'Task Manager' mini project, what appears just below the Genre name section is a random 'white dot' which has the list of genres stored. By adjusting the code (change display to display:none) this appears to remove the ‘white dot’. However, i'm not sure whether this then causes the next issue. In the end I decided to keep this code as it was with the dot showing as it would cause issues with the validation if it was removed. 
 
 Add Film template: - On touch screens likes mobiles and tablets (specifically Apple devices) the genre list doesn't fully work. When you try and select a specific genre another one is selected at random. 
 
 Add Film template: - If a user adds a film without selecting a Genre type, the film won't be added because of the Javs
 
-Add film image: - When adding a film I added a placeholder "https://" to show users that the image being added needs to start with https://. However, from testing this page several times, certain images found on the internet still aren't compatiable even if it starts with https://. From testing this over and over i found that only images from Wikipedia and imdb.com seem to work. In general this part of the add film page is a little bit hit and miss and ideally i would have liked to of had more time to come up with a better option i.e. a download button, however, this option comes with its complications as well. 
+Add film image: - When adding a film I added a placeholder "https://" to show users that the image being added needs to start with https://. However, from testing this page several times, certain images found on the internet still aren't compatiable even if it starts with https://. From testing this over and over I found that only images from Wikipedia and imdb.com seem to work. In general this part of the add film page is a little bit hit and miss and ideally I would have liked to of had more time to come up with a better option i.e. a download button, however, this option comes with its complications as well. 
 
 Head Icon: - All pages except for the Profile page, Edit Film page and Edit Genre page doesn't seem to show the 'Film' icon added to the head in the base template. This is something i would need to check at a later time. 
 
@@ -1142,7 +1145,7 @@ ____
 - The content of this website was entirely written by the myself, the developer.
 
 ### Code
-- The main guide I used throughout this project was both the <a href="https://www.youtube.com/watch?v=y72Dq3GRxhc" target="_blank">Task Manager</a> mini project within Code Institute and the detailed notes i made during these lessons. 
+- The main guide I used throughout this project was both the <a href="https://www.youtube.com/watch?v=y72Dq3GRxhc" target="_blank">Task Manager</a> mini project within Code Institute and the detailed notes I made during these lessons. 
 ____
 [Back to top ⇧](#filmzone)
 
@@ -1157,7 +1160,7 @@ ____
 
 This website is for educational purposes only and created for my Code Institute Python and Data Centric Development Milestone Project (MS3)
 
-During this project i contracted Covid-19 and was ill. This slowered me down and stopped me from adding more to the project with a Film page with a link to more information of each film and a media clip trailer for each film.  
+During this project I contracted Covid-19 and was ill. This slowered me down and stopped me from adding more to the project with a Film page with a link to more information of each film and a media clip trailer for each film.  
 
 ____
 [Back to top ⇧](#filmzone) 
