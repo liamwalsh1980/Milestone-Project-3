@@ -1117,13 +1117,16 @@ Add Film template: - Border bottom on the Genre name field stays red when a sele
 
 ![Image template](static/images/testing/bugs/mobile-bug-redline.png)
 
-Add Film template: – With the JQuery copied from a code institute lesson from the 'Task Manager' mini project, what appears just below the Genre name section is a random 'white dot' which has the list of genres stored. By adjusting the code (change display to display:none) this appears to remove the ‘white dot’. However, i'm not sure whether this then causes the next issue.
+Add Film template: – With the JQuery copied from a code institute lesson from the 'Task Manager' mini project, what appears just below the Genre name section is a random 'white dot' which has the list of genres stored. By adjusting the code (change display to display:none) this appears to remove the ‘white dot’. However, i'm not sure whether this then causes the next issue. In the end i decided to keep this code as it was with the dot showing as it would cause issues with the validation if it was removed. 
 
 Add Film template: - On touch screens likes mobiles and tablets (specifically Apple devices) the genre list doesn't fully work. When you try and select a specific genre another one is selected at random. 
 
-Head Icon: - All pages except for the Profile page, Edit Film page and Edit Genre page doesn't seem to show the 'Film' icon added to the head in the base template. This is something i would need to check at a later time. 
+Add Film template: - If a user adds a film without selecting a Genre type, the film won't be added because of the Javs
 
 Add film image: - When adding a film I added a placeholder "https://" to show users that the image being added needs to start with https://. However, from testing this page several times, certain images found on the internet still aren't compatiable even if it starts with https://. From testing this over and over i found that only images from Wikipedia and imdb.com seem to work. In general this part of the add film page is a little bit hit and miss and ideally i would have liked to of had more time to come up with a better option i.e. a download button, however, this option comes with its complications as well. 
+
+Head Icon: - All pages except for the Profile page, Edit Film page and Edit Genre page doesn't seem to show the 'Film' icon added to the head in the base template. This is something i would need to check at a later time. 
+
 ____
 [Back to top ⇧](#filmzone)
 
